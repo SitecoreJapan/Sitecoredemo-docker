@@ -55,6 +55,9 @@ COPY --from=ch_assets \module\cm\content .\
 # Copy role transforms
 COPY .\transforms\ \transforms\role\
 
+# Copy CM Resource
+COPY .\Data\ .\
+
 # Copy solution website files
 COPY --from=solution \artifacts\website\ .\
 
