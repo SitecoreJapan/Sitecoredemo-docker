@@ -6,12 +6,18 @@ ARG SPE_IMAGE
 ARG TOOLING_IMAGE
 ARG SOLUTION_IMAGE
 ARG HORIZON_RESOURCES_IMAGE
+ARG MANAGEMENT_SERVICES_IMAGE
+ARG HEADLESS_SERVICES_IMAGE
+ARG CONTENTHUB_ASSETS_IMAGE
 
 FROM ${SOLUTION_IMAGE} as solution
 FROM ${TOOLING_IMAGE} as tooling
 FROM ${SPE_IMAGE} as spe
 FROM ${SXA_IMAGE} as sxa
 FROM ${HORIZON_RESOURCES_IMAGE} as horizon_resources
+FROM ${MANAGEMENT_SERVICES_IMAGE} as management_services
+FROM ${HEADLESS_SERVICES_IMAGE} as headless_services
+FROM ${CONTENTHUB_ASSETS_IMAGE} AS ch_assets
 FROM ${BASE_IMAGE}
 
 
@@ -33,6 +39,15 @@ RUN C:\module\tools\Initialize-Content.ps1 -TargetPath .\; `
 
 # Add horizon module
 COPY --from=horizon_resources \module\cm\content \inetpub\wwwroot
+
+# Copy the Sitecore Management Services Module
+COPY --from=management_services C:\module\cm\content C:\inetpub\wwwroot
+
+# Add headless module
+COPY --from=headless_services C:\module\cm\content C:\inetpub\wwwroot
+COPY --from=headless_services C:\module\tools C:\module\tools
+RUN C:\module\tools\Initialize-Content.ps1 -TargetPath C:\inetpub\wwwroot; `
+    Remove-Item -Path C:\module -Recurse -Force;
 
 # Copy solution website files
 COPY --from=solution \artifacts\website\ .\
