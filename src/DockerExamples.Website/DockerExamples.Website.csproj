@@ -58,12 +58,6 @@
     <Content Include="layouts\Sample Inner Sublayout.ascx" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DockerExamples.XConnect.Model\DockerExamples.XConnect.Model.csproj">
-      <Project>{16dc2062-e853-44bb-a006-bc1f4cd5bbcf}</Project>
-      <Name>DockerExamples.XConnect.Model</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <PackageReference Include="Sitecore.Assemblies.Platform">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>

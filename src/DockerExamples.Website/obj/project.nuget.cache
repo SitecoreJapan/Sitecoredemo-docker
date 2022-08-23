@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "2OJPE1YAAMZD6Lug//Ze5nCeL05qJ130eI5o50Gs7SiAsKcwB2kcvK+CzNW8jvJmQeDpjvmsNetTpuGG2KbtyA==",
+  "success": true,
+  "projectFilePath": "C:\\projects\\Sitecoredemo.Docker\\src\\DockerExamples.Website\\DockerExamples.Website.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\shini\\.nuget\\packages\\sitecore.assemblies.platform\\10.2.0\\sitecore.assemblies.platform.10.2.0.nupkg.sha512",
+    "C:\\Users\\shini\\.nuget\\packages\\sitecore.assemblies.xconnect.web\\10.2.0\\sitecore.assemblies.xconnect.web.10.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}
