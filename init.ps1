@@ -6,7 +6,7 @@ Param (
     $LicenseXmlPath,
 
     [string]
-    $HostName = "dockerexamples",
+    $HostName = "sitecoredemo",
     
     # We do not need to use [SecureString] here since the value will be stored unencrypted in .env,
     # and used only for transient local example environment.
