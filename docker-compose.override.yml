@@ -108,6 +108,14 @@ services:
     environment:
       SITECORE_DEVELOPMENT_PATCHES: CustomErrorsOff
       Sitecore_Horizon_ClientHost: https://${HRZ_HOST}
+      # DEMO TEAM CUSTOMIZATION - Custom integrations
+      Sitecore_ConnectionStrings_CMP.ContentHub: ${CMP_ContentHub}
+      Sitecore_ConnectionStrings_CMP.ServiceBusEntityPathIn: ${CMP_ServiceBusEntityPathIn}
+      Sitecore_ConnectionStrings_CMP.ServiceBusSubscription: ${CMP_ServiceBusSubscription}
+      Sitecore_ConnectionStrings_CMP.ServiceBusEntityPathOut: ${CMP_ServiceBusEntityPathOut}
+      Sitecore_ConnectionStrings_DAM.ContentHub: ${DAM_ContentHub}
+      Sitecore_ConnectionStrings_DAM.SearchPage: ${DAM_SearchPage}
+      Sitecore_ConnectionStrings_DAM.ExternalRedirectKey: ${DAM_ExternalRedirectKey}
     entrypoint: powershell -Command "& C:\tools\entrypoints\iis\Development.ps1"
   hrz:
     image: ${SITECORE_MODULE_REGISTRY}sitecore-horizon:${HORIZON_VERSION}

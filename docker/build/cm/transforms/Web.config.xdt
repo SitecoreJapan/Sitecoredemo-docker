@@ -1,5 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <location>
+    <system.webServer>
+      <httpProtocol>
+        <customHeaders>
+          <!-- CSP -->
+          <add xdt:Transform="SetAttributes" xdt:Locator="Match(name)" name="Content-Security-Policy" value="default-src 'self' 'unsafe-inline' 'unsafe-eval' https://apps.sitecore.net https://*.stylelabs.io https://*.stylelabs.cloud https://*.stylelabsdemo.com https://*.stylelabsqa.com https://*.stylelabsdev.com https://*.sitecoresandbox.cloud https://*.azureedge.net https://stylelabs.eu.auth0.com https://login.windows.net https://login.microsoftonline.com https://*.boxever.com; img-src 'self' data: https://*.stylelabs.io https://*.stylelabs.cloud https://*.stylelabsdemo.com https://*.stylelabsqa.com https://*.stylelabsdev.com https://*.sitecoresandbox.cloud https://*.azureedge.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' 'unsafe-inline' https://fonts.gstatic.com; frame-ancestors 'self' https://sh.edge.localhost https://*.sitecoredemo.com;"/>
+        </customHeaders>
+      </httpProtocol>
+    </system.webServer>
+  </location>
   <system.webServer>
     <httpProtocol>
       <customHeaders>
@@ -7,4 +17,17 @@
       </customHeaders>
     </httpProtocol>
   </system.webServer>
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <!-- first completely remove the parent element -->
+      <dependentAssembly xdt:Transform="RemoveAll"
+                         xdt:Locator="Condition(starts-with(./_defaultNamespace:assemblyIdentity/@name,'System.Runtime.CompilerServices.Unsafe'))">
+      </dependentAssembly>
+      <!-- then add the new block -->
+      <dependentAssembly xdt:Transform="Insert">
+        <assemblyIdentity name="System.Runtime.CompilerServices.Unsafe" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.4.1" newVersion="4.0.4.0 " />
+      </dependentAssembly>
+    </assemblyBinding>
+  </runtime>
 </configuration>

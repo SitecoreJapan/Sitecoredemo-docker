@@ -49,6 +49,12 @@ COPY --from=headless_services C:\module\tools C:\module\tools
 RUN C:\module\tools\Initialize-Content.ps1 -TargetPath C:\inetpub\wwwroot; `
     Remove-Item -Path C:\module -Recurse -Force;
 
+# Add SCCH module 5.0.0
+COPY --from=ch_assets \module\cm\content .\
+
+# Copy role transforms
+COPY .\transforms\ \transforms\role\
+
 # Copy solution website files
 COPY --from=solution \artifacts\website\ .\
 
@@ -63,3 +69,6 @@ RUN C:\tools\scripts\Invoke-XdtTransform.ps1 -Path .\ -XdtPath C:\transforms\sol
 
 # Perform role transforms
 RUN C:\tools\scripts\Invoke-XdtTransform.ps1 -Path .\ -XdtPath C:\transforms\role
+
+# Apply SCCH transformation files
+RUN C:\tools\scripts\Invoke-XdtTransform.ps1 -Path C:\inetpub\wwwroot -XdtPath \inetpub\wwwroot\App_Data\Transforms\scch\xdts
