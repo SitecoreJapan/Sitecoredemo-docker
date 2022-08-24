@@ -40,9 +40,6 @@ RUN C:\module\tools\Initialize-Content.ps1 -TargetPath .\; `
 # Add horizon module
 COPY --from=horizon_resources \module\cm\content \inetpub\wwwroot
 
-# Copy the Sitecore Management Services Module
-COPY --from=management_services C:\module\cm\content C:\inetpub\wwwroot
-
 # Add headless module
 COPY --from=headless_services C:\module\cm\content C:\inetpub\wwwroot
 COPY --from=headless_services C:\module\tools C:\module\tools
@@ -52,8 +49,8 @@ RUN C:\module\tools\Initialize-Content.ps1 -TargetPath C:\inetpub\wwwroot; `
 # Add SCCH module 5.0.0
 COPY --from=ch_assets \module\cm\content .\
 
-# Copy role transforms
-COPY .\transforms\ \transforms\role\
+# Copy the Sitecore Management Services Module
+COPY --from=management_services C:\module\cm\content C:\inetpub\wwwroot
 
 # Copy CM Resource
 COPY .\Data\ .\
