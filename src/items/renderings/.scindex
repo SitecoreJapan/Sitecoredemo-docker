@@ -1,64 +1,64 @@
 ﻿# Do not commit this file to source control or modify it. It is safe to delete; it will recreate itself.
 ---
 File: |
-  C:\projects\Sitecoredemo-jp\src\items\renderings\sitecoredemo-jp\ContentBlock.yml
-ID: "4d4b5854-e855-50fa-8b97-d6d504da0fd1"
-Parent: "a0671b7a-2010-5b9e-bd40-905c7503a3e6"
-Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
-Path: "/sitecore/layout/Renderings/Project/sitecoredemo-jp/ContentBlock"
-Signature: 8cbJT8kFPelVcfxbvnQyBCwGpUrQhqkTOeYg90SyUZI=
-Modified: 637962386972725833
----
-File: |
-  C:\projects\Sitecoredemo-jp\src\items\renderings\sitecoredemo-jp.yml
+  C:\Projects\Sitecoredemo.Docker\src\items\renderings\sitecoredemo-jp.yml
 ID: "a0671b7a-2010-5b9e-bd40-905c7503a3e6"
 Parent: "1995806f-0a84-42b5-93b0-88f0e2ff872c"
 Template: "7ee0975b-0698-493e-b3a2-0b2ef33d0522"
 Path: "/sitecore/layout/Renderings/Project/sitecoredemo-jp"
 Signature: JeA4BAlwv5Ev8/QsKcj38gbMbAolHh1Jio2F0EoE9aY=
-Modified: 637962277270001503
+Modified: 637969284551369575
 ---
 File: |
-  C:\projects\Sitecoredemo-jp\src\items\renderings\sitecoredemo-jp\GraphQL-ConnectedDemo.yml
+  C:\Projects\Sitecoredemo.Docker\src\items\renderings\sitecoredemo-jp\GraphQL-ConnectedDemo.yml
 ID: "f1c75f96-de68-5d64-971c-f2472de5b983"
 Parent: "a0671b7a-2010-5b9e-bd40-905c7503a3e6"
 Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
 Path: "/sitecore/layout/Renderings/Project/sitecoredemo-jp/GraphQL-ConnectedDemo"
 Signature: jgs6w9vpImT2K8c7aklh5jj5++WXjpy2nzx2YHcLenY=
-Modified: 637962277270011615
+Modified: 637969284551379684
 ---
 File: |
-  C:\projects\Sitecoredemo-jp\src\items\renderings\sitecoredemo-jp\Home\Hero.yml
-ID: "66f69a58-0d43-4e87-8313-feededc43483"
-Parent: "543fe23d-9335-4be6-97ff-1b59ccec13a9"
-Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
-Path: "/sitecore/layout/Renderings/Project/sitecoredemo-jp/Home/Hero"
-Signature: nJsT9PYucAy7DQOYMGhvfuh0FzJeO2mUVVtfaXMFCbI=
-Modified: 637963115473313142
----
-File: |
-  C:\projects\Sitecoredemo-jp\src\items\renderings\sitecoredemo-jp\GraphQL-IntegratedDemo.yml
+  C:\Projects\Sitecoredemo.Docker\src\items\renderings\sitecoredemo-jp\GraphQL-IntegratedDemo.yml
 ID: "141ddff2-dea9-5a02-a233-31ffa387ed56"
 Parent: "a0671b7a-2010-5b9e-bd40-905c7503a3e6"
 Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
 Path: "/sitecore/layout/Renderings/Project/sitecoredemo-jp/GraphQL-IntegratedDemo"
 Signature: Bhv0AwwTTNSsd5MLkE943zD+U+gK4S0lS8IQuE7Jfwc=
-Modified: 637962277270021483
+Modified: 637969284551390004
 ---
 File: |
-  C:\projects\Sitecoredemo-jp\src\items\renderings\sitecoredemo-jp\GraphQL-Layout.yml
+  C:\Projects\Sitecoredemo.Docker\src\items\renderings\sitecoredemo-jp\ContentBlock.yml
+ID: "4d4b5854-e855-50fa-8b97-d6d504da0fd1"
+Parent: "a0671b7a-2010-5b9e-bd40-905c7503a3e6"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: "/sitecore/layout/Renderings/Project/sitecoredemo-jp/ContentBlock"
+Signature: 8cbJT8kFPelVcfxbvnQyBCwGpUrQhqkTOeYg90SyUZI=
+Modified: 637969284551379684
+---
+File: |
+  C:\Projects\Sitecoredemo.Docker\src\items\renderings\sitecoredemo-jp\GraphQL-Layout.yml
 ID: "a244ba68-e872-5bb0-9f71-dca8d6b8d314"
 Parent: "a0671b7a-2010-5b9e-bd40-905c7503a3e6"
 Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
 Path: "/sitecore/layout/Renderings/Project/sitecoredemo-jp/GraphQL-Layout"
 Signature: xOu3oZMpy6cazUToFUgzRyqCV4M7XfUxST/SxNHusJE=
-Modified: 637962277270021483
+Modified: 637969284551390004
 ---
 File: |
-  C:\projects\Sitecoredemo-jp\src\items\renderings\sitecoredemo-jp\Home.yml
+  C:\Projects\Sitecoredemo.Docker\src\items\renderings\sitecoredemo-jp\Home.yml
 ID: "543fe23d-9335-4be6-97ff-1b59ccec13a9"
 Parent: "a0671b7a-2010-5b9e-bd40-905c7503a3e6"
 Template: "7ee0975b-0698-493e-b3a2-0b2ef33d0522"
 Path: "/sitecore/layout/Renderings/Project/sitecoredemo-jp/Home"
 Signature: vI4p7tuf4roSIODEnojlXTn7TmTj04VyDY8p7wMD8Vs=
-Modified: 637963115473303139
+Modified: 637969284551390004
+---
+File: |
+  C:\Projects\Sitecoredemo.Docker\src\items\renderings\sitecoredemo-jp\Home\Hero.yml
+ID: "66f69a58-0d43-4e87-8313-feededc43483"
+Parent: "543fe23d-9335-4be6-97ff-1b59ccec13a9"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: "/sitecore/layout/Renderings/Project/sitecoredemo-jp/Home/Hero"
+Signature: nJsT9PYucAy7DQOYMGhvfuh0FzJeO2mUVVtfaXMFCbI=
+Modified: 637969284551399671

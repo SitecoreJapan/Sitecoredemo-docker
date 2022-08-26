@@ -44,17 +44,17 @@ Languages:
       Value: 20220420T145002Z
     - ID: "43e0b9f1-2c56-5326-bfc4-1f1aa302eabc"
       Hint: pageTitle
-      Value: ようこそ Sitecore JSS on XM Cloud
+      Value: Welcome to Sitecore JSS on XM Cloud
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "9cae8a71-6366-45ff-a153-23cf1f3aab7e"
+      Value: "6ad7b40e-3ac3-427b-9885-898edd3f8fb1"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\shinhara@sitecore.net
+        sitecore\Admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20220817T053839Z
+      Value: 20220826T013558Z
 - Language: "ja-JP"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"

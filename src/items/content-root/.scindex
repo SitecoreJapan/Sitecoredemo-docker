@@ -1,10 +1,10 @@
 ﻿# Do not commit this file to source control or modify it. It is safe to delete; it will recreate itself.
 ---
 File: |
-  C:\projects\Sitecoredemo-jp\src\items\content-root\content.yml
+  C:\Projects\Sitecoredemo.Docker\src\items\content-root\content.yml
 ID: "0de95ae4-41ab-4d01-9eb0-67441b7c2450"
 Parent: "11111111-1111-1111-1111-111111111111"
 Template: "e3e2d58c-df95-4230-adc9-279924cece84"
 Path: /sitecore/content
 Signature: ghPcct/goo2oLYyLvhRj8LxnvSDRWYBCGIjg8FQ16io=
-Modified: 637962277269206381
+Modified: 637969284550035835
