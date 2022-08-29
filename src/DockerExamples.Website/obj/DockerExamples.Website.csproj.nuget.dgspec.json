@@ -1,0 +1,66 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\projects\\Sitecoredemo.Docker\\src\\DockerExamples.Website\\DockerExamples.Website.csproj": {}
+  },
+  "projects": {
+    "C:\\projects\\Sitecoredemo.Docker\\src\\DockerExamples.Website\\DockerExamples.Website.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\projects\\Sitecoredemo.Docker\\src\\DockerExamples.Website\\DockerExamples.Website.csproj",
+        "projectName": "DockerExamples.Website",
+        "projectPath": "C:\\projects\\Sitecoredemo.Docker\\src\\DockerExamples.Website\\DockerExamples.Website.csproj",
+        "packagesPath": "C:\\Users\\shini\\.nuget\\packages\\",
+        "outputPath": "C:\\projects\\Sitecoredemo.Docker\\src\\DockerExamples.Website\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\projects\\Sitecoredemo.Docker\\NuGet.Config",
+          "C:\\Users\\shini\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://sitecore.myget.org/F/sc-packages/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "dependencies": {
+            "Sitecore.Assemblies.Platform": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[10.2.0, )"
+            },
+            "Sitecore.Assemblies.XConnect.Web": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[10.2.0, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
