@@ -14,7 +14,7 @@ services:
       - "${HTTPS_PORT}:443"
       - "${TRAEFIK_MANAGEMENT_PORT}:8080"
     healthcheck:
-      test: ["CMD", "traefik", "healthcheck", "--ping"]
+      test: [ "CMD", "traefik", "healthcheck", "--ping" ]
     volumes:
       - source: \\.\pipe\docker_engine\
         target: \\.\pipe\docker_engine\
@@ -22,8 +22,6 @@ services:
       - ./traefik:C:/etc/traefik
     depends_on:
       id:
-        condition: service_healthy
-      cd:
         condition: service_healthy
       cm:
         condition: service_healthy
@@ -52,7 +50,13 @@ services:
       SITECORE_ADMIN_PASSWORD: ${SITECORE_ADMIN_PASSWORD}
       POST_DEPLOYMENT_WAIT_PERIOD: 300
     healthcheck:
-      test: ["CMD", "powershell", "-command", "if ([System.Environment]::GetEnvironmentVariable('DatabasesDeploymentStatus', 'Machine') -eq 'Complete') { exit 0 } else { exit 1}"]
+      test:
+        [
+          "CMD",
+          "powershell",
+          "-command",
+          "if ([System.Environment]::GetEnvironmentVariable('DatabasesDeploymentStatus', 'Machine') -eq 'Complete') { exit 0 } else { exit 1}"
+        ]
       start_period: 300s
       interval: 5s
     depends_on:
@@ -70,7 +74,13 @@ services:
     environment:
       SOLR_MODE: solrcloud
     healthcheck:
-      test: ["CMD", "powershell", "-command", "try { $$statusCode = (iwr http://solr:8983/solr/admin/cores?action=STATUS -UseBasicParsing).StatusCode; if ($$statusCode -eq 200) { exit 0 } else { exit 1} } catch { exit 1 }"]
+      test:
+        [
+          "CMD",
+          "powershell",
+          "-command",
+          "try { $$statusCode = (iwr http://solr:8983/solr/admin/cores?action=STATUS -UseBasicParsing).StatusCode; if ($$statusCode -eq 200) { exit 0 } else { exit 1} } catch { exit 1 }"
+        ]
   solr-init:
     isolation: ${ISOLATION}
     image: ${SITECORE_DOCKER_REGISTRY}sitecore-xm1-solr-init:${SITECORE_VERSION}
@@ -93,7 +103,13 @@ services:
       Sitecore_Sitecore__IdentityServer__CertificateRawDataPassword: ${SITECORE_ID_CERTIFICATE_PASSWORD}
       Sitecore_License: ${SITECORE_LICENSE}
     healthcheck:
-      test: ["CMD", "pwsh", "-command", "C:/Healthchecks/Healthcheck.ps1"]
+      test:
+        [
+          "CMD",
+          "pwsh",
+          "-command",
+          "C:/Healthchecks/Healthcheck.ps1"
+        ]
       timeout: 300s
     depends_on:
       mssql-init:
@@ -103,36 +119,6 @@ services:
       - "traefik.http.routers.id-secure.entrypoints=websecure"
       - "traefik.http.routers.id-secure.rule=Host(`${ID_HOST}`)"
       - "traefik.http.routers.id-secure.tls=true"
-  cd:
-    isolation: ${ISOLATION}
-    image: ${SITECORE_DOCKER_REGISTRY}sitecore-xm1-cd:${SITECORE_VERSION}
-    depends_on:
-      mssql-init:
-        condition: service_healthy
-      solr-init:
-        condition: service_started
-      redis:
-        condition: service_started
-    environment:
-      Sitecore_AppSettings_instanceNameMode:define: default
-      Sitecore_ConnectionStrings_Security: Data Source=${SQL_SERVER};Initial Catalog=Sitecore.Core;User ID=${SQL_SA_LOGIN};Password=${SQL_SA_PASSWORD}
-      Sitecore_ConnectionStrings_Web: Data Source=${SQL_SERVER};Initial Catalog=Sitecore.Web;User ID=${SQL_SA_LOGIN};Password=${SQL_SA_PASSWORD}
-      Sitecore_ConnectionStrings_ExperienceForms: Data Source=${SQL_SERVER};Initial Catalog=Sitecore.ExperienceForms;User ID=${SQL_SA_LOGIN};Password=${SQL_SA_PASSWORD}
-      Sitecore_ConnectionStrings_Solr.Search: http://solr:8983/solr;solrCloud=true
-      Sitecore_ConnectionStrings_Redis.Sessions: redis:6379,ssl=False,abortConnect=False
-      Sitecore_License: ${SITECORE_LICENSE}
-      SOLR_CORE_PREFIX_NAME: ${SOLR_CORE_PREFIX_NAME}
-      MEDIA_REQUEST_PROTECTION_SHARED_SECRET: ${MEDIA_REQUEST_PROTECTION_SHARED_SECRET}
-    healthcheck:
-      test: ["CMD", "powershell", "-command", "C:/Healthchecks/Healthcheck.ps1"]
-      timeout: 300s
-    labels:
-      - "traefik.enable=true"
-      - "traefik.http.routers.cd-secure.entrypoints=websecure"
-      - "traefik.http.routers.cd-secure.rule=Host(`${CD_HOST}`)"
-      - "traefik.http.routers.cd-secure.tls=true"
-      - "traefik.http.middlewares.stripForwardedHostHeader.headers.customrequestheaders.X-Forwarded-Host="
-      - "traefik.http.routers.cd-secure.middlewares=stripForwardedHostHeader"
   cm:
     isolation: ${ISOLATION}
     image: ${SITECORE_DOCKER_REGISTRY}sitecore-xm1-cm:${SITECORE_VERSION}
@@ -159,11 +145,18 @@ services:
       Sitecore_Identity_Server_Authority: https://${ID_HOST}
       Sitecore_Identity_Server_InternalAuthority: http://id
       Sitecore_Identity_Server_CallbackAuthority: https://${CM_HOST}
+      RENDERING_HOST_INTERNAL_URI: ${RENDERING_HOST_INTERNAL_URI}
       Sitecore_Identity_Server_Require_Https: "false"
       SOLR_CORE_PREFIX_NAME: ${SOLR_CORE_PREFIX_NAME}
       MEDIA_REQUEST_PROTECTION_SHARED_SECRET: ${MEDIA_REQUEST_PROTECTION_SHARED_SECRET}
     healthcheck:
-      test: ["CMD", "powershell", "-command", "C:/Healthchecks/Healthcheck.ps1"]
+      test:
+        [
+          "CMD",
+          "powershell",
+          "-command",
+          "C:/Healthchecks/Healthcheck.ps1"
+        ]
       timeout: 300s
     labels:
       - "traefik.enable=true"
