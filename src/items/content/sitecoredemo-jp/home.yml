@@ -23,13 +23,6 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{A2E74698-1038-496D-989A-8ED3F8B2CC46}"
-              p:after="p[@uid='{D415ED7D-3C8A-555C-8B54-43B9F76B36DD}']"
-              s:ds="{B40CB4E3-7E58-4331-9A67-DCA34DE15A66}"
-              s:id="{66F69A58-0D43-4E87-8313-FEEDEDC43483}"
-              s:par="CacheClearingBehavior=Clear on publish"
-              s:ph="jss-main" />
-            <r
               uid="{2C4A53CC-9DA8-5F51-9D79-6EE2FC671B2D}"
               p:after="*[1=2]"
               s:rname="ContentBlock"
@@ -47,14 +40,14 @@ Languages:
       Value: Welcome to Sitecore JSS on XM Cloud
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "6ad7b40e-3ac3-427b-9885-898edd3f8fb1"
+      Value: "50dd24d3-8f8b-43ce-9635-13390c74f9ef"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\Admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20220826T013558Z
+      Value: 20220829T080521Z
 - Language: "ja-JP"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
