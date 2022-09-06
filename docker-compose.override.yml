@@ -126,6 +126,9 @@ services:
       Sitecore_ConnectionStrings_DAM.ContentHub: ${DAM_ContentHub}
       Sitecore_ConnectionStrings_DAM.SearchPage: ${DAM_SearchPage}
       Sitecore_ConnectionStrings_DAM.ExternalRedirectKey: ${DAM_ExternalRedirectKey}
+      JSS_EDITING_SECRET: ${JSS_EDITING_SECRET}
+      RENDERING_HOST_INTERNAL_URI: ${RENDERING_HOST_INTERNAL_URI}
+      CM_HOST: ${CM_HOST}
     entrypoint: powershell -Command "& C:\tools\entrypoints\iis\Development.ps1"
   hrz:
     image: ${SITECORE_MODULE_REGISTRY}sitecore-horizon:${HORIZON_VERSION}
