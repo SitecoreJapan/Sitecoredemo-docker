@@ -1,9 +1,5 @@
 $ErrorActionPreference = "Stop";
 
-$envContent = Get-Content .env -Encoding UTF8
-$cmHost = $envContent | Where-Object { $_ -imatch "^CM_HOST=.+" }
-$idHost = $envContent | Where-Object { $_ -imatch "^ID_HOST=.+" }
-
 Write-Host "Building containers..." -ForegroundColor Green
 docker-compose build
 if ($LASTEXITCODE -ne 0) {
@@ -46,7 +42,7 @@ if ($LASTEXITCODE -ne 0) {
 
 Write-Host "Logging into Sitecore..." -ForegroundColor Green
 
-dotnet sitecore login --cm https://$cmHost --auth https://$idHost --allow-write true -n default
+dotnet sitecore login --cm https://cm.sitecoredemo.localhost --auth https://id.sitecoredemo.localhost --allow-write true -n default
     
 if ($LASTEXITCODE -ne 0) {
     Write-Error "Unable to log into Sitecore, did the Sitecore environment start correctly? See logs above."
