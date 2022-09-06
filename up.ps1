@@ -69,7 +69,7 @@ dotnet sitecore ser push
 if ($ClientCredentialsLogin -ne "true") {
     Write-Host "Opening site..." -ForegroundColor Green
     
-    Start-Process https://xmcloudcm.localhost/sitecore/
+    Start-Process https://cm.sitecoredemo.localhost/sitecore/
 }
 
 Write-Host ""
