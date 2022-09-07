@@ -89,7 +89,7 @@ Set-EnvFileVariable "SITECORE_ID_CERTIFICATE_PASSWORD" -Value $idCertPassword
 Set-EnvFileVariable "SITECORE_LICENSE" -Value (ConvertTo-CompressedBase64String -Path $LicenseXmlPath)
 
 # JSS_EDITING_SECRET
-Set-EnvFileVariable "JSS_EDITING_SECRET" -Value (Get-SitecoreRandomString 32)
+Set-EnvFileVariable "JSS_EDITING_SECRET" -Value (Get-SitecoreRandomString 32 -DisallowSpecial)
 
 ##################################
 # Configure TLS/HTTPS certificates
