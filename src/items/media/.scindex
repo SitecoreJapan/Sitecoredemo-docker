@@ -7,7 +7,7 @@ Parent: "90ae357f-6171-4ea9-808c-5600b678f726"
 Template: "fe5dd826-48c6-436d-b87a-7c4210c7413b"
 Path: "/sitecore/media library/Project/sitecoredemo-jp"
 Signature: yg9NDkowopfD1FK6zgv2FttupvjuYGhOOWopv+sy4nk=
-Modified: 637969284550224863
+Modified: 637981067710911552
 ---
 File: |
   C:\Projects\Sitecoredemo.Docker\src\items\media\sitecoredemo-jp\GettyImages-637945962.yml
@@ -16,4 +16,4 @@ Parent: "c4d45de6-7302-463e-909f-0cbf5082127d"
 Template: "daf085e8-602e-43a6-8299-038ff171349f"
 Path: "/sitecore/media library/Project/sitecoredemo-jp/GettyImages-637945962"
 Signature: o0lzOjjRwArnXnd9zk4ZtdcMwOMitV3qY90eCEiIMuk=
-Modified: 637969284551314289
+Modified: 637981067711892037
