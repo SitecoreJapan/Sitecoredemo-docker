@@ -1,19 +1,19 @@
 ﻿# Do not commit this file to source control or modify it. It is safe to delete; it will recreate itself.
 ---
 File: |
-  C:\projects\Sitecoredemo.Docker\src\items\media\sitecoredemo-jp\GettyImages-637945962.yml
-ID: "86789501-4737-4a0e-9ef2-385198a93e40"
-Parent: "c4d45de6-7302-463e-909f-0cbf5082127d"
-Template: "daf085e8-602e-43a6-8299-038ff171349f"
-Path: "/sitecore/media library/Project/sitecoredemo-jp/GettyImages-637945962"
-Signature: o0lzOjjRwArnXnd9zk4ZtdcMwOMitV3qY90eCEiIMuk=
-Modified: 637962277269934564
----
-File: |
-  C:\projects\Sitecoredemo.Docker\src\items\media\sitecoredemo-jp.yml
+  C:\Projects\Sitecoredemo.Docker\src\items\media\sitecoredemo-jp.yml
 ID: "c4d45de6-7302-463e-909f-0cbf5082127d"
 Parent: "90ae357f-6171-4ea9-808c-5600b678f726"
 Template: "fe5dd826-48c6-436d-b87a-7c4210c7413b"
 Path: "/sitecore/media library/Project/sitecoredemo-jp"
 Signature: yg9NDkowopfD1FK6zgv2FttupvjuYGhOOWopv+sy4nk=
-Modified: 637962277269286679
+Modified: 637981067710911552
+---
+File: |
+  C:\Projects\Sitecoredemo.Docker\src\items\media\sitecoredemo-jp\GettyImages-637945962.yml
+ID: "86789501-4737-4a0e-9ef2-385198a93e40"
+Parent: "c4d45de6-7302-463e-909f-0cbf5082127d"
+Template: "daf085e8-602e-43a6-8299-038ff171349f"
+Path: "/sitecore/media library/Project/sitecoredemo-jp/GettyImages-637945962"
+Signature: o0lzOjjRwArnXnd9zk4ZtdcMwOMitV3qY90eCEiIMuk=
+Modified: 637981067711892037

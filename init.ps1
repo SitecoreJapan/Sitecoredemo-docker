@@ -11,12 +11,7 @@ Param (
     # We do not need to use [SecureString] here since the value will be stored unencrypted in .env,
     # and used only for transient local example environment.
     [string]
-    $SitecoreAdminPassword = "Password12345",
-    
-    # We do not need to use [SecureString] here since the value will be stored unencrypted in .env,
-    # and used only for transient local example environment.
-    [string]
-    $SqlSaPassword = "Password12345"
+    $SitecoreAdminPassword = "Password12345"
 )
 
 $ErrorActionPreference = "Stop";
@@ -57,7 +52,7 @@ Write-Host "Populating required .env file variables..." -ForegroundColor Green
 Set-EnvFileVariable "SITECORE_ADMIN_PASSWORD" -Value $SitecoreAdminPassword
 
 # SQL_SA_PASSWORD
-Set-EnvFileVariable "SQL_SA_PASSWORD" -Value $SqlSaPassword
+Set-EnvFileVariable "SQL_SA_PASSWORD" -Value (Get-SitecoreRandomString 19 -DisallowSpecial -EnforceComplexity)
 
 # CD_HOST
 Set-EnvFileVariable "CD_HOST" -Value "cd.$($HostName).localhost"
@@ -92,6 +87,9 @@ Set-EnvFileVariable "SITECORE_ID_CERTIFICATE_PASSWORD" -Value $idCertPassword
 
 # SITECORE_LICENSE
 Set-EnvFileVariable "SITECORE_LICENSE" -Value (ConvertTo-CompressedBase64String -Path $LicenseXmlPath)
+
+# JSS_EDITING_SECRET
+Set-EnvFileVariable "JSS_EDITING_SECRET" -Value (Get-SitecoreRandomString 32)
 
 ##################################
 # Configure TLS/HTTPS certificates

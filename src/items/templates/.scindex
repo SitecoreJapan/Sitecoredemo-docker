@@ -1,289 +1,253 @@
 ﻿# Do not commit this file to source control or modify it. It is safe to delete; it will recreate itself.
 ---
 File: |
-  C:\projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp.yml
-ID: "7057bd13-458b-55f0-9e8d-fbef8325dff7"
-Parent: "825b30b4-b40b-422e-9920-23a1b6bda89c"
-Template: "0437fee2-44c9-46a6-abe9-28858d9fee8c"
-Path: "/sitecore/templates/Project/sitecoredemo-jp"
-Signature: ztfZZzG2djNmNsHfL0aeyMDvCHpYH42QXvqi12ESC2g=
-Modified: 637962277270031497
----
-File: |
-  C:\projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\App Route.yml
+  C:\Projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\App Route.yml
 ID: "899228a0-a4ce-570a-ae24-97566af3dab6"
 Parent: "7057bd13-458b-55f0-9e8d-fbef8325dff7"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
 Path: "/sitecore/templates/Project/sitecoredemo-jp/App Route"
 Signature: 6VNb1Z8RliCpQNpxMh3Z4YxqFVF76r6onEvmcqwcUMQ=
-Modified: 637963082380535330
+Modified: 637981067711983915
 ---
 File: |
-  C:\projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\ContentBlock Rendering Parameters.yml
-ID: "6f3f774c-7a7e-51ea-a97c-277e59060124"
-Parent: "7057bd13-458b-55f0-9e8d-fbef8325dff7"
-Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: "/sitecore/templates/Project/sitecoredemo-jp/ContentBlock Rendering Parameters"
-Signature: pNkitn7Y3eJwVbaXAHB6h/HUV6mUiSVlQwJK0WKe3Cs=
-Modified: 637962277270051571
----
-File: |
-  C:\projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\ContentBlock.yml
+  C:\Projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\ContentBlock.yml
 ID: "7ac240f6-c7c7-5911-8f4b-b6f6cacba088"
 Parent: "7057bd13-458b-55f0-9e8d-fbef8325dff7"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
 Path: "/sitecore/templates/Project/sitecoredemo-jp/ContentBlock"
 Signature: xMryYmlnuE0UOQvSLg8KZ3ZE7NfxlVBFrRIOlyzKCbA=
-Modified: 637962277270061505
+Modified: 637981067712039861
 ---
 File: |
-  C:\projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\GraphQL-ConnectedDemo Rendering Parameters.yml
-ID: "7692953b-c49e-5aff-a047-d43bccf77d8a"
-Parent: "7057bd13-458b-55f0-9e8d-fbef8325dff7"
-Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: "/sitecore/templates/Project/sitecoredemo-jp/GraphQL-ConnectedDemo Rendering Parameters"
-Signature: qvXBP1ttK5Q/kccHLhdgcWML4Qp+d6aZZTY3ydLzS2Y=
-Modified: 637962277270071601
+  C:\Projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp.yml
+ID: "7057bd13-458b-55f0-9e8d-fbef8325dff7"
+Parent: "825b30b4-b40b-422e-9920-23a1b6bda89c"
+Template: "0437fee2-44c9-46a6-abe9-28858d9fee8c"
+Path: "/sitecore/templates/Project/sitecoredemo-jp"
+Signature: ztfZZzG2djNmNsHfL0aeyMDvCHpYH42QXvqi12ESC2g=
+Modified: 637981067711983915
 ---
 File: |
-  C:\projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\GraphQL-ConnectedDemo.yml
+  C:\Projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\GraphQL-ConnectedDemo.yml
 ID: "17902cd6-6589-562d-af47-78556130f2f3"
 Parent: "7057bd13-458b-55f0-9e8d-fbef8325dff7"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
 Path: "/sitecore/templates/Project/sitecoredemo-jp/GraphQL-ConnectedDemo"
 Signature: Nu1xsqmFTFIDwei8ZiINZ0Du7aZSjy9M6t3BmfkYytI=
-Modified: 637962277270081497
+Modified: 637981067712044896
 ---
 File: |
-  C:\projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\GraphQL-IntegratedDemo Rendering Parameters.yml
-ID: "155670f9-3da7-5ec8-8d53-32e0e33955de"
+  C:\Projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\ContentBlock Rendering Parameters.yml
+ID: "6f3f774c-7a7e-51ea-a97c-277e59060124"
 Parent: "7057bd13-458b-55f0-9e8d-fbef8325dff7"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: "/sitecore/templates/Project/sitecoredemo-jp/GraphQL-IntegratedDemo Rendering Parameters"
-Signature: C5GM48MiJ+MNbGHzgkqH4glK7V8nU6C8OX0E6ZtX5K4=
-Modified: 637962277270101497
+Path: "/sitecore/templates/Project/sitecoredemo-jp/ContentBlock Rendering Parameters"
+Signature: pNkitn7Y3eJwVbaXAHB6h/HUV6mUiSVlQwJK0WKe3Cs=
+Modified: 637981067711983915
 ---
 File: |
-  C:\projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\GraphQL-IntegratedDemo.yml
+  C:\Projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\GraphQL-IntegratedDemo.yml
 ID: "d8e0c2ca-0229-54d0-8d51-7161183bc393"
 Parent: "7057bd13-458b-55f0-9e8d-fbef8325dff7"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
 Path: "/sitecore/templates/Project/sitecoredemo-jp/GraphQL-IntegratedDemo"
 Signature: +rtLhbkLG1Ij/oVwtk3pyVlIjMuuaCMRiDHyADfhlAs=
-Modified: 637962277270101497
+Modified: 637981067712085310
 ---
 File: |
-  C:\projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\GraphQL-Layout Rendering Parameters.yml
+  C:\Projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\GraphQL-ConnectedDemo Rendering Parameters.yml
+ID: "7692953b-c49e-5aff-a047-d43bccf77d8a"
+Parent: "7057bd13-458b-55f0-9e8d-fbef8325dff7"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: "/sitecore/templates/Project/sitecoredemo-jp/GraphQL-ConnectedDemo Rendering Parameters"
+Signature: qvXBP1ttK5Q/kccHLhdgcWML4Qp+d6aZZTY3ydLzS2Y=
+Modified: 637981067712044896
+---
+File: |
+  C:\Projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\GraphQL-Layout Rendering Parameters.yml
 ID: "491c211a-45d8-5e1d-9d37-82855918a70a"
 Parent: "7057bd13-458b-55f0-9e8d-fbef8325dff7"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
 Path: "/sitecore/templates/Project/sitecoredemo-jp/GraphQL-Layout Rendering Parameters"
 Signature: x862QuQUi8XmxyWosfVLdrmDIFSSXM4adKcvtlUzkd8=
-Modified: 637962277270123271
+Modified: 637981067712085310
 ---
 File: |
-  C:\projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\Home.yml
-ID: "ec76e24a-d288-40ef-8a31-1224ee6bffc7"
+  C:\Projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\GraphQL-IntegratedDemo Rendering Parameters.yml
+ID: "155670f9-3da7-5ec8-8d53-32e0e33955de"
 Parent: "7057bd13-458b-55f0-9e8d-fbef8325dff7"
-Template: "0437fee2-44c9-46a6-abe9-28858d9fee8c"
-Path: "/sitecore/templates/Project/sitecoredemo-jp/Home"
-Signature: fVGAa4LIveCdC7osbANN7UWl5wLzmOz3dIgaGd26kfI=
-Modified: 637963115473323100
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: "/sitecore/templates/Project/sitecoredemo-jp/GraphQL-IntegratedDemo Rendering Parameters"
+Signature: C5GM48MiJ+MNbGHzgkqH4glK7V8nU6C8OX0E6ZtX5K4=
+Modified: 637981067712085310
 ---
 File: |
-  C:\projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\App Route\Page Metadata.yml
-ID: "afa02111-e2f6-5109-9f43-7fa8c014082c"
-Parent: "899228a0-a4ce-570a-ae24-97566af3dab6"
-Template: "e269fbb5-3750-427a-9149-7aa950b49301"
-Path: "/sitecore/templates/Project/sitecoredemo-jp/App Route/Page Metadata"
-Signature: sWvQIZYmPBFtp0tUEQpg/mv0CBmAKLwfOhUvjnt8bGY=
-Modified: 637962277270041538
----
-File: |
-  C:\projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\App Route\__Standard Values.yml
+  C:\Projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\App Route\__Standard Values.yml
 ID: "965377f2-8d41-5e0b-8cdc-bf8dcf7e2554"
 Parent: "899228a0-a4ce-570a-ae24-97566af3dab6"
 Template: "899228a0-a4ce-570a-ae24-97566af3dab6"
 Path: "/sitecore/templates/Project/sitecoredemo-jp/App Route/__Standard Values"
 Signature: ZOJ/sXRAt8ZToDfovO+rIF2GaQ+ieIuWTEbZJDM0vmc=
-Modified: 637963115473343093
+Modified: 637981067711983915
 ---
 File: |
-  C:\projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\ContentBlock\Data.yml
-ID: "84e6b65b-cce3-5d0f-a851-a1f3389a2114"
-Parent: "7ac240f6-c7c7-5911-8f4b-b6f6cacba088"
+  C:\Projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\App Route\Page Metadata.yml
+ID: "afa02111-e2f6-5109-9f43-7fa8c014082c"
+Parent: "899228a0-a4ce-570a-ae24-97566af3dab6"
 Template: "e269fbb5-3750-427a-9149-7aa950b49301"
-Path: "/sitecore/templates/Project/sitecoredemo-jp/ContentBlock/Data"
-Signature: bWVQO8srROQMmKr1SUsMv47hy8oXmsWnxzjCMuLqiNk=
-Modified: 637962277270061505
+Path: "/sitecore/templates/Project/sitecoredemo-jp/App Route/Page Metadata"
+Signature: sWvQIZYmPBFtp0tUEQpg/mv0CBmAKLwfOhUvjnt8bGY=
+Modified: 637981067711983915
 ---
 File: |
-  C:\projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\ContentBlock\__Standard Values.yml
+  C:\Projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\ContentBlock\__Standard Values.yml
 ID: "3bb03a1e-ec1a-5dd3-a676-ddef6c486155"
 Parent: "7ac240f6-c7c7-5911-8f4b-b6f6cacba088"
 Template: "7ac240f6-c7c7-5911-8f4b-b6f6cacba088"
 Path: "/sitecore/templates/Project/sitecoredemo-jp/ContentBlock/__Standard Values"
 Signature: 8tNIVZqy8lnhQGcA3Q28hxK63beNYjg0NjmQPewCwHM=
-Modified: 637962277270071601
+Modified: 637981067712044896
 ---
 File: |
-  C:\projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\ContentBlock Rendering Parameters\__Standard Values.yml
-ID: "b943ccf6-394f-5072-89e2-d5a3740dcd66"
-Parent: "6f3f774c-7a7e-51ea-a97c-277e59060124"
-Template: "6f3f774c-7a7e-51ea-a97c-277e59060124"
-Path: "/sitecore/templates/Project/sitecoredemo-jp/ContentBlock Rendering Parameters/__Standard Values"
-Signature: ikWQSJVrZTz9ubnIMdGDZiG9vdPQaNnRpbEJR/V5EZk=
-Modified: 637973257605995066
+  C:\Projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\ContentBlock\Data.yml
+ID: "84e6b65b-cce3-5d0f-a851-a1f3389a2114"
+Parent: "7ac240f6-c7c7-5911-8f4b-b6f6cacba088"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: "/sitecore/templates/Project/sitecoredemo-jp/ContentBlock/Data"
+Signature: bWVQO8srROQMmKr1SUsMv47hy8oXmsWnxzjCMuLqiNk=
+Modified: 637981067712044896
 ---
 File: |
-  C:\projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\GraphQL-ConnectedDemo\__Standard Values.yml
-ID: "871aa41f-cbe3-5334-a913-bf218d97278f"
-Parent: "17902cd6-6589-562d-af47-78556130f2f3"
-Template: "17902cd6-6589-562d-af47-78556130f2f3"
-Path: "/sitecore/templates/Project/sitecoredemo-jp/GraphQL-ConnectedDemo/__Standard Values"
-Signature: REgvKyTiocEZqHvRTlKuQOiCnXHtfE0X2wJ0dHpldM8=
-Modified: 637962277270091509
----
-File: |
-  C:\projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\GraphQL-ConnectedDemo\Data.yml
+  C:\Projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\GraphQL-ConnectedDemo\Data.yml
 ID: "e15568b6-63f8-53f7-a21e-9453351763bf"
 Parent: "17902cd6-6589-562d-af47-78556130f2f3"
 Template: "e269fbb5-3750-427a-9149-7aa950b49301"
 Path: "/sitecore/templates/Project/sitecoredemo-jp/GraphQL-ConnectedDemo/Data"
 Signature: LnkHUOx9vFp4ZxxFs0LC4v7PJHE4mpz1vsDY2/Zx0Ek=
-Modified: 637962277270081497
+Modified: 637981067712044896
 ---
 File: |
-  C:\projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\GraphQL-ConnectedDemo Rendering Parameters\__Standard Values.yml
-ID: "5d0e34c6-7872-5837-b6ce-f8433f5abf51"
-Parent: "7692953b-c49e-5aff-a047-d43bccf77d8a"
-Template: "7692953b-c49e-5aff-a047-d43bccf77d8a"
-Path: "/sitecore/templates/Project/sitecoredemo-jp/GraphQL-ConnectedDemo Rendering Parameters/__Standard Values"
-Signature: xKpYdMCxQu4Gx8Wj35kPHT+eUTzFv8XNdyNQcLsuw74=
-Modified: 637973257606151802
+  C:\Projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\ContentBlock Rendering Parameters\__Standard Values.yml
+ID: "b943ccf6-394f-5072-89e2-d5a3740dcd66"
+Parent: "6f3f774c-7a7e-51ea-a97c-277e59060124"
+Template: "6f3f774c-7a7e-51ea-a97c-277e59060124"
+Path: "/sitecore/templates/Project/sitecoredemo-jp/ContentBlock Rendering Parameters/__Standard Values"
+Signature: ikWQSJVrZTz9ubnIMdGDZiG9vdPQaNnRpbEJR/V5EZk=
+Modified: 637981067712038984
 ---
 File: |
-  C:\projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\GraphQL-IntegratedDemo\__Standard Values.yml
-ID: "d016d6a5-874d-5de9-80e0-5afb9640fcf6"
-Parent: "d8e0c2ca-0229-54d0-8d51-7161183bc393"
-Template: "d8e0c2ca-0229-54d0-8d51-7161183bc393"
-Path: "/sitecore/templates/Project/sitecoredemo-jp/GraphQL-IntegratedDemo/__Standard Values"
-Signature: X9sHvJEiR3w70aWEW3E5kvBikKsrf0nnyorUWFbuUD8=
-Modified: 637962277270113201
----
-File: |
-  C:\projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\GraphQL-IntegratedDemo\Data.yml
+  C:\Projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\GraphQL-IntegratedDemo\Data.yml
 ID: "27f3c549-061f-5265-be56-398cb434b971"
 Parent: "d8e0c2ca-0229-54d0-8d51-7161183bc393"
 Template: "e269fbb5-3750-427a-9149-7aa950b49301"
 Path: "/sitecore/templates/Project/sitecoredemo-jp/GraphQL-IntegratedDemo/Data"
 Signature: peQjIb7s8co6hJ8FmoA3A3fID+4DLLFiNYL6Kb8FhCk=
-Modified: 637962277270111483
+Modified: 637981067712085310
 ---
 File: |
-  C:\projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\GraphQL-IntegratedDemo Rendering Parameters\__Standard Values.yml
-ID: "8894a9ef-17cf-5a59-a783-ea25cec7508a"
-Parent: "155670f9-3da7-5ec8-8d53-32e0e33955de"
-Template: "155670f9-3da7-5ec8-8d53-32e0e33955de"
-Path: "/sitecore/templates/Project/sitecoredemo-jp/GraphQL-IntegratedDemo Rendering Parameters/__Standard Values"
-Signature: uj0SjSn4HZknz63eUcLPoQARcTSqlXPU9x4V0C4Qm44=
-Modified: 637973257606284117
+  C:\Projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\GraphQL-ConnectedDemo\__Standard Values.yml
+ID: "871aa41f-cbe3-5334-a913-bf218d97278f"
+Parent: "17902cd6-6589-562d-af47-78556130f2f3"
+Template: "17902cd6-6589-562d-af47-78556130f2f3"
+Path: "/sitecore/templates/Project/sitecoredemo-jp/GraphQL-ConnectedDemo/__Standard Values"
+Signature: REgvKyTiocEZqHvRTlKuQOiCnXHtfE0X2wJ0dHpldM8=
+Modified: 637981067712085310
 ---
 File: |
-  C:\projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\GraphQL-Layout Rendering Parameters\__Standard Values.yml
-ID: "bd282cdf-c662-5948-bc1d-beebb50fa6ff"
-Parent: "491c211a-45d8-5e1d-9d37-82855918a70a"
-Template: "491c211a-45d8-5e1d-9d37-82855918a70a"
-Path: "/sitecore/templates/Project/sitecoredemo-jp/GraphQL-Layout Rendering Parameters/__Standard Values"
-Signature: wVGh+0qi4kUKQuqfAF7VcqR4mq1ILA4KAyoojC+ziZA=
-Modified: 637973257606424021
+  C:\Projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\GraphQL-IntegratedDemo\__Standard Values.yml
+ID: "d016d6a5-874d-5de9-80e0-5afb9640fcf6"
+Parent: "d8e0c2ca-0229-54d0-8d51-7161183bc393"
+Template: "d8e0c2ca-0229-54d0-8d51-7161183bc393"
+Path: "/sitecore/templates/Project/sitecoredemo-jp/GraphQL-IntegratedDemo/__Standard Values"
+Signature: X9sHvJEiR3w70aWEW3E5kvBikKsrf0nnyorUWFbuUD8=
+Modified: 637981067712085310
 ---
 File: |
-  C:\projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\App Route\Page Metadata\pageTitle.yml
-ID: "43e0b9f1-2c56-5326-bfc4-1f1aa302eabc"
-Parent: "afa02111-e2f6-5109-9f43-7fa8c014082c"
-Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: "/sitecore/templates/Project/sitecoredemo-jp/App Route/Page Metadata/pageTitle"
-Signature: TnIMvLpNVXrdj+2ndE0oGNUpAkldMsdo1mXWnDMNQdI=
-Modified: 637963082380544036
+  C:\Projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\GraphQL-ConnectedDemo Rendering Parameters\__Standard Values.yml
+ID: "5d0e34c6-7872-5837-b6ce-f8433f5abf51"
+Parent: "7692953b-c49e-5aff-a047-d43bccf77d8a"
+Template: "7692953b-c49e-5aff-a047-d43bccf77d8a"
+Path: "/sitecore/templates/Project/sitecoredemo-jp/GraphQL-ConnectedDemo Rendering Parameters/__Standard Values"
+Signature: xKpYdMCxQu4Gx8Wj35kPHT+eUTzFv8XNdyNQcLsuw74=
+Modified: 637981067712044896
 ---
 File: |
-  C:\projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\Home\Hero.yml
-ID: "59b38ded-91b0-4fb4-bb6b-a96ec6d6519e"
-Parent: "ec76e24a-d288-40ef-8a31-1224ee6bffc7"
-Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: "/sitecore/templates/Project/sitecoredemo-jp/Home/Hero"
-Signature: gBiSHnOkH/EFz2e6tZ/gLNJzQru0JcH65V3ZvFZsveg=
-Modified: 637963115473333192
----
-File: |
-  C:\projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\ContentBlock\Data\content.yml
-ID: "d0152f40-db44-5ed9-80a3-7f451f8ca22e"
-Parent: "84e6b65b-cce3-5d0f-a851-a1f3389a2114"
-Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: "/sitecore/templates/Project/sitecoredemo-jp/ContentBlock/Data/content"
-Signature: nvL3VkspxbMQp3Ir+1eO0YOzgfEynfhoML+lHIQB+UY=
-Modified: 637962277270061505
----
-File: |
-  C:\projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\ContentBlock\Data\heading.yml
+  C:\Projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\ContentBlock\Data\heading.yml
 ID: "5f5c135b-30a4-51ef-98aa-5d29ed4ffe68"
 Parent: "84e6b65b-cce3-5d0f-a851-a1f3389a2114"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
 Path: "/sitecore/templates/Project/sitecoredemo-jp/ContentBlock/Data/heading"
 Signature: Z3ODKNbTNmOHj07pknBWwWTnp79Z8Y9zYcO2FM4fSM4=
-Modified: 637962277270071601
+Modified: 637981067712044896
 ---
 File: |
-  C:\projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\GraphQL-ConnectedDemo\Data\sample2.yml
-ID: "87d39a5e-e2f7-513d-be5c-0e2808636f72"
-Parent: "e15568b6-63f8-53f7-a21e-9453351763bf"
-Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: "/sitecore/templates/Project/sitecoredemo-jp/GraphQL-ConnectedDemo/Data/sample2"
-Signature: Mb0ITb6FX0sjlADN9ZxpOaXXbMd5dfezVDf8g8AjyWg=
-Modified: 637962277270091509
+  C:\Projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\GraphQL-IntegratedDemo Rendering Parameters\__Standard Values.yml
+ID: "8894a9ef-17cf-5a59-a783-ea25cec7508a"
+Parent: "155670f9-3da7-5ec8-8d53-32e0e33955de"
+Template: "155670f9-3da7-5ec8-8d53-32e0e33955de"
+Path: "/sitecore/templates/Project/sitecoredemo-jp/GraphQL-IntegratedDemo Rendering Parameters/__Standard Values"
+Signature: uj0SjSn4HZknz63eUcLPoQARcTSqlXPU9x4V0C4Qm44=
+Modified: 637981067712085310
 ---
 File: |
-  C:\projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\GraphQL-ConnectedDemo\Data\sample1.yml
+  C:\Projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\GraphQL-ConnectedDemo\Data\sample1.yml
 ID: "bc331982-4233-5f86-8e90-2c628df2388d"
 Parent: "e15568b6-63f8-53f7-a21e-9453351763bf"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
 Path: "/sitecore/templates/Project/sitecoredemo-jp/GraphQL-ConnectedDemo/Data/sample1"
 Signature: XNj6uZ8JKF85GBeu3McVPTLMXPJwnno9Em5AOokHypQ=
-Modified: 637962277270091509
+Modified: 637981067712044896
 ---
 File: |
-  C:\projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\GraphQL-IntegratedDemo\Data\sample1.yml
-ID: "11805834-0986-53ee-a03b-d6af4fa8cb41"
-Parent: "27f3c549-061f-5265-be56-398cb434b971"
-Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: "/sitecore/templates/Project/sitecoredemo-jp/GraphQL-IntegratedDemo/Data/sample1"
-Signature: XTw3DXw/D+pcsEiOdHbaP6C7xOr2NsEb6iT7muhAeik=
-Modified: 637962277270113201
+  C:\Projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\GraphQL-Layout Rendering Parameters\__Standard Values.yml
+ID: "bd282cdf-c662-5948-bc1d-beebb50fa6ff"
+Parent: "491c211a-45d8-5e1d-9d37-82855918a70a"
+Template: "491c211a-45d8-5e1d-9d37-82855918a70a"
+Path: "/sitecore/templates/Project/sitecoredemo-jp/GraphQL-Layout Rendering Parameters/__Standard Values"
+Signature: wVGh+0qi4kUKQuqfAF7VcqR4mq1ILA4KAyoojC+ziZA=
+Modified: 637981067712085310
 ---
 File: |
-  C:\projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\GraphQL-IntegratedDemo\Data\sample2.yml
+  C:\Projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\GraphQL-IntegratedDemo\Data\sample2.yml
 ID: "7a70c19e-1a85-5d4f-a352-70fdeb73d3cc"
 Parent: "27f3c549-061f-5265-be56-398cb434b971"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
 Path: "/sitecore/templates/Project/sitecoredemo-jp/GraphQL-IntegratedDemo/Data/sample2"
 Signature: RMUEcYBxdY7NRiYjuq9kbPVMgQDhlFJQMndcRn/CTIM=
-Modified: 637962277270113201
+Modified: 637981067712085310
 ---
 File: |
-  C:\projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\Home\Hero\Data\heading.yml
-ID: "534778c4-c7af-465a-b946-9f2b7c312f36"
-Parent: "c949774f-c9e3-47ff-8513-32f61376b26e"
+  C:\Projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\App Route\Page Metadata\pageTitle.yml
+ID: "43e0b9f1-2c56-5326-bfc4-1f1aa302eabc"
+Parent: "afa02111-e2f6-5109-9f43-7fa8c014082c"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: "/sitecore/templates/Project/sitecoredemo-jp/Home/Hero/Data/heading"
-Signature: 6J7qgSo0cnet6ZCLm9H0y7zAWZbM9kBl3gtTXHCwKBg=
-Modified: 637963115473343093
+Path: "/sitecore/templates/Project/sitecoredemo-jp/App Route/Page Metadata/pageTitle"
+Signature: TnIMvLpNVXrdj+2ndE0oGNUpAkldMsdo1mXWnDMNQdI=
+Modified: 637981067711983915
 ---
 File: |
-  C:\projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\Home\Hero\Data.yml
-ID: "c949774f-c9e3-47ff-8513-32f61376b26e"
-Parent: "59b38ded-91b0-4fb4-bb6b-a96ec6d6519e"
-Template: "e269fbb5-3750-427a-9149-7aa950b49301"
-Path: "/sitecore/templates/Project/sitecoredemo-jp/Home/Hero/Data"
-Signature: BpwiANRySAF2W0AR+xskbrw/iMNiNnoow0eFNsnBXkg=
-Modified: 637963115473333192
+  C:\Projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\ContentBlock\Data\content.yml
+ID: "d0152f40-db44-5ed9-80a3-7f451f8ca22e"
+Parent: "84e6b65b-cce3-5d0f-a851-a1f3389a2114"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: "/sitecore/templates/Project/sitecoredemo-jp/ContentBlock/Data/content"
+Signature: nvL3VkspxbMQp3Ir+1eO0YOzgfEynfhoML+lHIQB+UY=
+Modified: 637981067712044896
+---
+File: |
+  C:\Projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\GraphQL-ConnectedDemo\Data\sample2.yml
+ID: "87d39a5e-e2f7-513d-be5c-0e2808636f72"
+Parent: "e15568b6-63f8-53f7-a21e-9453351763bf"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: "/sitecore/templates/Project/sitecoredemo-jp/GraphQL-ConnectedDemo/Data/sample2"
+Signature: Mb0ITb6FX0sjlADN9ZxpOaXXbMd5dfezVDf8g8AjyWg=
+Modified: 637981067712044896
+---
+File: |
+  C:\Projects\Sitecoredemo.Docker\src\items\templates\sitecoredemo-jp\GraphQL-IntegratedDemo\Data\sample1.yml
+ID: "11805834-0986-53ee-a03b-d6af4fa8cb41"
+Parent: "27f3c549-061f-5265-be56-398cb434b971"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: "/sitecore/templates/Project/sitecoredemo-jp/GraphQL-IntegratedDemo/Data/sample1"
+Signature: XTw3DXw/D+pcsEiOdHbaP6C7xOr2NsEb6iT7muhAeik=
+Modified: 637981067712085310

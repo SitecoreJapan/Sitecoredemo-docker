@@ -1,19 +1,19 @@
 ﻿# Do not commit this file to source control or modify it. It is safe to delete; it will recreate itself.
 ---
 File: |
-  C:\projects\Sitecoredemo.Docker\src\items\layouts\sitecoredemo-jp.yml
+  C:\Projects\Sitecoredemo.Docker\src\items\layouts\sitecoredemo-jp.yml
 ID: "db0e6fd8-e94a-524a-b386-103e3355fa46"
 Parent: "da04b275-8838-4a3a-afee-817cf1fdd2eb"
 Template: "93227c5d-4fef-474d-94c0-f252ec8e8219"
 Path: "/sitecore/layout/Layouts/Project/sitecoredemo-jp"
 Signature: YRL1yZa9neVNAcVVjwWTCyqEG4ixIcjR7uBx9bmOBOA=
-Modified: 637962277269275512
+Modified: 637981067710911552
 ---
 File: |
-  C:\projects\Sitecoredemo.Docker\src\items\layouts\sitecoredemo-jp\sitecoredemo Layout.yml
+  C:\Projects\Sitecoredemo.Docker\src\items\layouts\sitecoredemo-jp\sitecoredemo Layout.yml
 ID: "37b153e5-bf43-5107-8d25-33490357ba9a"
 Parent: "db0e6fd8-e94a-524a-b386-103e3355fa46"
 Template: "35c61e90-47dd-43dd-83a8-d1c4d5119720"
 Path: "/sitecore/layout/Layouts/Project/sitecoredemo-jp/sitecoredemo Layout"
 Signature: /0gkhHyfj+3HASkJopGCJx6GdTVJBYqu9k+TgeS9ovM=
-Modified: 637962277269275512
+Modified: 637981067710911552
