@@ -96,11 +96,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\projects\\Sitecoredemo.Docker\\src\\DockerExamples.Website\\DockerExamples.Website.csproj",
-      "projectName": "DockerExamples.Website",
-      "projectPath": "C:\\projects\\Sitecoredemo.Docker\\src\\DockerExamples.Website\\DockerExamples.Website.csproj",
+      "projectUniqueName": "C:\\projects\\Sitecoredemo.Docker\\src\\Platform\\Platform.csproj",
+      "projectName": "DockerStarter",
+      "projectPath": "C:\\projects\\Sitecoredemo.Docker\\src\\Platform\\Platform.csproj",
       "packagesPath": "C:\\Users\\shini\\.nuget\\packages\\",
-      "outputPath": "C:\\projects\\Sitecoredemo.Docker\\src\\DockerExamples.Website\\obj\\",
+      "outputPath": "C:\\projects\\Sitecoredemo.Docker\\src\\Platform\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
