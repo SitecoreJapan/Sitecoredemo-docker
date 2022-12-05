@@ -33,9 +33,6 @@ RUN Invoke-Expression 'robocopy C:\build\src C:\out\transforms /s /ndl /njh /njs
 # Build website with file publish
 RUN msbuild .\src\Platform\Platform.csproj /p:Configuration=$env:BUILD_CONFIGURATION /p:DeployOnBuild=True /p:DeployDefaultTarget=WebPublish /p:WebPublishMethod=FileSystem /p:PublishUrl=C:\out\website
 
-# Build XConnect with file publish
-# RUN msbuild .\src\DockerExamples.XConnect\DockerExamples.XConnect.csproj /p:Configuration=$env:BUILD_CONFIGURATION /p:DeployOnBuild=True /p:DeployDefaultTarget=WebPublish /p:WebPublishMethod=FileSystem /p:PublishUrl=C:\out\xconnect
-
 FROM ${BASE_IMAGE}
 
 WORKDIR C:\artifacts
@@ -43,4 +40,3 @@ WORKDIR C:\artifacts
 # Copy final build artifacts
 COPY --from=builder C:\out\website .\website\
 COPY --from=builder C:\out\transforms .\transforms\
-# COPY --from=builder C:\out\xconnect .\xconnect\

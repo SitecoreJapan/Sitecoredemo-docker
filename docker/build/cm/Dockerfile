@@ -5,7 +5,6 @@ ARG SXA_IMAGE
 ARG SPE_IMAGE
 ARG TOOLING_IMAGE
 ARG SOLUTION_IMAGE
-ARG HORIZON_RESOURCES_IMAGE
 ARG MANAGEMENT_SERVICES_IMAGE
 ARG HEADLESS_SERVICES_IMAGE
 ARG CONTENTHUB_ASSETS_IMAGE
@@ -14,7 +13,6 @@ FROM ${SOLUTION_IMAGE} as solution
 FROM ${TOOLING_IMAGE} as tooling
 FROM ${SPE_IMAGE} as spe
 FROM ${SXA_IMAGE} as sxa
-FROM ${HORIZON_RESOURCES_IMAGE} as horizon_resources
 FROM ${MANAGEMENT_SERVICES_IMAGE} as management_services
 FROM ${HEADLESS_SERVICES_IMAGE} as headless_services
 FROM ${CONTENTHUB_ASSETS_IMAGE} AS ch_assets
@@ -36,9 +34,6 @@ COPY --from=sxa \module\cm\content .\
 COPY --from=sxa \module\tools \module\tools
 RUN C:\module\tools\Initialize-Content.ps1 -TargetPath .\; `
     Remove-Item -Path C:\module -Recurse -Force;
-
-# Add horizon module
-COPY --from=horizon_resources \module\cm\content \inetpub\wwwroot
 
 # Add headless module
 COPY --from=headless_services C:\module\cm\content C:\inetpub\wwwroot

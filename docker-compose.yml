@@ -30,7 +30,7 @@ services:
     image: ${SITECORE_DOCKER_REGISTRY}sitecore-redis:${SITECORE_VERSION}
   mssql:
     isolation: ${ISOLATION}
-    image: ${SITECORE_DOCKER_REGISTRY}nonproduction/mssql-developer:2017-${SITECORE_VERSION}
+    image: ${SITECORE_DOCKER_REGISTRY}nonproduction/mssql-developer:2017-${EXTERNAL_IMAGE_TAG_SUFFIX}
     environment:
       SA_PASSWORD: ${SQL_SA_PASSWORD}
       ACCEPT_EULA: "Y"
@@ -64,7 +64,7 @@ services:
         condition: service_healthy
   solr:
     isolation: ${ISOLATION}
-    image: ${SITECORE_DOCKER_REGISTRY}nonproduction/solr:8.8.2-${SITECORE_VERSION}
+    image: ${SITECORE_DOCKER_REGISTRY}nonproduction/solr:8.11.2-${EXTERNAL_IMAGE_TAG_SUFFIX}
     ports:
       - "${SOLR_PORT}:8983"
     volumes:
@@ -92,7 +92,7 @@ services:
         condition: service_healthy
   id:
     isolation: ${ISOLATION}
-    image: ${SITECORE_DOCKER_REGISTRY}sitecore-id6:${SITECORE_VERSION}
+    image: ${SITECORE_DOCKER_REGISTRY}sitecore-id7:${SITECORE_VERSION}
     environment:
       Sitecore_Sitecore__IdentityServer__SitecoreMemberShipOptions__ConnectionString: Data Source=${SQL_SERVER};Initial Catalog=Sitecore.Core;User ID=${SQL_SA_LOGIN};Password=${SQL_SA_PASSWORD}
       Sitecore_Sitecore__IdentityServer__AccountOptions__PasswordRecoveryUrl: https://${CM_HOST}/sitecore/login?rc=1
@@ -142,6 +142,9 @@ services:
       Sitecore_AppSettings_Telerik.Upload.ConfigurationHashKey: ${TELERIK_ENCRYPTION_KEY}
       Sitecore_AppSettings_Telerik.Web.UI.DialogParametersEncryptionKey: ${TELERIK_ENCRYPTION_KEY}
       Sitecore_License: ${SITECORE_LICENSE}
+      Sitecore_GraphQL_Enabled: ${SITECORE_GRAPHQL_ENABLED}
+      Sitecore_GraphQL_ExposePlayground: ${SITECORE_GRAPHQL_EXPOSEPLAYGROUND}
+      Sitecore_GraphQL_UploadMediaOptions_EncryptionKey: ${SITECORE_GRAPHQL_UPLOADMEDIAOPTIONS_ENCRYPTIONKEY}
       Sitecore_Identity_Server_Authority: https://${ID_HOST}
       Sitecore_Identity_Server_InternalAuthority: http://id
       Sitecore_Identity_Server_CallbackAuthority: https://${CM_HOST}
