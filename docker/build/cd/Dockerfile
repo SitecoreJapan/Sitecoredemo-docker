@@ -4,6 +4,9 @@ ARG PARENT_IMAGE
 ARG SOLUTION_IMAGE
 ARG TOOLS_IMAGE
 ARG HEADLESS_SERVICES_IMAGE
+ARG SXA_IMAGE
+
+FROM ${SXA_IMAGE} as sxa
 
 FROM ${SOLUTION_IMAGE} as solution
 FROM ${TOOLS_IMAGE} as tools
@@ -16,6 +19,12 @@ WORKDIR C:\inetpub\wwwroot
 
 # Copy developer tools and entrypoint
 COPY --from=tools C:\tools C:\tools
+
+# Add SXA module
+COPY --from=sxa \module\cd\content .\
+COPY --from=sxa \module\tools \module\tools
+RUN C:\module\tools\Initialize-Content.ps1 -TargetPath .\; `
+    Remove-Item -Path C:\module -Recurse -Force;
 
 # Copy and init the JSS / Headless Services Module
 COPY --from=headless_services C:\module\cd\content C:\inetpub\wwwroot
