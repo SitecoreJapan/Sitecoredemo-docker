@@ -44,3 +44,4 @@ _ReSharper*/
 packages/
 
 /.env
+.env
