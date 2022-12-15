@@ -5,9 +5,9 @@ serialized paths are configured in `*.module.json` files in the parent directory
 
 * `InitItems.module.json` configures items which this template needs to
   push before deploying JSS items using `jss deploy`.
-* `XmCloudPreview.module.json` contains developer-owned configuration items
+* `DockerStarter.module.json` contains developer-owned configuration items
   which are created by the JSS Styleguide sample.
-* `XmCloudPreview-Content.module.json` contains content items which are
+* `DockerStarter-Content.module.json` contains content items which are
   created by the JSS Styleguide sample. It's a good practice to put content
   into a separate module, so it can be excluded from packaging and deployment.
 

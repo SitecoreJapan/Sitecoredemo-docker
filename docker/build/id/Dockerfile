@@ -1,5 +1,7 @@
 # escape=`
 
-ARG BASE_IMAGE
+ARG PARENT_IMAGE
 
-FROM ${BASE_IMAGE}
+FROM ${PARENT_IMAGE}
+
+COPY readme.md *.xml* .\Config\production\

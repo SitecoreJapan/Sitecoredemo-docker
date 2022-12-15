@@ -1,0 +1,16 @@
+{
+    "namespace": "DockerStarter-Content",
+    "references": [ "DockerStarter" ],
+    "items": {
+        "includes": [
+            {
+                "name": "content",
+                "path": "/sitecore/content/DockerStarter"
+            },
+            {
+                "name": "media",
+                "path": "/sitecore/media library/dockerstarter"
+            }
+        ]
+    }
+}
