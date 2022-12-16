@@ -68,6 +68,14 @@
     <Content Include="App_Config\Include\Sitecore.LoadBalancing.config" />
     <Content Include="App_Config\Include\Sitecore.Media.config" />
     <Content Include="App_Config\Include\DockerStarter.config" />
+    <Content Include="App_Data\localization\texts.ja-JP.xml" />
+    <Content Include="App_Data\localization\texts.sxa.ja-JP.xml" />
+    <Content Include="App_Data\items\core\localization\items.core.ja-JP.dat" />
+    <Content Include="App_Data\items\core\localization\items.core.sxa.ja-JP.dat" />
+    <Content Include="App_Data\items\master\localization\items.master.ja-JP.dat" />
+    <Content Include="App_Data\items\master\localization\items.master.sxa.ja-JP.dat" />
+    <Content Include="App_Data\items\web\localization\items.web.ja-JP.dat" />
+    <Content Include="App_Data\items\web\localization\items.web.sxa.ja-JP.dat" />
     <None Include="Platform.wpp.targets" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="README.md" />

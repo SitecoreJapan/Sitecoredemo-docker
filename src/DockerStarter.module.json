@@ -5,19 +5,19 @@
         "includes": [
             {
                 "name": "layouts",
-                "path": "/sitecore/layout/Layouts/Project/dockerstarter"
+                "path": "/sitecore/layout/Layouts/Project"
             },
             {
                 "name": "placeholders",
-                "path": "/sitecore/layout/Placeholder Settings/Project/dockerstarter"
+                "path": "/sitecore/layout/Placeholder Settings/Project/sitecoredemo-jp"
             },
             {
                 "name": "renderings",
-                "path": "/sitecore/layout/Renderings/Project/dockerstarter"
+                "path": "/sitecore/layout/Renderings/Project/sitecoredemo-jp"
             },
             {
                 "name": "templates",
-                "path": "/sitecore/templates/Project/dockerstarter"
+                "path": "/sitecore/templates/Project/sitecoredemo-jp"
             }
         ]
     }

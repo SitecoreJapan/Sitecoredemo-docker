@@ -5,11 +5,11 @@
         "includes": [
             {
                 "name": "content",
-                "path": "/sitecore/content/DockerStarter"
+                "path": "/sitecore/content/sitecoredemo-jp"
             },
             {
                 "name": "media",
-                "path": "/sitecore/media library/dockerstarter"
+                "path": "/sitecore/media library/Project/sitecoredemo-jp"
             }
         ]
     }

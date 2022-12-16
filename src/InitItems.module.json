@@ -12,7 +12,12 @@
                 "name": "api-key",
                 "path": "/sitecore/system/Settings/Services/API Keys/DockerStarter",
                 "scope": "singleItem"
-            }
+            },
+            {
+                "name": "core-language",
+                "path": "/sitecore/system/Languages",
+                "database": "core"
+            }       
         ]
     }
 }

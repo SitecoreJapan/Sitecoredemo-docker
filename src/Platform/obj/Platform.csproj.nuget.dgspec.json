@@ -1,21 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\DockerStarter\\src\\platform\\Platform.csproj": {}
+    "C:\\Projects\\Sitecoredemo.Docker\\src\\platform\\Platform.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\DockerStarter\\src\\platform\\Platform.csproj": {
+    "C:\\Projects\\Sitecoredemo.Docker\\src\\platform\\Platform.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\DockerStarter\\src\\platform\\Platform.csproj",
+        "projectUniqueName": "C:\\Projects\\Sitecoredemo.Docker\\src\\platform\\Platform.csproj",
         "projectName": "DockerStarter",
-        "projectPath": "C:\\Projects\\DockerStarter\\src\\platform\\Platform.csproj",
+        "projectPath": "C:\\Projects\\Sitecoredemo.Docker\\src\\platform\\Platform.csproj",
         "packagesPath": "C:\\Users\\haram\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\DockerStarter\\src\\platform\\obj\\",
+        "outputPath": "C:\\Projects\\Sitecoredemo.Docker\\src\\platform\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
-          "C:\\Projects\\DockerStarter\\NuGet.Config",
+          "C:\\Projects\\Sitecoredemo.Docker\\NuGet.Config",
           "C:\\Users\\haram\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -60,6 +60,17 @@
               "version": "[9.0.*, )"
             }
           }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
         }
       }
     }

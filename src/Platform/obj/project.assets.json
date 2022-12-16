@@ -1799,6 +1799,5367 @@
           "lib/net40/WebActivatorEx.dll": {}
         }
       }
+    },
+    ".NETFramework,Version=v4.8/win": {
+      "EnterpriseLibrary.Common/6.0.1304": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/NET45/Microsoft.Practices.EnterpriseLibrary.Common.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/NET45/Microsoft.Practices.EnterpriseLibrary.Common.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "EnterpriseLibrary.TransientFaultHandling/6.0.1304": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/portable-net45+win+wp8/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/portable-net45+win+wp8/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "EnterpriseLibrary.TransientFaultHandling.Caching/6.0.1304": {
+        "type": "package",
+        "dependencies": {
+          "EnterpriseLibrary.TransientFaultHandling": "6.0.0"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/NET45/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.Caching.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/NET45/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.Caching.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "EnterpriseLibrary.TransientFaultHandling.Configuration/6.0.1304": {
+        "type": "package",
+        "dependencies": {
+          "EnterpriseLibrary.Common": "6.0.0",
+          "EnterpriseLibrary.TransientFaultHandling": "6.0.0",
+          "EnterpriseLibrary.TransientFaultHandling.Caching": "6.0.0",
+          "EnterpriseLibrary.TransientFaultHandling.Data": "6.0.0",
+          "EnterpriseLibrary.TransientFaultHandling.ServiceBus": "6.0.0",
+          "EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage": "6.0.0"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/NET45/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.Configuration.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/NET45/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.Configuration.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "EnterpriseLibrary.TransientFaultHandling.Data/6.0.1304.1": {
+        "type": "package",
+        "dependencies": {
+          "EnterpriseLibrary.TransientFaultHandling": "6.0.0"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/NET45/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.Data.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/NET45/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.Data.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "EnterpriseLibrary.TransientFaultHandling.ServiceBus/6.0.1304": {
+        "type": "package",
+        "dependencies": {
+          "EnterpriseLibrary.TransientFaultHandling": "6.0.0"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/NET45/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.ServiceBus.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/NET45/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.ServiceBus.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage/6.0.1304": {
+        "type": "package",
+        "dependencies": {
+          "EnterpriseLibrary.TransientFaultHandling": "6.0.0"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/NET45/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/NET45/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "GraphQL/2.4.0": {
+        "type": "package",
+        "dependencies": {
+          "GraphQL-Parser": "3.0.0",
+          "Newtonsoft.Json": "10.0.3",
+          "System.Buffers": "4.5.0",
+          "System.Reactive.Core": "3.1.1",
+          "System.Reactive.Linq": "3.1.1",
+          "System.ValueTuple": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System"
+        ],
+        "compile": {
+          "lib/net45/GraphQL.dll": {}
+        },
+        "runtime": {
+          "lib/net45/GraphQL.dll": {}
+        }
+      },
+      "GraphQL-Parser/3.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/GraphQL-Parser.dll": {}
+        },
+        "runtime": {
+          "lib/net45/GraphQL-Parser.dll": {}
+        }
+      },
+      "HtmlAgilityPack/1.4.9.5": {
+        "type": "package",
+        "compile": {
+          "lib/Net45/HtmlAgilityPack.dll": {
+            "related": ".pdb;.XML"
+          }
+        },
+        "runtime": {
+          "lib/Net45/HtmlAgilityPack.dll": {
+            "related": ".pdb;.XML"
+          }
+        }
+      },
+      "IdentityModel/3.10.10": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.1",
+          "System.Text.Encodings.Web": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/net452/IdentityModel.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net452/IdentityModel.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.AspNet.Cors/5.2.6": {
+        "type": "package",
+        "compile": {
+          "lib/net45/System.Web.Cors.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Cors.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Mvc/5.2.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Razor": "[3.2.4, 3.3.0)",
+          "Microsoft.AspNet.WebPages": "[3.2.4, 3.3.0)"
+        },
+        "compile": {
+          "lib/net45/System.Web.Mvc.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/System.Web.Mvc.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNet.OData/7.5.9": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "[5.2.2, 5.3.0)",
+          "Microsoft.AspNet.WebApi.Core": "[5.2.2, 5.3.0)",
+          "Microsoft.Extensions.DependencyInjection": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "1.0.0",
+          "Microsoft.OData.Core": "[7.8.2, 8.0.0)"
+        },
+        "frameworkAssemblies": [
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/net45/Microsoft.AspNet.OData.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.OData.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNet.Razor/3.2.4": {
+        "type": "package",
+        "compile": {
+          "lib/net45/System.Web.Razor.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/System.Web.Razor.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNet.WebApi/5.2.6": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.WebHost": "[5.2.6, 5.3.0)"
+        }
+      },
+      "Microsoft.AspNet.WebApi.Client/5.2.6": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "6.0.4"
+        },
+        "frameworkAssemblies": [
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/net45/System.Net.Http.Formatting.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/System.Net.Http.Formatting.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNet.WebApi.Core/5.2.6": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "5.2.6"
+        },
+        "compile": {
+          "lib/net45/System.Web.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/System.Web.Http.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNet.WebApi.Cors/5.2.6": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Cors": "5.2.6",
+          "Microsoft.AspNet.WebApi.Core": "[5.2.6, 5.3.0)"
+        },
+        "compile": {
+          "lib/net45/System.Web.Http.Cors.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/System.Web.Http.Cors.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNet.WebApi.WebHost/5.2.6": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Core": "[5.2.6, 5.3.0)"
+        },
+        "compile": {
+          "lib/net45/System.Web.Http.WebHost.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/System.Web.Http.WebHost.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNet.WebPages/3.2.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Razor": "[3.2.4, 3.3.0)",
+          "Microsoft.Web.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/System.Web.Helpers.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/System.Web.WebPages.Deployment.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/System.Web.WebPages.Razor.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/System.Web.WebPages.dll": {
+            "related": ".Deployment.xml;.Razor.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/System.Web.Helpers.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/System.Web.WebPages.Deployment.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/System.Web.WebPages.Razor.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/System.Web.WebPages.dll": {
+            "related": ".Deployment.xml;.Razor.xml;.xml"
+          }
+        }
+      },
+      "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Configuration.ConfigurationBuilders.Base/1.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/Net471/Microsoft.Configuration.ConfigurationBuilders.Base.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/Net471/Microsoft.Configuration.ConfigurationBuilders.Base.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Configuration.ConfigurationBuilders.Environment/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Configuration.ConfigurationBuilders.Base": "1.0.0"
+        },
+        "compile": {
+          "lib/Net471/Microsoft.Configuration.ConfigurationBuilders.Environment.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/Net471/Microsoft.Configuration.ConfigurationBuilders.Environment.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "6.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0",
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/net461/Microsoft.Extensions.DependencyInjection.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Extensions.DependencyInjection.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "6.0.0",
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net461/Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "6.0.0",
+          "Microsoft.Extensions.DependencyInjection": "6.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Options": "6.0.0",
+          "System.Diagnostics.DiagnosticSource": "6.0.0",
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/net461/Microsoft.Extensions.Logging.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Extensions.Logging.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/6.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.4"
+        },
+        "compile": {
+          "lib/net461/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/Microsoft.Extensions.Logging.Abstractions.targets": {}
+        }
+      },
+      "Microsoft.Extensions.Options/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Primitives": "6.0.0"
+        },
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.Extensions.Options.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Extensions.Options.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.Primitives/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.4",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "compile": {
+          "lib/net461/Microsoft.Extensions.Primitives.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Extensions.Primitives.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.JsonWebTokens/5.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Tokens": "5.4.0",
+          "Newtonsoft.Json": "10.0.1"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.IdentityModel.JsonWebTokens.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Microsoft.IdentityModel.JsonWebTokens.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Logging/5.4.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.IdentityModel.Logging.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Microsoft.IdentityModel.Logging.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Tokens/5.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Logging": "5.4.0",
+          "Newtonsoft.Json": "10.0.1"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.Runtime.Serialization",
+          "System.Xml"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.IdentityModel.Tokens.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Microsoft.IdentityModel.Tokens.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.OData.Core/7.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.OData.Edm": "[7.9.0]",
+          "Microsoft.Spatial": "[7.9.0]"
+        },
+        "compile": {
+          "lib/net45/Microsoft.OData.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.OData.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.OData.Edm/7.9.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.6.0",
+          "System.Text.Encodings.Web": "4.6.0",
+          "System.Text.Json": "4.6.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.OData.Edm.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.OData.Edm.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Spatial/7.9.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.Spatial.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Spatial.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Web.Infrastructure/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Microsoft.Web.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Microsoft.Web.Infrastructure.dll": {}
+        }
+      },
+      "Mvp.Xml/2.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net20/Mvp.Xml.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net20/Mvp.Xml.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Polly/6.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Polly.dll": {
+            "related": ".deps.json;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Polly.dll": {
+            "related": ".deps.json;.pdb;.xml"
+          }
+        }
+      },
+      "protobuf-net/2.0.0.668": {
+        "type": "package",
+        "compile": {
+          "lib/net40/protobuf-net.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net40/protobuf-net.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "RazorGenerator.Mvc/2.4.9": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Mvc": "3.0.50813.1",
+          "WebActivatorEx": "2.0.3"
+        },
+        "frameworkAssemblies": [
+          "System.Web"
+        ],
+        "compile": {
+          "lib/net40/RazorGenerator.Mvc.dll": {}
+        },
+        "runtime": {
+          "lib/net40/RazorGenerator.Mvc.dll": {}
+        }
+      },
+      "SharpZipLib/1.3.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/ICSharpCode.SharpZipLib.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/ICSharpCode.SharpZipLib.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Sitecore.Annotations/10.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net471/Sitecore.Annotations.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net471/Sitecore.Annotations.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sitecore.Assemblies.Platform/10.3.0": {
+        "type": "package",
+        "build": {
+          "build/Sitecore.Assemblies.Platform.targets": {}
+        }
+      },
+      "Sitecore.Assemblies.SitecoreHeadlessServicesServer/21.0.583": {
+        "type": "package",
+        "build": {
+          "build/Sitecore.Assemblies.SitecoreHeadlessServicesServer.targets": {}
+        }
+      },
+      "Sitecore.Client/10.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Sitecore.Kernel": "10.3.0",
+          "Sitecore.Nexus.Consumption": "1.5.0"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.Data",
+          "System.Data.DataSetExtensions",
+          "System.Data.Linq",
+          "System.Drawing",
+          "System.Linq",
+          "System.Runtime",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Runtime.Serialization",
+          "System.ServiceModel",
+          "System.ServiceModel.Web",
+          "System.Threading.Thread",
+          "System.Web",
+          "System.Web.ApplicationServices",
+          "System.Web.DynamicData",
+          "System.Web.Entity",
+          "System.Web.Extensions",
+          "System.Web.Extensions.Design",
+          "System.Web.Services",
+          "System.Windows.Forms",
+          "System.Xml",
+          "System.Xml.Linq",
+          "System.configuration"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.Client.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net48/Sitecore.Client.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sitecore.ContentSearch/10.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Sitecore.ContentSearch.Data": "10.3.0",
+          "Sitecore.ContentSearch.Linq": "10.3.0"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "Microsoft.Win32.Primitives",
+          "System",
+          "System.AppContext",
+          "System.Console",
+          "System.Core",
+          "System.Diagnostics.Tracing",
+          "System.Globalization.Calendars",
+          "System.IO",
+          "System.IO.Compression",
+          "System.IO.Compression.ZipFile",
+          "System.IO.FileSystem",
+          "System.IO.FileSystem.Primitives",
+          "System.Linq",
+          "System.Linq.Expressions",
+          "System.Net.Http",
+          "System.Net.Sockets",
+          "System.Reflection",
+          "System.Runtime",
+          "System.Runtime.Extensions",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Runtime.Serialization",
+          "System.Security.Cryptography.Algorithms",
+          "System.Security.Cryptography.Encoding",
+          "System.Security.Cryptography.Primitives",
+          "System.Security.Cryptography.X509Certificates",
+          "System.Text.RegularExpressions",
+          "System.Threading.Thread",
+          "System.Web",
+          "System.Xml",
+          "System.Xml.Linq",
+          "System.Xml.ReaderWriter",
+          "System.configuration"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.ContentSearch.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net48/Sitecore.ContentSearch.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sitecore.ContentSearch.Data/10.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.Win32.Primitives",
+          "System",
+          "System.AppContext",
+          "System.Console",
+          "System.Core",
+          "System.Diagnostics.Tracing",
+          "System.Globalization.Calendars",
+          "System.IO",
+          "System.IO.Compression",
+          "System.IO.Compression.ZipFile",
+          "System.IO.FileSystem",
+          "System.IO.FileSystem.Primitives",
+          "System.Linq",
+          "System.Linq.Expressions",
+          "System.Net.Http",
+          "System.Net.Sockets",
+          "System.Reflection",
+          "System.Runtime",
+          "System.Runtime.Extensions",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Security.Cryptography.Algorithms",
+          "System.Security.Cryptography.Encoding",
+          "System.Security.Cryptography.Primitives",
+          "System.Security.Cryptography.X509Certificates",
+          "System.Text.RegularExpressions",
+          "System.Threading.Thread",
+          "System.Xml.ReaderWriter"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.ContentSearch.Data.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net48/Sitecore.ContentSearch.Data.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sitecore.ContentSearch.Linq/10.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Sitecore.ContentSearch.Data": "10.3.0",
+          "Sitecore.Kernel": "10.3.0"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.Win32.Primitives",
+          "System",
+          "System.AppContext",
+          "System.Console",
+          "System.Core",
+          "System.Diagnostics.Tracing",
+          "System.Globalization.Calendars",
+          "System.IO",
+          "System.IO.Compression",
+          "System.IO.Compression.ZipFile",
+          "System.IO.FileSystem",
+          "System.IO.FileSystem.Primitives",
+          "System.Linq",
+          "System.Linq.Expressions",
+          "System.Net.Http",
+          "System.Net.Sockets",
+          "System.Reflection",
+          "System.Runtime",
+          "System.Runtime.Extensions",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Runtime.Serialization",
+          "System.Security.Cryptography.Algorithms",
+          "System.Security.Cryptography.Encoding",
+          "System.Security.Cryptography.Primitives",
+          "System.Security.Cryptography.X509Certificates",
+          "System.Text.RegularExpressions",
+          "System.Threading.Thread",
+          "System.XML",
+          "System.Xml.ReaderWriter"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.ContentSearch.Linq.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net48/Sitecore.ContentSearch.Linq.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sitecore.Data.ResourceItems.Abstractions/10.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Data.ResourceItems.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Data.ResourceItems.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sitecore.Data.ResourceItems.ProtobufNet/10.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.1",
+          "Sitecore.Data.ResourceItems.Abstractions": "10.3.0",
+          "protobuf-net": "2.0.0.668"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Data.ResourceItems.ProtobufNet.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Data.ResourceItems.ProtobufNet.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sitecore.Framework.Conditions/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Framework.Conditions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Framework.Conditions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sitecore.Framework.Data.Blobs/3.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Sitecore.Framework.Conditions": "6.0.0",
+          "Sitecore.Framework.Data.Blobs.Abstractions": "3.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Framework.Data.Blobs.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Framework.Data.Blobs.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sitecore.Framework.Data.Blobs.Abstractions/3.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Sitecore.Framework.Conditions": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Framework.Data.Blobs.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Framework.Data.Blobs.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sitecore.Kernel/10.3.0": {
+        "type": "package",
+        "dependencies": {
+          "EnterpriseLibrary.Common": "6.0.1304",
+          "EnterpriseLibrary.TransientFaultHandling": "6.0.1304",
+          "EnterpriseLibrary.TransientFaultHandling.Caching": "6.0.1304",
+          "EnterpriseLibrary.TransientFaultHandling.Configuration": "6.0.1304",
+          "EnterpriseLibrary.TransientFaultHandling.Data": "6.0.1304.1",
+          "EnterpriseLibrary.TransientFaultHandling.ServiceBus": "6.0.1304",
+          "EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage": "6.0.1304",
+          "HtmlAgilityPack": "1.4.9.5",
+          "IdentityModel": "3.10.10",
+          "Microsoft.AspNet.WebApi": "5.2.6",
+          "Microsoft.Configuration.ConfigurationBuilders.Base": "1.0.2",
+          "Microsoft.Configuration.ConfigurationBuilders.Environment": "1.0.2",
+          "Microsoft.Extensions.DependencyInjection": "6.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Logging": "6.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.1",
+          "Mvp.Xml": "2.3.0",
+          "Newtonsoft.Json": "13.0.1",
+          "Polly": "6.1.2",
+          "SharpZipLib": "1.3.2",
+          "Sitecore.Data.ResourceItems.ProtobufNet": "10.3.0",
+          "Sitecore.Framework.Data.Blobs": "3.0.1",
+          "Sitecore.Kernel.Portable": "10.3.0",
+          "Sitecore.Logging": "10.3.0",
+          "Sitecore.Logging.Client": "10.3.0",
+          "Sitecore.Nexus.Consumption": "1.5.0",
+          "System.Buffers": "4.5.1"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Core",
+          "System.Data",
+          "System.Design",
+          "System.DirectoryServices",
+          "System.Drawing",
+          "System.IO.Compression",
+          "System.IO.Compression.FileSystem",
+          "System.Linq",
+          "System.Runtime",
+          "System.Runtime.Caching",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Runtime.Serialization",
+          "System.Security",
+          "System.ServiceModel",
+          "System.ServiceModel.Web",
+          "System.Threading.Thread",
+          "System.Web",
+          "System.Web.ApplicationServices",
+          "System.Web.Extensions",
+          "System.Web.Services",
+          "System.Xml",
+          "System.Xml.Linq",
+          "System.configuration",
+          "sysglobl"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.Kernel.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net48/Sitecore.Kernel.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sitecore.Kernel.Portable/10.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Kernel.Portable.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Kernel.Portable.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sitecore.LayoutService/9.0.310": {
+        "type": "package",
+        "dependencies": {
+          "Sitecore.Mvc": "10.3.0",
+          "Sitecore.Services.GraphQL.EdgeSchema": "7.0.567"
+        },
+        "frameworkAssemblies": [
+          "System.Linq",
+          "System.Runtime",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Threading.Thread"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.LayoutService.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net48/Sitecore.LayoutService.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sitecore.Logging/10.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "System.Data",
+          "System.Linq",
+          "System.Runtime",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Threading.Thread",
+          "System.Web",
+          "System.Xml",
+          "System.configuration"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.Logging.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net48/Sitecore.Logging.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sitecore.Logging.Client/10.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Sitecore.Logging": "10.3.0"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.Core",
+          "System.Data",
+          "System.Data.DataSetExtensions",
+          "System.Linq",
+          "System.Runtime",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Runtime.Serialization",
+          "System.Threading.Thread",
+          "System.Web",
+          "System.Web.Extensions",
+          "System.Xml",
+          "System.Xml.Linq",
+          "System.configuration"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.Logging.Client.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net48/Sitecore.Logging.Client.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sitecore.Mvc/10.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Mvc": "5.2.4",
+          "Microsoft.AspNet.WebApi.WebHost": "5.2.6",
+          "RazorGenerator.Mvc": "2.4.9",
+          "Sitecore.Web": "10.3.0"
+        },
+        "frameworkAssemblies": [
+          "System.Linq",
+          "System.Runtime",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Threading.Thread",
+          "System.Windows.Forms"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.Mvc.dll": {}
+        },
+        "runtime": {
+          "lib/net48/Sitecore.Mvc.dll": {}
+        }
+      },
+      "Sitecore.Nexus.Consumption/1.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Sitecore.Nexus.Licensing": "2.0.6"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Nexus.Consumption.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Nexus.Consumption.dll": {}
+        }
+      },
+      "Sitecore.Nexus.Licensing/2.0.6": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Cryptography.Xml": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Nexus.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Nexus.Licensing.dll": {}
+        }
+      },
+      "Sitecore.Services.Client/10.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Sitecore.Client": "10.3.0",
+          "Sitecore.Services.Core": "10.3.0"
+        },
+        "frameworkAssemblies": [
+          "System.Linq",
+          "System.Runtime",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Threading.Thread"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.Services.Client.dll": {}
+        },
+        "runtime": {
+          "lib/net48/Sitecore.Services.Client.dll": {}
+        }
+      },
+      "Sitecore.Services.Core/10.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.OData": "7.5.9",
+          "Microsoft.OData.Core": "7.9.0",
+          "Sitecore.Web": "10.3.0"
+        },
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations",
+          "System.Linq",
+          "System.Runtime",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Threading.Thread"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.Services.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net48/Sitecore.Services.Core.dll": {}
+        }
+      },
+      "Sitecore.Services.GraphQL/7.0.567": {
+        "type": "package",
+        "dependencies": {
+          "GraphQL": "2.4.0",
+          "Newtonsoft.Json": "13.0.1",
+          "System.Reactive.Core": "4.4.1",
+          "System.Reactive.Interfaces": "4.4.1",
+          "System.Reactive.Linq": "4.4.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Services.GraphQL.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Services.GraphQL.dll": {}
+        }
+      },
+      "Sitecore.Services.GraphQL.ContentSchema/7.0.567": {
+        "type": "package",
+        "dependencies": {
+          "Sitecore.ContentSearch": "10.3.0",
+          "Sitecore.Services.GraphQL.NetFxHost": "7.0.567"
+        },
+        "frameworkAssemblies": [
+          "System.Linq",
+          "System.Runtime",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Threading.Thread"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.Services.GraphQL.Content.dll": {}
+        },
+        "runtime": {
+          "lib/net48/Sitecore.Services.GraphQL.Content.dll": {}
+        }
+      },
+      "Sitecore.Services.GraphQL.EdgeSchema/7.0.567": {
+        "type": "package",
+        "dependencies": {
+          "Sitecore.Services.GraphQL": "7.0.567",
+          "Sitecore.Services.GraphQL.ContentSchema": "7.0.567"
+        },
+        "frameworkAssemblies": [
+          "System.Linq",
+          "System.Runtime",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Threading.Thread"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.Services.GraphQL.EdgeSchema.dll": {}
+        },
+        "runtime": {
+          "lib/net48/Sitecore.Services.GraphQL.EdgeSchema.dll": {}
+        }
+      },
+      "Sitecore.Services.GraphQL.NetFxHost/7.0.567": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Mvc": "5.2.4",
+          "Sitecore.Annotations": "10.3.0",
+          "Sitecore.Services.Client": "10.3.0",
+          "Sitecore.Services.GraphQL": "7.0.567",
+          "Sitecore.Services.Infrastructure.Sitecore": "10.3.0"
+        },
+        "frameworkAssemblies": [
+          "System.Linq",
+          "System.Runtime",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Threading.Thread"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.Services.GraphQL.NetFxHost.dll": {}
+        },
+        "runtime": {
+          "lib/net48/Sitecore.Services.GraphQL.NetFxHost.dll": {}
+        }
+      },
+      "Sitecore.Services.Infrastructure/10.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Mvc": "5.2.4",
+          "Microsoft.AspNet.WebApi.Cors": "5.2.6",
+          "Microsoft.AspNet.WebApi.WebHost": "5.2.6",
+          "Sitecore.Services.Core": "10.3.0",
+          "System.IdentityModel.Tokens.Jwt": "5.4.0"
+        },
+        "frameworkAssemblies": [
+          "System.Linq",
+          "System.Runtime",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Threading.Thread"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.Services.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "lib/net48/Sitecore.Services.Infrastructure.dll": {}
+        }
+      },
+      "Sitecore.Services.Infrastructure.Sitecore/10.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Sitecore.ContentSearch": "10.3.0",
+          "Sitecore.Services.Core": "10.3.0",
+          "Sitecore.Services.Infrastructure": "10.3.0"
+        },
+        "frameworkAssemblies": [
+          "System.IdentityModel",
+          "System.Linq",
+          "System.Runtime",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Threading.Thread"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.Services.Infrastructure.Sitecore.dll": {}
+        },
+        "runtime": {
+          "lib/net48/Sitecore.Services.Infrastructure.Sitecore.dll": {}
+        }
+      },
+      "Sitecore.Web/10.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Core": "5.2.6",
+          "Microsoft.AspNet.WebPages": "3.2.4",
+          "Sitecore.Kernel": "10.3.0"
+        },
+        "frameworkAssemblies": [
+          "System.Linq",
+          "System.Runtime",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Threading.Thread"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.Web.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net48/Sitecore.Web.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Buffers/4.5.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net45/System.Buffers.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Buffers.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Diagnostics.DiagnosticSource/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.4",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "compile": {
+          "lib/net461/System.Diagnostics.DiagnosticSource.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Diagnostics.DiagnosticSource.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.IdentityModel.Tokens.Jwt/5.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.JsonWebTokens": "5.4.0",
+          "Microsoft.IdentityModel.Tokens": "5.4.0",
+          "Newtonsoft.Json": "10.0.1"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System"
+        ],
+        "compile": {
+          "lib/net461/System.IdentityModel.Tokens.Jwt.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.IdentityModel.Tokens.Jwt.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Memory.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Memory.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Numerics",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Numerics.Vectors.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net46/System.Numerics.Vectors.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Reactive/4.4.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.4",
+          "System.ValueTuple": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "System.Windows",
+          "System.Windows.Forms",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net46/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net46/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Reactive.Core/4.4.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Reactive": "4.4.1",
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/net46/System.Reactive.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net46/System.Reactive.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Reactive.Interfaces/4.4.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Reactive": "4.4.1",
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/net46/System.Reactive.Interfaces.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net46/System.Reactive.Interfaces.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Reactive.Linq/4.4.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Reactive": "4.4.1",
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/net46/System.Reactive.Linq.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net46/System.Reactive.Linq.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Security.AccessControl/4.5.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Principal.Windows": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Security.AccessControl.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/win/lib/net461/System.Security.AccessControl.dll": {}
+        }
+      },
+      "System.Security.Cryptography.Xml/4.5.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Permissions": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Security",
+          "System.Xml",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Security.Cryptography.Xml.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Security.Cryptography.Xml.dll": {}
+        }
+      },
+      "System.Security.Permissions/4.5.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.AccessControl": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Data",
+          "System.Data.OracleClient",
+          "System.Drawing",
+          "System.Net",
+          "System.ServiceProcess",
+          "System.Transactions",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Security.Permissions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Security.Permissions.dll": {}
+        }
+      },
+      "System.Security.Principal.Windows/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Security.Principal.Windows.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/win/lib/net461/System.Security.Principal.Windows.dll": {}
+        }
+      },
+      "System.Text.Encodings.Web/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Text.Json/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "1.0.0",
+          "System.Buffers": "4.5.0",
+          "System.Memory": "4.5.3",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.6.0",
+          "System.Text.Encodings.Web": "4.6.0",
+          "System.Threading.Tasks.Extensions": "4.5.2",
+          "System.ValueTuple": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Core",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Text.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Text.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net47/System.ValueTuple.dll": {}
+        },
+        "runtime": {
+          "lib/net47/System.ValueTuple.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "WebActivatorEx/2.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Web.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "lib/net40/WebActivatorEx.dll": {}
+        },
+        "runtime": {
+          "lib/net40/WebActivatorEx.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.8/win-x64": {
+      "EnterpriseLibrary.Common/6.0.1304": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/NET45/Microsoft.Practices.EnterpriseLibrary.Common.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/NET45/Microsoft.Practices.EnterpriseLibrary.Common.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "EnterpriseLibrary.TransientFaultHandling/6.0.1304": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/portable-net45+win+wp8/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/portable-net45+win+wp8/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "EnterpriseLibrary.TransientFaultHandling.Caching/6.0.1304": {
+        "type": "package",
+        "dependencies": {
+          "EnterpriseLibrary.TransientFaultHandling": "6.0.0"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/NET45/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.Caching.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/NET45/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.Caching.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "EnterpriseLibrary.TransientFaultHandling.Configuration/6.0.1304": {
+        "type": "package",
+        "dependencies": {
+          "EnterpriseLibrary.Common": "6.0.0",
+          "EnterpriseLibrary.TransientFaultHandling": "6.0.0",
+          "EnterpriseLibrary.TransientFaultHandling.Caching": "6.0.0",
+          "EnterpriseLibrary.TransientFaultHandling.Data": "6.0.0",
+          "EnterpriseLibrary.TransientFaultHandling.ServiceBus": "6.0.0",
+          "EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage": "6.0.0"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/NET45/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.Configuration.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/NET45/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.Configuration.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "EnterpriseLibrary.TransientFaultHandling.Data/6.0.1304.1": {
+        "type": "package",
+        "dependencies": {
+          "EnterpriseLibrary.TransientFaultHandling": "6.0.0"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/NET45/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.Data.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/NET45/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.Data.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "EnterpriseLibrary.TransientFaultHandling.ServiceBus/6.0.1304": {
+        "type": "package",
+        "dependencies": {
+          "EnterpriseLibrary.TransientFaultHandling": "6.0.0"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/NET45/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.ServiceBus.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/NET45/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.ServiceBus.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage/6.0.1304": {
+        "type": "package",
+        "dependencies": {
+          "EnterpriseLibrary.TransientFaultHandling": "6.0.0"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/NET45/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/NET45/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "GraphQL/2.4.0": {
+        "type": "package",
+        "dependencies": {
+          "GraphQL-Parser": "3.0.0",
+          "Newtonsoft.Json": "10.0.3",
+          "System.Buffers": "4.5.0",
+          "System.Reactive.Core": "3.1.1",
+          "System.Reactive.Linq": "3.1.1",
+          "System.ValueTuple": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System"
+        ],
+        "compile": {
+          "lib/net45/GraphQL.dll": {}
+        },
+        "runtime": {
+          "lib/net45/GraphQL.dll": {}
+        }
+      },
+      "GraphQL-Parser/3.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/GraphQL-Parser.dll": {}
+        },
+        "runtime": {
+          "lib/net45/GraphQL-Parser.dll": {}
+        }
+      },
+      "HtmlAgilityPack/1.4.9.5": {
+        "type": "package",
+        "compile": {
+          "lib/Net45/HtmlAgilityPack.dll": {
+            "related": ".pdb;.XML"
+          }
+        },
+        "runtime": {
+          "lib/Net45/HtmlAgilityPack.dll": {
+            "related": ".pdb;.XML"
+          }
+        }
+      },
+      "IdentityModel/3.10.10": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.1",
+          "System.Text.Encodings.Web": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/net452/IdentityModel.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net452/IdentityModel.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.AspNet.Cors/5.2.6": {
+        "type": "package",
+        "compile": {
+          "lib/net45/System.Web.Cors.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Cors.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Mvc/5.2.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Razor": "[3.2.4, 3.3.0)",
+          "Microsoft.AspNet.WebPages": "[3.2.4, 3.3.0)"
+        },
+        "compile": {
+          "lib/net45/System.Web.Mvc.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/System.Web.Mvc.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNet.OData/7.5.9": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "[5.2.2, 5.3.0)",
+          "Microsoft.AspNet.WebApi.Core": "[5.2.2, 5.3.0)",
+          "Microsoft.Extensions.DependencyInjection": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "1.0.0",
+          "Microsoft.OData.Core": "[7.8.2, 8.0.0)"
+        },
+        "frameworkAssemblies": [
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/net45/Microsoft.AspNet.OData.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.OData.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNet.Razor/3.2.4": {
+        "type": "package",
+        "compile": {
+          "lib/net45/System.Web.Razor.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/System.Web.Razor.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNet.WebApi/5.2.6": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.WebHost": "[5.2.6, 5.3.0)"
+        }
+      },
+      "Microsoft.AspNet.WebApi.Client/5.2.6": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "6.0.4"
+        },
+        "frameworkAssemblies": [
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/net45/System.Net.Http.Formatting.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/System.Net.Http.Formatting.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNet.WebApi.Core/5.2.6": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "5.2.6"
+        },
+        "compile": {
+          "lib/net45/System.Web.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/System.Web.Http.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNet.WebApi.Cors/5.2.6": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Cors": "5.2.6",
+          "Microsoft.AspNet.WebApi.Core": "[5.2.6, 5.3.0)"
+        },
+        "compile": {
+          "lib/net45/System.Web.Http.Cors.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/System.Web.Http.Cors.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNet.WebApi.WebHost/5.2.6": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Core": "[5.2.6, 5.3.0)"
+        },
+        "compile": {
+          "lib/net45/System.Web.Http.WebHost.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/System.Web.Http.WebHost.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNet.WebPages/3.2.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Razor": "[3.2.4, 3.3.0)",
+          "Microsoft.Web.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/System.Web.Helpers.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/System.Web.WebPages.Deployment.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/System.Web.WebPages.Razor.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/System.Web.WebPages.dll": {
+            "related": ".Deployment.xml;.Razor.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/System.Web.Helpers.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/System.Web.WebPages.Deployment.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/System.Web.WebPages.Razor.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/System.Web.WebPages.dll": {
+            "related": ".Deployment.xml;.Razor.xml;.xml"
+          }
+        }
+      },
+      "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Configuration.ConfigurationBuilders.Base/1.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/Net471/Microsoft.Configuration.ConfigurationBuilders.Base.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/Net471/Microsoft.Configuration.ConfigurationBuilders.Base.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Configuration.ConfigurationBuilders.Environment/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Configuration.ConfigurationBuilders.Base": "1.0.0"
+        },
+        "compile": {
+          "lib/Net471/Microsoft.Configuration.ConfigurationBuilders.Environment.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/Net471/Microsoft.Configuration.ConfigurationBuilders.Environment.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "6.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0",
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/net461/Microsoft.Extensions.DependencyInjection.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Extensions.DependencyInjection.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "6.0.0",
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net461/Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "6.0.0",
+          "Microsoft.Extensions.DependencyInjection": "6.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Options": "6.0.0",
+          "System.Diagnostics.DiagnosticSource": "6.0.0",
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/net461/Microsoft.Extensions.Logging.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Extensions.Logging.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/6.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.4"
+        },
+        "compile": {
+          "lib/net461/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/Microsoft.Extensions.Logging.Abstractions.targets": {}
+        }
+      },
+      "Microsoft.Extensions.Options/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Primitives": "6.0.0"
+        },
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.Extensions.Options.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Extensions.Options.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.Primitives/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.4",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "compile": {
+          "lib/net461/Microsoft.Extensions.Primitives.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Extensions.Primitives.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.JsonWebTokens/5.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Tokens": "5.4.0",
+          "Newtonsoft.Json": "10.0.1"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.IdentityModel.JsonWebTokens.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Microsoft.IdentityModel.JsonWebTokens.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Logging/5.4.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.IdentityModel.Logging.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Microsoft.IdentityModel.Logging.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Tokens/5.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Logging": "5.4.0",
+          "Newtonsoft.Json": "10.0.1"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.Runtime.Serialization",
+          "System.Xml"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.IdentityModel.Tokens.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Microsoft.IdentityModel.Tokens.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.OData.Core/7.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.OData.Edm": "[7.9.0]",
+          "Microsoft.Spatial": "[7.9.0]"
+        },
+        "compile": {
+          "lib/net45/Microsoft.OData.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.OData.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.OData.Edm/7.9.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.6.0",
+          "System.Text.Encodings.Web": "4.6.0",
+          "System.Text.Json": "4.6.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.OData.Edm.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.OData.Edm.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Spatial/7.9.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.Spatial.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Spatial.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Web.Infrastructure/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Microsoft.Web.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Microsoft.Web.Infrastructure.dll": {}
+        }
+      },
+      "Mvp.Xml/2.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net20/Mvp.Xml.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net20/Mvp.Xml.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Polly/6.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Polly.dll": {
+            "related": ".deps.json;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Polly.dll": {
+            "related": ".deps.json;.pdb;.xml"
+          }
+        }
+      },
+      "protobuf-net/2.0.0.668": {
+        "type": "package",
+        "compile": {
+          "lib/net40/protobuf-net.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net40/protobuf-net.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "RazorGenerator.Mvc/2.4.9": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Mvc": "3.0.50813.1",
+          "WebActivatorEx": "2.0.3"
+        },
+        "frameworkAssemblies": [
+          "System.Web"
+        ],
+        "compile": {
+          "lib/net40/RazorGenerator.Mvc.dll": {}
+        },
+        "runtime": {
+          "lib/net40/RazorGenerator.Mvc.dll": {}
+        }
+      },
+      "SharpZipLib/1.3.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/ICSharpCode.SharpZipLib.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/ICSharpCode.SharpZipLib.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Sitecore.Annotations/10.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net471/Sitecore.Annotations.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net471/Sitecore.Annotations.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sitecore.Assemblies.Platform/10.3.0": {
+        "type": "package",
+        "build": {
+          "build/Sitecore.Assemblies.Platform.targets": {}
+        }
+      },
+      "Sitecore.Assemblies.SitecoreHeadlessServicesServer/21.0.583": {
+        "type": "package",
+        "build": {
+          "build/Sitecore.Assemblies.SitecoreHeadlessServicesServer.targets": {}
+        }
+      },
+      "Sitecore.Client/10.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Sitecore.Kernel": "10.3.0",
+          "Sitecore.Nexus.Consumption": "1.5.0"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.Data",
+          "System.Data.DataSetExtensions",
+          "System.Data.Linq",
+          "System.Drawing",
+          "System.Linq",
+          "System.Runtime",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Runtime.Serialization",
+          "System.ServiceModel",
+          "System.ServiceModel.Web",
+          "System.Threading.Thread",
+          "System.Web",
+          "System.Web.ApplicationServices",
+          "System.Web.DynamicData",
+          "System.Web.Entity",
+          "System.Web.Extensions",
+          "System.Web.Extensions.Design",
+          "System.Web.Services",
+          "System.Windows.Forms",
+          "System.Xml",
+          "System.Xml.Linq",
+          "System.configuration"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.Client.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net48/Sitecore.Client.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sitecore.ContentSearch/10.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Sitecore.ContentSearch.Data": "10.3.0",
+          "Sitecore.ContentSearch.Linq": "10.3.0"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "Microsoft.Win32.Primitives",
+          "System",
+          "System.AppContext",
+          "System.Console",
+          "System.Core",
+          "System.Diagnostics.Tracing",
+          "System.Globalization.Calendars",
+          "System.IO",
+          "System.IO.Compression",
+          "System.IO.Compression.ZipFile",
+          "System.IO.FileSystem",
+          "System.IO.FileSystem.Primitives",
+          "System.Linq",
+          "System.Linq.Expressions",
+          "System.Net.Http",
+          "System.Net.Sockets",
+          "System.Reflection",
+          "System.Runtime",
+          "System.Runtime.Extensions",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Runtime.Serialization",
+          "System.Security.Cryptography.Algorithms",
+          "System.Security.Cryptography.Encoding",
+          "System.Security.Cryptography.Primitives",
+          "System.Security.Cryptography.X509Certificates",
+          "System.Text.RegularExpressions",
+          "System.Threading.Thread",
+          "System.Web",
+          "System.Xml",
+          "System.Xml.Linq",
+          "System.Xml.ReaderWriter",
+          "System.configuration"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.ContentSearch.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net48/Sitecore.ContentSearch.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sitecore.ContentSearch.Data/10.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.Win32.Primitives",
+          "System",
+          "System.AppContext",
+          "System.Console",
+          "System.Core",
+          "System.Diagnostics.Tracing",
+          "System.Globalization.Calendars",
+          "System.IO",
+          "System.IO.Compression",
+          "System.IO.Compression.ZipFile",
+          "System.IO.FileSystem",
+          "System.IO.FileSystem.Primitives",
+          "System.Linq",
+          "System.Linq.Expressions",
+          "System.Net.Http",
+          "System.Net.Sockets",
+          "System.Reflection",
+          "System.Runtime",
+          "System.Runtime.Extensions",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Security.Cryptography.Algorithms",
+          "System.Security.Cryptography.Encoding",
+          "System.Security.Cryptography.Primitives",
+          "System.Security.Cryptography.X509Certificates",
+          "System.Text.RegularExpressions",
+          "System.Threading.Thread",
+          "System.Xml.ReaderWriter"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.ContentSearch.Data.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net48/Sitecore.ContentSearch.Data.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sitecore.ContentSearch.Linq/10.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Sitecore.ContentSearch.Data": "10.3.0",
+          "Sitecore.Kernel": "10.3.0"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.Win32.Primitives",
+          "System",
+          "System.AppContext",
+          "System.Console",
+          "System.Core",
+          "System.Diagnostics.Tracing",
+          "System.Globalization.Calendars",
+          "System.IO",
+          "System.IO.Compression",
+          "System.IO.Compression.ZipFile",
+          "System.IO.FileSystem",
+          "System.IO.FileSystem.Primitives",
+          "System.Linq",
+          "System.Linq.Expressions",
+          "System.Net.Http",
+          "System.Net.Sockets",
+          "System.Reflection",
+          "System.Runtime",
+          "System.Runtime.Extensions",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Runtime.Serialization",
+          "System.Security.Cryptography.Algorithms",
+          "System.Security.Cryptography.Encoding",
+          "System.Security.Cryptography.Primitives",
+          "System.Security.Cryptography.X509Certificates",
+          "System.Text.RegularExpressions",
+          "System.Threading.Thread",
+          "System.XML",
+          "System.Xml.ReaderWriter"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.ContentSearch.Linq.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net48/Sitecore.ContentSearch.Linq.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sitecore.Data.ResourceItems.Abstractions/10.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Data.ResourceItems.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Data.ResourceItems.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sitecore.Data.ResourceItems.ProtobufNet/10.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.1",
+          "Sitecore.Data.ResourceItems.Abstractions": "10.3.0",
+          "protobuf-net": "2.0.0.668"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Data.ResourceItems.ProtobufNet.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Data.ResourceItems.ProtobufNet.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sitecore.Framework.Conditions/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Framework.Conditions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Framework.Conditions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sitecore.Framework.Data.Blobs/3.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Sitecore.Framework.Conditions": "6.0.0",
+          "Sitecore.Framework.Data.Blobs.Abstractions": "3.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Framework.Data.Blobs.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Framework.Data.Blobs.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sitecore.Framework.Data.Blobs.Abstractions/3.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Sitecore.Framework.Conditions": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Framework.Data.Blobs.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Framework.Data.Blobs.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sitecore.Kernel/10.3.0": {
+        "type": "package",
+        "dependencies": {
+          "EnterpriseLibrary.Common": "6.0.1304",
+          "EnterpriseLibrary.TransientFaultHandling": "6.0.1304",
+          "EnterpriseLibrary.TransientFaultHandling.Caching": "6.0.1304",
+          "EnterpriseLibrary.TransientFaultHandling.Configuration": "6.0.1304",
+          "EnterpriseLibrary.TransientFaultHandling.Data": "6.0.1304.1",
+          "EnterpriseLibrary.TransientFaultHandling.ServiceBus": "6.0.1304",
+          "EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage": "6.0.1304",
+          "HtmlAgilityPack": "1.4.9.5",
+          "IdentityModel": "3.10.10",
+          "Microsoft.AspNet.WebApi": "5.2.6",
+          "Microsoft.Configuration.ConfigurationBuilders.Base": "1.0.2",
+          "Microsoft.Configuration.ConfigurationBuilders.Environment": "1.0.2",
+          "Microsoft.Extensions.DependencyInjection": "6.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Logging": "6.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.1",
+          "Mvp.Xml": "2.3.0",
+          "Newtonsoft.Json": "13.0.1",
+          "Polly": "6.1.2",
+          "SharpZipLib": "1.3.2",
+          "Sitecore.Data.ResourceItems.ProtobufNet": "10.3.0",
+          "Sitecore.Framework.Data.Blobs": "3.0.1",
+          "Sitecore.Kernel.Portable": "10.3.0",
+          "Sitecore.Logging": "10.3.0",
+          "Sitecore.Logging.Client": "10.3.0",
+          "Sitecore.Nexus.Consumption": "1.5.0",
+          "System.Buffers": "4.5.1"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Core",
+          "System.Data",
+          "System.Design",
+          "System.DirectoryServices",
+          "System.Drawing",
+          "System.IO.Compression",
+          "System.IO.Compression.FileSystem",
+          "System.Linq",
+          "System.Runtime",
+          "System.Runtime.Caching",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Runtime.Serialization",
+          "System.Security",
+          "System.ServiceModel",
+          "System.ServiceModel.Web",
+          "System.Threading.Thread",
+          "System.Web",
+          "System.Web.ApplicationServices",
+          "System.Web.Extensions",
+          "System.Web.Services",
+          "System.Xml",
+          "System.Xml.Linq",
+          "System.configuration",
+          "sysglobl"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.Kernel.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net48/Sitecore.Kernel.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sitecore.Kernel.Portable/10.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Kernel.Portable.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Kernel.Portable.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sitecore.LayoutService/9.0.310": {
+        "type": "package",
+        "dependencies": {
+          "Sitecore.Mvc": "10.3.0",
+          "Sitecore.Services.GraphQL.EdgeSchema": "7.0.567"
+        },
+        "frameworkAssemblies": [
+          "System.Linq",
+          "System.Runtime",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Threading.Thread"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.LayoutService.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net48/Sitecore.LayoutService.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sitecore.Logging/10.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "System.Data",
+          "System.Linq",
+          "System.Runtime",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Threading.Thread",
+          "System.Web",
+          "System.Xml",
+          "System.configuration"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.Logging.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net48/Sitecore.Logging.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sitecore.Logging.Client/10.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Sitecore.Logging": "10.3.0"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.Core",
+          "System.Data",
+          "System.Data.DataSetExtensions",
+          "System.Linq",
+          "System.Runtime",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Runtime.Serialization",
+          "System.Threading.Thread",
+          "System.Web",
+          "System.Web.Extensions",
+          "System.Xml",
+          "System.Xml.Linq",
+          "System.configuration"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.Logging.Client.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net48/Sitecore.Logging.Client.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sitecore.Mvc/10.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Mvc": "5.2.4",
+          "Microsoft.AspNet.WebApi.WebHost": "5.2.6",
+          "RazorGenerator.Mvc": "2.4.9",
+          "Sitecore.Web": "10.3.0"
+        },
+        "frameworkAssemblies": [
+          "System.Linq",
+          "System.Runtime",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Threading.Thread",
+          "System.Windows.Forms"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.Mvc.dll": {}
+        },
+        "runtime": {
+          "lib/net48/Sitecore.Mvc.dll": {}
+        }
+      },
+      "Sitecore.Nexus.Consumption/1.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Sitecore.Nexus.Licensing": "2.0.6"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Nexus.Consumption.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Nexus.Consumption.dll": {}
+        }
+      },
+      "Sitecore.Nexus.Licensing/2.0.6": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Cryptography.Xml": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Nexus.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Nexus.Licensing.dll": {}
+        }
+      },
+      "Sitecore.Services.Client/10.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Sitecore.Client": "10.3.0",
+          "Sitecore.Services.Core": "10.3.0"
+        },
+        "frameworkAssemblies": [
+          "System.Linq",
+          "System.Runtime",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Threading.Thread"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.Services.Client.dll": {}
+        },
+        "runtime": {
+          "lib/net48/Sitecore.Services.Client.dll": {}
+        }
+      },
+      "Sitecore.Services.Core/10.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.OData": "7.5.9",
+          "Microsoft.OData.Core": "7.9.0",
+          "Sitecore.Web": "10.3.0"
+        },
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations",
+          "System.Linq",
+          "System.Runtime",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Threading.Thread"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.Services.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net48/Sitecore.Services.Core.dll": {}
+        }
+      },
+      "Sitecore.Services.GraphQL/7.0.567": {
+        "type": "package",
+        "dependencies": {
+          "GraphQL": "2.4.0",
+          "Newtonsoft.Json": "13.0.1",
+          "System.Reactive.Core": "4.4.1",
+          "System.Reactive.Interfaces": "4.4.1",
+          "System.Reactive.Linq": "4.4.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Services.GraphQL.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Services.GraphQL.dll": {}
+        }
+      },
+      "Sitecore.Services.GraphQL.ContentSchema/7.0.567": {
+        "type": "package",
+        "dependencies": {
+          "Sitecore.ContentSearch": "10.3.0",
+          "Sitecore.Services.GraphQL.NetFxHost": "7.0.567"
+        },
+        "frameworkAssemblies": [
+          "System.Linq",
+          "System.Runtime",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Threading.Thread"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.Services.GraphQL.Content.dll": {}
+        },
+        "runtime": {
+          "lib/net48/Sitecore.Services.GraphQL.Content.dll": {}
+        }
+      },
+      "Sitecore.Services.GraphQL.EdgeSchema/7.0.567": {
+        "type": "package",
+        "dependencies": {
+          "Sitecore.Services.GraphQL": "7.0.567",
+          "Sitecore.Services.GraphQL.ContentSchema": "7.0.567"
+        },
+        "frameworkAssemblies": [
+          "System.Linq",
+          "System.Runtime",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Threading.Thread"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.Services.GraphQL.EdgeSchema.dll": {}
+        },
+        "runtime": {
+          "lib/net48/Sitecore.Services.GraphQL.EdgeSchema.dll": {}
+        }
+      },
+      "Sitecore.Services.GraphQL.NetFxHost/7.0.567": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Mvc": "5.2.4",
+          "Sitecore.Annotations": "10.3.0",
+          "Sitecore.Services.Client": "10.3.0",
+          "Sitecore.Services.GraphQL": "7.0.567",
+          "Sitecore.Services.Infrastructure.Sitecore": "10.3.0"
+        },
+        "frameworkAssemblies": [
+          "System.Linq",
+          "System.Runtime",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Threading.Thread"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.Services.GraphQL.NetFxHost.dll": {}
+        },
+        "runtime": {
+          "lib/net48/Sitecore.Services.GraphQL.NetFxHost.dll": {}
+        }
+      },
+      "Sitecore.Services.Infrastructure/10.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Mvc": "5.2.4",
+          "Microsoft.AspNet.WebApi.Cors": "5.2.6",
+          "Microsoft.AspNet.WebApi.WebHost": "5.2.6",
+          "Sitecore.Services.Core": "10.3.0",
+          "System.IdentityModel.Tokens.Jwt": "5.4.0"
+        },
+        "frameworkAssemblies": [
+          "System.Linq",
+          "System.Runtime",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Threading.Thread"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.Services.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "lib/net48/Sitecore.Services.Infrastructure.dll": {}
+        }
+      },
+      "Sitecore.Services.Infrastructure.Sitecore/10.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Sitecore.ContentSearch": "10.3.0",
+          "Sitecore.Services.Core": "10.3.0",
+          "Sitecore.Services.Infrastructure": "10.3.0"
+        },
+        "frameworkAssemblies": [
+          "System.IdentityModel",
+          "System.Linq",
+          "System.Runtime",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Threading.Thread"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.Services.Infrastructure.Sitecore.dll": {}
+        },
+        "runtime": {
+          "lib/net48/Sitecore.Services.Infrastructure.Sitecore.dll": {}
+        }
+      },
+      "Sitecore.Web/10.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Core": "5.2.6",
+          "Microsoft.AspNet.WebPages": "3.2.4",
+          "Sitecore.Kernel": "10.3.0"
+        },
+        "frameworkAssemblies": [
+          "System.Linq",
+          "System.Runtime",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Threading.Thread"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.Web.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net48/Sitecore.Web.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Buffers/4.5.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net45/System.Buffers.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Buffers.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Diagnostics.DiagnosticSource/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.4",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "compile": {
+          "lib/net461/System.Diagnostics.DiagnosticSource.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Diagnostics.DiagnosticSource.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.IdentityModel.Tokens.Jwt/5.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.JsonWebTokens": "5.4.0",
+          "Microsoft.IdentityModel.Tokens": "5.4.0",
+          "Newtonsoft.Json": "10.0.1"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System"
+        ],
+        "compile": {
+          "lib/net461/System.IdentityModel.Tokens.Jwt.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.IdentityModel.Tokens.Jwt.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Memory.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Memory.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Numerics",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Numerics.Vectors.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net46/System.Numerics.Vectors.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Reactive/4.4.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.4",
+          "System.ValueTuple": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "System.Windows",
+          "System.Windows.Forms",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net46/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net46/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Reactive.Core/4.4.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Reactive": "4.4.1",
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/net46/System.Reactive.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net46/System.Reactive.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Reactive.Interfaces/4.4.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Reactive": "4.4.1",
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/net46/System.Reactive.Interfaces.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net46/System.Reactive.Interfaces.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Reactive.Linq/4.4.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Reactive": "4.4.1",
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/net46/System.Reactive.Linq.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net46/System.Reactive.Linq.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Security.AccessControl/4.5.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Principal.Windows": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Security.AccessControl.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Security.AccessControl.dll": {}
+        }
+      },
+      "System.Security.Cryptography.Xml/4.5.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Permissions": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Security",
+          "System.Xml",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Security.Cryptography.Xml.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Security.Cryptography.Xml.dll": {}
+        }
+      },
+      "System.Security.Permissions/4.5.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.AccessControl": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Data",
+          "System.Data.OracleClient",
+          "System.Drawing",
+          "System.Net",
+          "System.ServiceProcess",
+          "System.Transactions",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Security.Permissions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Security.Permissions.dll": {}
+        }
+      },
+      "System.Security.Principal.Windows/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Security.Principal.Windows.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Security.Principal.Windows.dll": {}
+        }
+      },
+      "System.Text.Encodings.Web/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Text.Json/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "1.0.0",
+          "System.Buffers": "4.5.0",
+          "System.Memory": "4.5.3",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.6.0",
+          "System.Text.Encodings.Web": "4.6.0",
+          "System.Threading.Tasks.Extensions": "4.5.2",
+          "System.ValueTuple": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Core",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Text.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Text.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net47/System.ValueTuple.dll": {}
+        },
+        "runtime": {
+          "lib/net47/System.ValueTuple.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "WebActivatorEx/2.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Web.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "lib/net40/WebActivatorEx.dll": {}
+        },
+        "runtime": {
+          "lib/net40/WebActivatorEx.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.8/win-x86": {
+      "EnterpriseLibrary.Common/6.0.1304": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/NET45/Microsoft.Practices.EnterpriseLibrary.Common.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/NET45/Microsoft.Practices.EnterpriseLibrary.Common.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "EnterpriseLibrary.TransientFaultHandling/6.0.1304": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/portable-net45+win+wp8/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/portable-net45+win+wp8/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "EnterpriseLibrary.TransientFaultHandling.Caching/6.0.1304": {
+        "type": "package",
+        "dependencies": {
+          "EnterpriseLibrary.TransientFaultHandling": "6.0.0"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/NET45/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.Caching.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/NET45/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.Caching.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "EnterpriseLibrary.TransientFaultHandling.Configuration/6.0.1304": {
+        "type": "package",
+        "dependencies": {
+          "EnterpriseLibrary.Common": "6.0.0",
+          "EnterpriseLibrary.TransientFaultHandling": "6.0.0",
+          "EnterpriseLibrary.TransientFaultHandling.Caching": "6.0.0",
+          "EnterpriseLibrary.TransientFaultHandling.Data": "6.0.0",
+          "EnterpriseLibrary.TransientFaultHandling.ServiceBus": "6.0.0",
+          "EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage": "6.0.0"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/NET45/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.Configuration.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/NET45/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.Configuration.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "EnterpriseLibrary.TransientFaultHandling.Data/6.0.1304.1": {
+        "type": "package",
+        "dependencies": {
+          "EnterpriseLibrary.TransientFaultHandling": "6.0.0"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/NET45/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.Data.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/NET45/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.Data.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "EnterpriseLibrary.TransientFaultHandling.ServiceBus/6.0.1304": {
+        "type": "package",
+        "dependencies": {
+          "EnterpriseLibrary.TransientFaultHandling": "6.0.0"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/NET45/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.ServiceBus.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/NET45/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.ServiceBus.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage/6.0.1304": {
+        "type": "package",
+        "dependencies": {
+          "EnterpriseLibrary.TransientFaultHandling": "6.0.0"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/NET45/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/NET45/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "GraphQL/2.4.0": {
+        "type": "package",
+        "dependencies": {
+          "GraphQL-Parser": "3.0.0",
+          "Newtonsoft.Json": "10.0.3",
+          "System.Buffers": "4.5.0",
+          "System.Reactive.Core": "3.1.1",
+          "System.Reactive.Linq": "3.1.1",
+          "System.ValueTuple": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System"
+        ],
+        "compile": {
+          "lib/net45/GraphQL.dll": {}
+        },
+        "runtime": {
+          "lib/net45/GraphQL.dll": {}
+        }
+      },
+      "GraphQL-Parser/3.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/GraphQL-Parser.dll": {}
+        },
+        "runtime": {
+          "lib/net45/GraphQL-Parser.dll": {}
+        }
+      },
+      "HtmlAgilityPack/1.4.9.5": {
+        "type": "package",
+        "compile": {
+          "lib/Net45/HtmlAgilityPack.dll": {
+            "related": ".pdb;.XML"
+          }
+        },
+        "runtime": {
+          "lib/Net45/HtmlAgilityPack.dll": {
+            "related": ".pdb;.XML"
+          }
+        }
+      },
+      "IdentityModel/3.10.10": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.1",
+          "System.Text.Encodings.Web": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/net452/IdentityModel.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net452/IdentityModel.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.AspNet.Cors/5.2.6": {
+        "type": "package",
+        "compile": {
+          "lib/net45/System.Web.Cors.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Cors.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Mvc/5.2.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Razor": "[3.2.4, 3.3.0)",
+          "Microsoft.AspNet.WebPages": "[3.2.4, 3.3.0)"
+        },
+        "compile": {
+          "lib/net45/System.Web.Mvc.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/System.Web.Mvc.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNet.OData/7.5.9": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "[5.2.2, 5.3.0)",
+          "Microsoft.AspNet.WebApi.Core": "[5.2.2, 5.3.0)",
+          "Microsoft.Extensions.DependencyInjection": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "1.0.0",
+          "Microsoft.OData.Core": "[7.8.2, 8.0.0)"
+        },
+        "frameworkAssemblies": [
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/net45/Microsoft.AspNet.OData.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.OData.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNet.Razor/3.2.4": {
+        "type": "package",
+        "compile": {
+          "lib/net45/System.Web.Razor.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/System.Web.Razor.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNet.WebApi/5.2.6": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.WebHost": "[5.2.6, 5.3.0)"
+        }
+      },
+      "Microsoft.AspNet.WebApi.Client/5.2.6": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "6.0.4"
+        },
+        "frameworkAssemblies": [
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/net45/System.Net.Http.Formatting.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/System.Net.Http.Formatting.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNet.WebApi.Core/5.2.6": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "5.2.6"
+        },
+        "compile": {
+          "lib/net45/System.Web.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/System.Web.Http.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNet.WebApi.Cors/5.2.6": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Cors": "5.2.6",
+          "Microsoft.AspNet.WebApi.Core": "[5.2.6, 5.3.0)"
+        },
+        "compile": {
+          "lib/net45/System.Web.Http.Cors.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/System.Web.Http.Cors.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNet.WebApi.WebHost/5.2.6": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Core": "[5.2.6, 5.3.0)"
+        },
+        "compile": {
+          "lib/net45/System.Web.Http.WebHost.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/System.Web.Http.WebHost.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNet.WebPages/3.2.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Razor": "[3.2.4, 3.3.0)",
+          "Microsoft.Web.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/System.Web.Helpers.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/System.Web.WebPages.Deployment.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/System.Web.WebPages.Razor.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/System.Web.WebPages.dll": {
+            "related": ".Deployment.xml;.Razor.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/System.Web.Helpers.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/System.Web.WebPages.Deployment.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/System.Web.WebPages.Razor.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/System.Web.WebPages.dll": {
+            "related": ".Deployment.xml;.Razor.xml;.xml"
+          }
+        }
+      },
+      "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Configuration.ConfigurationBuilders.Base/1.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/Net471/Microsoft.Configuration.ConfigurationBuilders.Base.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/Net471/Microsoft.Configuration.ConfigurationBuilders.Base.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Configuration.ConfigurationBuilders.Environment/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Configuration.ConfigurationBuilders.Base": "1.0.0"
+        },
+        "compile": {
+          "lib/Net471/Microsoft.Configuration.ConfigurationBuilders.Environment.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/Net471/Microsoft.Configuration.ConfigurationBuilders.Environment.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "6.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0",
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/net461/Microsoft.Extensions.DependencyInjection.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Extensions.DependencyInjection.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "6.0.0",
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net461/Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "6.0.0",
+          "Microsoft.Extensions.DependencyInjection": "6.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Options": "6.0.0",
+          "System.Diagnostics.DiagnosticSource": "6.0.0",
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/net461/Microsoft.Extensions.Logging.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Extensions.Logging.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/6.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.4"
+        },
+        "compile": {
+          "lib/net461/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/Microsoft.Extensions.Logging.Abstractions.targets": {}
+        }
+      },
+      "Microsoft.Extensions.Options/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Primitives": "6.0.0"
+        },
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.Extensions.Options.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Extensions.Options.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.Primitives/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.4",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "compile": {
+          "lib/net461/Microsoft.Extensions.Primitives.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Extensions.Primitives.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.JsonWebTokens/5.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Tokens": "5.4.0",
+          "Newtonsoft.Json": "10.0.1"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.IdentityModel.JsonWebTokens.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Microsoft.IdentityModel.JsonWebTokens.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Logging/5.4.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.IdentityModel.Logging.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Microsoft.IdentityModel.Logging.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Tokens/5.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Logging": "5.4.0",
+          "Newtonsoft.Json": "10.0.1"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.Runtime.Serialization",
+          "System.Xml"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.IdentityModel.Tokens.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/Microsoft.IdentityModel.Tokens.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.OData.Core/7.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.OData.Edm": "[7.9.0]",
+          "Microsoft.Spatial": "[7.9.0]"
+        },
+        "compile": {
+          "lib/net45/Microsoft.OData.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.OData.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.OData.Edm/7.9.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.6.0",
+          "System.Text.Encodings.Web": "4.6.0",
+          "System.Text.Json": "4.6.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.OData.Edm.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.OData.Edm.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Spatial/7.9.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.Spatial.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Spatial.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Web.Infrastructure/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Microsoft.Web.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Microsoft.Web.Infrastructure.dll": {}
+        }
+      },
+      "Mvp.Xml/2.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net20/Mvp.Xml.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net20/Mvp.Xml.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Polly/6.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Polly.dll": {
+            "related": ".deps.json;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Polly.dll": {
+            "related": ".deps.json;.pdb;.xml"
+          }
+        }
+      },
+      "protobuf-net/2.0.0.668": {
+        "type": "package",
+        "compile": {
+          "lib/net40/protobuf-net.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net40/protobuf-net.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "RazorGenerator.Mvc/2.4.9": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Mvc": "3.0.50813.1",
+          "WebActivatorEx": "2.0.3"
+        },
+        "frameworkAssemblies": [
+          "System.Web"
+        ],
+        "compile": {
+          "lib/net40/RazorGenerator.Mvc.dll": {}
+        },
+        "runtime": {
+          "lib/net40/RazorGenerator.Mvc.dll": {}
+        }
+      },
+      "SharpZipLib/1.3.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/ICSharpCode.SharpZipLib.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/ICSharpCode.SharpZipLib.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Sitecore.Annotations/10.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net471/Sitecore.Annotations.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net471/Sitecore.Annotations.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sitecore.Assemblies.Platform/10.3.0": {
+        "type": "package",
+        "build": {
+          "build/Sitecore.Assemblies.Platform.targets": {}
+        }
+      },
+      "Sitecore.Assemblies.SitecoreHeadlessServicesServer/21.0.583": {
+        "type": "package",
+        "build": {
+          "build/Sitecore.Assemblies.SitecoreHeadlessServicesServer.targets": {}
+        }
+      },
+      "Sitecore.Client/10.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Sitecore.Kernel": "10.3.0",
+          "Sitecore.Nexus.Consumption": "1.5.0"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.Data",
+          "System.Data.DataSetExtensions",
+          "System.Data.Linq",
+          "System.Drawing",
+          "System.Linq",
+          "System.Runtime",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Runtime.Serialization",
+          "System.ServiceModel",
+          "System.ServiceModel.Web",
+          "System.Threading.Thread",
+          "System.Web",
+          "System.Web.ApplicationServices",
+          "System.Web.DynamicData",
+          "System.Web.Entity",
+          "System.Web.Extensions",
+          "System.Web.Extensions.Design",
+          "System.Web.Services",
+          "System.Windows.Forms",
+          "System.Xml",
+          "System.Xml.Linq",
+          "System.configuration"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.Client.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net48/Sitecore.Client.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sitecore.ContentSearch/10.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Sitecore.ContentSearch.Data": "10.3.0",
+          "Sitecore.ContentSearch.Linq": "10.3.0"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "Microsoft.Win32.Primitives",
+          "System",
+          "System.AppContext",
+          "System.Console",
+          "System.Core",
+          "System.Diagnostics.Tracing",
+          "System.Globalization.Calendars",
+          "System.IO",
+          "System.IO.Compression",
+          "System.IO.Compression.ZipFile",
+          "System.IO.FileSystem",
+          "System.IO.FileSystem.Primitives",
+          "System.Linq",
+          "System.Linq.Expressions",
+          "System.Net.Http",
+          "System.Net.Sockets",
+          "System.Reflection",
+          "System.Runtime",
+          "System.Runtime.Extensions",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Runtime.Serialization",
+          "System.Security.Cryptography.Algorithms",
+          "System.Security.Cryptography.Encoding",
+          "System.Security.Cryptography.Primitives",
+          "System.Security.Cryptography.X509Certificates",
+          "System.Text.RegularExpressions",
+          "System.Threading.Thread",
+          "System.Web",
+          "System.Xml",
+          "System.Xml.Linq",
+          "System.Xml.ReaderWriter",
+          "System.configuration"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.ContentSearch.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net48/Sitecore.ContentSearch.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sitecore.ContentSearch.Data/10.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.Win32.Primitives",
+          "System",
+          "System.AppContext",
+          "System.Console",
+          "System.Core",
+          "System.Diagnostics.Tracing",
+          "System.Globalization.Calendars",
+          "System.IO",
+          "System.IO.Compression",
+          "System.IO.Compression.ZipFile",
+          "System.IO.FileSystem",
+          "System.IO.FileSystem.Primitives",
+          "System.Linq",
+          "System.Linq.Expressions",
+          "System.Net.Http",
+          "System.Net.Sockets",
+          "System.Reflection",
+          "System.Runtime",
+          "System.Runtime.Extensions",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Security.Cryptography.Algorithms",
+          "System.Security.Cryptography.Encoding",
+          "System.Security.Cryptography.Primitives",
+          "System.Security.Cryptography.X509Certificates",
+          "System.Text.RegularExpressions",
+          "System.Threading.Thread",
+          "System.Xml.ReaderWriter"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.ContentSearch.Data.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net48/Sitecore.ContentSearch.Data.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sitecore.ContentSearch.Linq/10.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Sitecore.ContentSearch.Data": "10.3.0",
+          "Sitecore.Kernel": "10.3.0"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.Win32.Primitives",
+          "System",
+          "System.AppContext",
+          "System.Console",
+          "System.Core",
+          "System.Diagnostics.Tracing",
+          "System.Globalization.Calendars",
+          "System.IO",
+          "System.IO.Compression",
+          "System.IO.Compression.ZipFile",
+          "System.IO.FileSystem",
+          "System.IO.FileSystem.Primitives",
+          "System.Linq",
+          "System.Linq.Expressions",
+          "System.Net.Http",
+          "System.Net.Sockets",
+          "System.Reflection",
+          "System.Runtime",
+          "System.Runtime.Extensions",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Runtime.Serialization",
+          "System.Security.Cryptography.Algorithms",
+          "System.Security.Cryptography.Encoding",
+          "System.Security.Cryptography.Primitives",
+          "System.Security.Cryptography.X509Certificates",
+          "System.Text.RegularExpressions",
+          "System.Threading.Thread",
+          "System.XML",
+          "System.Xml.ReaderWriter"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.ContentSearch.Linq.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net48/Sitecore.ContentSearch.Linq.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sitecore.Data.ResourceItems.Abstractions/10.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Data.ResourceItems.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Data.ResourceItems.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sitecore.Data.ResourceItems.ProtobufNet/10.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.1",
+          "Sitecore.Data.ResourceItems.Abstractions": "10.3.0",
+          "protobuf-net": "2.0.0.668"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Data.ResourceItems.ProtobufNet.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Data.ResourceItems.ProtobufNet.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sitecore.Framework.Conditions/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Framework.Conditions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Framework.Conditions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sitecore.Framework.Data.Blobs/3.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Sitecore.Framework.Conditions": "6.0.0",
+          "Sitecore.Framework.Data.Blobs.Abstractions": "3.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Framework.Data.Blobs.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Framework.Data.Blobs.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sitecore.Framework.Data.Blobs.Abstractions/3.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Sitecore.Framework.Conditions": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Framework.Data.Blobs.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Framework.Data.Blobs.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sitecore.Kernel/10.3.0": {
+        "type": "package",
+        "dependencies": {
+          "EnterpriseLibrary.Common": "6.0.1304",
+          "EnterpriseLibrary.TransientFaultHandling": "6.0.1304",
+          "EnterpriseLibrary.TransientFaultHandling.Caching": "6.0.1304",
+          "EnterpriseLibrary.TransientFaultHandling.Configuration": "6.0.1304",
+          "EnterpriseLibrary.TransientFaultHandling.Data": "6.0.1304.1",
+          "EnterpriseLibrary.TransientFaultHandling.ServiceBus": "6.0.1304",
+          "EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage": "6.0.1304",
+          "HtmlAgilityPack": "1.4.9.5",
+          "IdentityModel": "3.10.10",
+          "Microsoft.AspNet.WebApi": "5.2.6",
+          "Microsoft.Configuration.ConfigurationBuilders.Base": "1.0.2",
+          "Microsoft.Configuration.ConfigurationBuilders.Environment": "1.0.2",
+          "Microsoft.Extensions.DependencyInjection": "6.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Logging": "6.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.1",
+          "Mvp.Xml": "2.3.0",
+          "Newtonsoft.Json": "13.0.1",
+          "Polly": "6.1.2",
+          "SharpZipLib": "1.3.2",
+          "Sitecore.Data.ResourceItems.ProtobufNet": "10.3.0",
+          "Sitecore.Framework.Data.Blobs": "3.0.1",
+          "Sitecore.Kernel.Portable": "10.3.0",
+          "Sitecore.Logging": "10.3.0",
+          "Sitecore.Logging.Client": "10.3.0",
+          "Sitecore.Nexus.Consumption": "1.5.0",
+          "System.Buffers": "4.5.1"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Core",
+          "System.Data",
+          "System.Design",
+          "System.DirectoryServices",
+          "System.Drawing",
+          "System.IO.Compression",
+          "System.IO.Compression.FileSystem",
+          "System.Linq",
+          "System.Runtime",
+          "System.Runtime.Caching",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Runtime.Serialization",
+          "System.Security",
+          "System.ServiceModel",
+          "System.ServiceModel.Web",
+          "System.Threading.Thread",
+          "System.Web",
+          "System.Web.ApplicationServices",
+          "System.Web.Extensions",
+          "System.Web.Services",
+          "System.Xml",
+          "System.Xml.Linq",
+          "System.configuration",
+          "sysglobl"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.Kernel.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net48/Sitecore.Kernel.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sitecore.Kernel.Portable/10.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Kernel.Portable.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Kernel.Portable.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sitecore.LayoutService/9.0.310": {
+        "type": "package",
+        "dependencies": {
+          "Sitecore.Mvc": "10.3.0",
+          "Sitecore.Services.GraphQL.EdgeSchema": "7.0.567"
+        },
+        "frameworkAssemblies": [
+          "System.Linq",
+          "System.Runtime",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Threading.Thread"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.LayoutService.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net48/Sitecore.LayoutService.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sitecore.Logging/10.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "System.Data",
+          "System.Linq",
+          "System.Runtime",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Threading.Thread",
+          "System.Web",
+          "System.Xml",
+          "System.configuration"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.Logging.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net48/Sitecore.Logging.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sitecore.Logging.Client/10.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Sitecore.Logging": "10.3.0"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.Core",
+          "System.Data",
+          "System.Data.DataSetExtensions",
+          "System.Linq",
+          "System.Runtime",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Runtime.Serialization",
+          "System.Threading.Thread",
+          "System.Web",
+          "System.Web.Extensions",
+          "System.Xml",
+          "System.Xml.Linq",
+          "System.configuration"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.Logging.Client.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net48/Sitecore.Logging.Client.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Sitecore.Mvc/10.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Mvc": "5.2.4",
+          "Microsoft.AspNet.WebApi.WebHost": "5.2.6",
+          "RazorGenerator.Mvc": "2.4.9",
+          "Sitecore.Web": "10.3.0"
+        },
+        "frameworkAssemblies": [
+          "System.Linq",
+          "System.Runtime",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Threading.Thread",
+          "System.Windows.Forms"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.Mvc.dll": {}
+        },
+        "runtime": {
+          "lib/net48/Sitecore.Mvc.dll": {}
+        }
+      },
+      "Sitecore.Nexus.Consumption/1.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Sitecore.Nexus.Licensing": "2.0.6"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Nexus.Consumption.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Nexus.Consumption.dll": {}
+        }
+      },
+      "Sitecore.Nexus.Licensing/2.0.6": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Cryptography.Xml": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Nexus.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Nexus.Licensing.dll": {}
+        }
+      },
+      "Sitecore.Services.Client/10.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Sitecore.Client": "10.3.0",
+          "Sitecore.Services.Core": "10.3.0"
+        },
+        "frameworkAssemblies": [
+          "System.Linq",
+          "System.Runtime",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Threading.Thread"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.Services.Client.dll": {}
+        },
+        "runtime": {
+          "lib/net48/Sitecore.Services.Client.dll": {}
+        }
+      },
+      "Sitecore.Services.Core/10.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.OData": "7.5.9",
+          "Microsoft.OData.Core": "7.9.0",
+          "Sitecore.Web": "10.3.0"
+        },
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations",
+          "System.Linq",
+          "System.Runtime",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Threading.Thread"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.Services.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net48/Sitecore.Services.Core.dll": {}
+        }
+      },
+      "Sitecore.Services.GraphQL/7.0.567": {
+        "type": "package",
+        "dependencies": {
+          "GraphQL": "2.4.0",
+          "Newtonsoft.Json": "13.0.1",
+          "System.Reactive.Core": "4.4.1",
+          "System.Reactive.Interfaces": "4.4.1",
+          "System.Reactive.Linq": "4.4.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Services.GraphQL.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Services.GraphQL.dll": {}
+        }
+      },
+      "Sitecore.Services.GraphQL.ContentSchema/7.0.567": {
+        "type": "package",
+        "dependencies": {
+          "Sitecore.ContentSearch": "10.3.0",
+          "Sitecore.Services.GraphQL.NetFxHost": "7.0.567"
+        },
+        "frameworkAssemblies": [
+          "System.Linq",
+          "System.Runtime",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Threading.Thread"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.Services.GraphQL.Content.dll": {}
+        },
+        "runtime": {
+          "lib/net48/Sitecore.Services.GraphQL.Content.dll": {}
+        }
+      },
+      "Sitecore.Services.GraphQL.EdgeSchema/7.0.567": {
+        "type": "package",
+        "dependencies": {
+          "Sitecore.Services.GraphQL": "7.0.567",
+          "Sitecore.Services.GraphQL.ContentSchema": "7.0.567"
+        },
+        "frameworkAssemblies": [
+          "System.Linq",
+          "System.Runtime",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Threading.Thread"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.Services.GraphQL.EdgeSchema.dll": {}
+        },
+        "runtime": {
+          "lib/net48/Sitecore.Services.GraphQL.EdgeSchema.dll": {}
+        }
+      },
+      "Sitecore.Services.GraphQL.NetFxHost/7.0.567": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Mvc": "5.2.4",
+          "Sitecore.Annotations": "10.3.0",
+          "Sitecore.Services.Client": "10.3.0",
+          "Sitecore.Services.GraphQL": "7.0.567",
+          "Sitecore.Services.Infrastructure.Sitecore": "10.3.0"
+        },
+        "frameworkAssemblies": [
+          "System.Linq",
+          "System.Runtime",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Threading.Thread"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.Services.GraphQL.NetFxHost.dll": {}
+        },
+        "runtime": {
+          "lib/net48/Sitecore.Services.GraphQL.NetFxHost.dll": {}
+        }
+      },
+      "Sitecore.Services.Infrastructure/10.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Mvc": "5.2.4",
+          "Microsoft.AspNet.WebApi.Cors": "5.2.6",
+          "Microsoft.AspNet.WebApi.WebHost": "5.2.6",
+          "Sitecore.Services.Core": "10.3.0",
+          "System.IdentityModel.Tokens.Jwt": "5.4.0"
+        },
+        "frameworkAssemblies": [
+          "System.Linq",
+          "System.Runtime",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Threading.Thread"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.Services.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "lib/net48/Sitecore.Services.Infrastructure.dll": {}
+        }
+      },
+      "Sitecore.Services.Infrastructure.Sitecore/10.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Sitecore.ContentSearch": "10.3.0",
+          "Sitecore.Services.Core": "10.3.0",
+          "Sitecore.Services.Infrastructure": "10.3.0"
+        },
+        "frameworkAssemblies": [
+          "System.IdentityModel",
+          "System.Linq",
+          "System.Runtime",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Threading.Thread"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.Services.Infrastructure.Sitecore.dll": {}
+        },
+        "runtime": {
+          "lib/net48/Sitecore.Services.Infrastructure.Sitecore.dll": {}
+        }
+      },
+      "Sitecore.Web/10.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Core": "5.2.6",
+          "Microsoft.AspNet.WebPages": "3.2.4",
+          "Sitecore.Kernel": "10.3.0"
+        },
+        "frameworkAssemblies": [
+          "System.Linq",
+          "System.Runtime",
+          "System.Runtime.InteropServices",
+          "System.Runtime.InteropServices.RuntimeInformation",
+          "System.Threading.Thread"
+        ],
+        "compile": {
+          "lib/net48/Sitecore.Web.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net48/Sitecore.Web.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Buffers/4.5.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net45/System.Buffers.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Buffers.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Diagnostics.DiagnosticSource/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.4",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "compile": {
+          "lib/net461/System.Diagnostics.DiagnosticSource.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Diagnostics.DiagnosticSource.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.IdentityModel.Tokens.Jwt/5.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.JsonWebTokens": "5.4.0",
+          "Microsoft.IdentityModel.Tokens": "5.4.0",
+          "Newtonsoft.Json": "10.0.1"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System"
+        ],
+        "compile": {
+          "lib/net461/System.IdentityModel.Tokens.Jwt.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.IdentityModel.Tokens.Jwt.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Memory.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Memory.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Numerics",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Numerics.Vectors.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net46/System.Numerics.Vectors.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Reactive/4.4.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.4",
+          "System.ValueTuple": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "System.Windows",
+          "System.Windows.Forms",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net46/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net46/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Reactive.Core/4.4.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Reactive": "4.4.1",
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/net46/System.Reactive.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net46/System.Reactive.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Reactive.Interfaces/4.4.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Reactive": "4.4.1",
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/net46/System.Reactive.Interfaces.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net46/System.Reactive.Interfaces.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Reactive.Linq/4.4.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Reactive": "4.4.1",
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/net46/System.Reactive.Linq.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net46/System.Reactive.Linq.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Security.AccessControl/4.5.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Principal.Windows": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Security.AccessControl.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Security.AccessControl.dll": {}
+        }
+      },
+      "System.Security.Cryptography.Xml/4.5.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Permissions": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Security",
+          "System.Xml",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Security.Cryptography.Xml.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Security.Cryptography.Xml.dll": {}
+        }
+      },
+      "System.Security.Permissions/4.5.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.AccessControl": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Data",
+          "System.Data.OracleClient",
+          "System.Drawing",
+          "System.Net",
+          "System.ServiceProcess",
+          "System.Transactions",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Security.Permissions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Security.Permissions.dll": {}
+        }
+      },
+      "System.Security.Principal.Windows/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Security.Principal.Windows.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Security.Principal.Windows.dll": {}
+        }
+      },
+      "System.Text.Encodings.Web/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Text.Json/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "1.0.0",
+          "System.Buffers": "4.5.0",
+          "System.Memory": "4.5.3",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.6.0",
+          "System.Text.Encodings.Web": "4.6.0",
+          "System.Threading.Tasks.Extensions": "4.5.2",
+          "System.ValueTuple": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Core",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Text.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Text.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net47/System.ValueTuple.dll": {}
+        },
+        "runtime": {
+          "lib/net47/System.ValueTuple.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "WebActivatorEx/2.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Web.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "lib/net40/WebActivatorEx.dll": {}
+        },
+        "runtime": {
+          "lib/net40/WebActivatorEx.dll": {}
+        }
+      }
     }
   },
   "libraries": {
@@ -3587,15 +8948,15 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\DockerStarter\\src\\platform\\Platform.csproj",
+      "projectUniqueName": "C:\\Projects\\Sitecoredemo.Docker\\src\\platform\\Platform.csproj",
       "projectName": "DockerStarter",
-      "projectPath": "C:\\Projects\\DockerStarter\\src\\platform\\Platform.csproj",
+      "projectPath": "C:\\Projects\\Sitecoredemo.Docker\\src\\platform\\Platform.csproj",
       "packagesPath": "C:\\Users\\haram\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\DockerStarter\\src\\platform\\obj\\",
+      "outputPath": "C:\\Projects\\Sitecoredemo.Docker\\src\\platform\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Projects\\DockerStarter\\NuGet.Config",
+        "C:\\Projects\\Sitecoredemo.Docker\\NuGet.Config",
         "C:\\Users\\haram\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3640,6 +9001,17 @@
             "version": "[9.0.*, )"
           }
         }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
       }
     }
   }

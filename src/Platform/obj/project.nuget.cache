@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lEpDmVguzvBa6zX2PRUq9pMCXGCVD70M5Mp2xtUp3F2dHQ0G18JKE7lgXLd5/sBltkLLxgUYGuflYQ19heQL/A==",
+  "dgSpecHash": "exCJTO1PHYjKgld7vKWPtKRDZjrnAEruApiAGofLi3NTXBpVXpuuZbBiSottjby0aHRiH6OYV/Yx2mgkDlnKoA==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\DockerStarter\\src\\platform\\Platform.csproj",
+  "projectFilePath": "C:\\Projects\\Sitecoredemo.Docker\\src\\platform\\Platform.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\haram\\.nuget\\packages\\enterpriselibrary.common\\6.0.1304\\enterpriselibrary.common.6.0.1304.nupkg.sha512",
     "C:\\Users\\haram\\.nuget\\packages\\enterpriselibrary.transientfaulthandling\\6.0.1304\\enterpriselibrary.transientfaulthandling.6.0.1304.nupkg.sha512",
