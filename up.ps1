@@ -12,6 +12,8 @@ Push-Location $workingDirectoryPath
 
 npm install
 
+jss deploy config
+
 Pop-Location
 
 # Start the Sitecore instance
@@ -69,6 +71,9 @@ dotnet sitecore index rebuild
 
 Write-Host "Pushing Default rendering host configuration" -ForegroundColor Green
 dotnet sitecore ser push
+
+Write-Host "publishing content..." -ForegroundColor Green
+dotnet sitecore publish
 
 if ($ClientCredentialsLogin -ne "true") {
     Write-Host "Opening site..." -ForegroundColor Green
