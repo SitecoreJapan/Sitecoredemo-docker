@@ -17,18 +17,9 @@ Param (
     [Parameter(Mandatory = $true,
         HelpMessage = "Sets the sitecore\\admin password for this environment via environment variable.",
         ParameterSetName = "env-init")]
-    [string]$AdminPassword,
-    [Parameter(Mandatory = $false,
-        HelpMessage = "Sets the instance topology",
-        ParameterSetName = "env-init")]
-    [ValidateSet("xp0","xp1","xm1")]
-    [string]$Topology = "xp0"
+    [string]$AdminPassword
 )
 
-$topologyArray = "xp0", "xp1", "xm1";
-if (!$topologyArray.Contains($Topology)) {
-  throw "The topology $Topology is not valid. Please choose one from existed $($topologyArray -join ', ')"
-}
 $ErrorActionPreference = "Stop";
 $workinDirectoryPath = ".\"
 
@@ -109,9 +100,7 @@ finally {
 Write-Host "Adding Windows hosts file entries..." -ForegroundColor Green
 
 Add-HostsEntry "cm.sitecoredemo.localhost"
-if ($Topology -ne "xp0") {
-  Add-HostsEntry "cd.sitecoredemo.localhost"
-}
+Add-HostsEntry "cd.sitecoredemo.localhost"
 Add-HostsEntry "id.sitecoredemo.localhost"
 Add-HostsEntry "www.sitecoredemo.localhost"
 
@@ -131,10 +120,8 @@ if ($InitEnv) {
     # CM_HOST
     Set-EnvFileVariable "CM_HOST" -Value "cm.sitecoredemo.localhost"
 
-    if ($Topology -ne "xp0") {
-      # CD_HOST
-      Set-EnvFileVariable "CD_HOST" -Value "cd.sitecoredemo.localhost"
-    }
+    # CD_HOST
+    Set-EnvFileVariable "CD_HOST" -Value "cd.sitecoredemo.localhost"
 
     # ID_HOST
     Set-EnvFileVariable "ID_HOST" -Value "id.sitecoredemo.localhost"
@@ -171,6 +158,9 @@ if ($InitEnv) {
     # SQL_SA_LOGIN
     Set-EnvFileVariable "SQL_SA_LOGIN" -Value "sa"
 
+    # JSS_DockerStarter_DEPLOYMENT_SECRET
+    Set-EnvFileVariable "JSS_DockerStarter_DEPLOYMENT_SECRET" -Value (Get-SitecoreRandomString 32 -DisallowSpecial -EnforceComplexity)
+
     # SITECORE_ADMIN_PASSWORD
     Set-EnvFileVariable "SITECORE_ADMIN_PASSWORD" -Value $AdminPassword
 
@@ -178,10 +168,6 @@ if ($InitEnv) {
     # Populate it for the Next.js local environment as well
     $jssEditingSecret = Get-SitecoreRandomString 64 -DisallowSpecial
     Set-EnvFileVariable "JSS_EDITING_SECRET" -Value $jssEditingSecret
-
-    # Set the instance topology
-    Set-EnvFileVariable "TOPOLOGY" -Value $Topology
-    Write-Host "The instance topology: $Topology" -ForegroundColor Green
 
     Pop-Location
 }
