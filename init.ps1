@@ -119,10 +119,7 @@ if ($InitEnv) {
 
     # CM_HOST
     Set-EnvFileVariable "CM_HOST" -Value "cm.sitecoredemo.localhost"
-
-    # CD_HOST
-    Set-EnvFileVariable "CD_HOST" -Value "cd.sitecoredemo.localhost"
-
+    
     # ID_HOST
     Set-EnvFileVariable "ID_HOST" -Value "id.sitecoredemo.localhost"
 
