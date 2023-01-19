@@ -19,8 +19,19 @@
                 "scope": "singleItem"
             },
             {
+                "name": "language",
+                "path": "/sitecore/system/Languages/ja-JP",
+                "scope": "singleItem"
+            },
+            {
                 "name": "core-language",
                 "path": "/sitecore/system/Languages",
+                "database": "core"
+            },
+            {
+                "name": "powershell-report",
+                "path": "/sitecore/client/Applications/Launchpad/PageSettings/Buttons/ContentEditing/PowerShell Reports",
+                "scope": "singleItem",
                 "database": "core"
             }       
         ]
