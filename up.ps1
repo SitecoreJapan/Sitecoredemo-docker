@@ -12,8 +12,6 @@ Push-Location $workingDirectoryPath
 
 npm install
 
-jss deploy config
-
 Pop-Location
 
 # Start the Sitecore instance
