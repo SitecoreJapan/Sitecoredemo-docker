@@ -1,6 +1,0 @@
-C:\projects\Sitecoredemo.Docker\src\DockerExamples.Website\bin\DockerExamples.Website.dll
-C:\projects\Sitecoredemo.Docker\src\DockerExamples.Website\bin\DockerExamples.Website.pdb
-C:\projects\Sitecoredemo.Docker\src\DockerExamples.Website\obj\Debug\DockerExamples.Website.csproj.AssemblyReference.cache
-C:\projects\Sitecoredemo.Docker\src\DockerExamples.Website\obj\Debug\DockerExamples.Website.csproj.CoreCompileInputs.cache
-C:\projects\Sitecoredemo.Docker\src\DockerExamples.Website\obj\Debug\DockerExamples.Website.dll
-C:\projects\Sitecoredemo.Docker\src\DockerExamples.Website\obj\Debug\DockerExamples.Website.pdb

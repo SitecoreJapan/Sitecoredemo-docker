@@ -1,20 +1,41 @@
+#
+# The docker-compose.yml in this solution is a stock Sitecore XP0 environment, without
+# any changes. This override represents all the additions/changes needed for this solution.
+# Note that some of the overrides point to 'empty' Dockerfiles. This is recommended, even if
+# you are not customizing an image, to enable retagging and later customization. See Sitecore
+# Containers documentation for details.
+#
+
 version: "2.4"
 
 services:
+
   # A Windows-based nodejs base image
   nodejs:
     image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-nodejs:${VERSION:-latest}
     build:
-      context: ./docker/build/nodejs
+      context: docker/build/nodejs
       args:
         PARENT_IMAGE: ${NODEJS_PARENT_IMAGE}
         NODEJS_VERSION: ${NODEJS_VERSION}
     scale: 0
 
+  # The solution build image is added here so it can be referenced as a build dependency
+  # for the images which use its output. Setting "scale: 0" means docker-compose will not
+  # include it in the running environment. See Dockerfile for more details.
+  solution:
+    image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-solution:${VERSION:-latest}
+    build:
+      context: .
+      args:
+        BUILD_CONFIGURATION: ${BUILD_CONFIGURATION}
+        BUILD_IMAGE: mcr.microsoft.com/dotnet/framework/sdk:4.8-windowsservercore-ltsc2019
+    scale: 0
+
   rendering:
     image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-rendering:${VERSION:-latest}
     build:
-      context: ./docker/build/rendering
+      context: docker/build/rendering
       target: ${BUILD_CONFIGURATION}
       args:
         PARENT_IMAGE: ${REGISTRY}${COMPOSE_PROJECT_NAME}-nodejs:${VERSION:-latest}
@@ -23,143 +44,109 @@ services:
     environment:
       SITECORE_API_HOST: "http://cm"
       NEXTJS_DIST_DIR: ".next-container"
-      PUBLIC_URL: "https://${CD_HOST}"
+      PUBLIC_URL: "https://${RENDERING_HOST}"
       JSS_EDITING_SECRET: ${JSS_EDITING_SECRET}
-      SITECORE_API_KEY: "${SITECORE_API_KEY}"
+      SITECORE_API_KEY: ${SITECORE_API_KEY}
     depends_on:
       - cm
       - nodejs
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.rendering-secure.entrypoints=websecure"
-      - "traefik.http.routers.rendering-secure.rule=Host(`${CD_HOST}`)"
+      - "traefik.http.routers.rendering-secure.rule=Host(`${RENDERING_HOST}`)"
       - "traefik.http.routers.rendering-secure.tls=true"
 
-  solution:
-    image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-solution:${VERSION:-latest}
-    build:
-      context: .
-      args:
-        BASE_IMAGE: ${SOLUTION_BASE_IMAGE}
-        BUILD_IMAGE: ${SOLUTION_BUILD_IMAGE}
-        BUILD_CONFIGURATION: ${BUILD_CONFIGURATION}
-    scale: 0
-
+  # Mount the Traefik configuration and certs.
   traefik:
     volumes:
       - ./docker/traefik:C:/etc/traefik
     depends_on:
-      hrz:
-        condition: service_healthy
+    - rendering
 
+  # Redis
   redis:
     image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-redis:${VERSION:-latest}
     build:
-      context: ./docker/build/redis
+      context: docker/build/redis
       args:
-        BASE_IMAGE: ${SITECORE_DOCKER_REGISTRY}sitecore-redis:${SITECORE_VERSION}
+        PARENT_IMAGE: ${SITECORE_DOCKER_REGISTRY}redis:3.2.100-${EXTERNAL_IMAGE_TAG_SUFFIX}
 
+  # Mount our SQL data folder and use our custom image with the Headless Services (JSS)
+  # module data added. See Dockerfile for details.
   mssql:
-    mem_limit: 2GB
     volumes:
-      - ${LOCAL_DATA_PATH}\mssql:c:\data
+      - type: bind
+        source: ${LOCAL_DATA_PATH}\sql
+        target: c:\data
 
+  # Mount our SQL data folder and use our custom image with the Headless Services (JSS)
+  # module data added. See Dockerfile for details.
   mssql-init:
     image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-xm1-mssql-init:${VERSION:-latest}
     build:
-      context: ./docker/build/mssql-init
+      context: docker/build/mssql-init
       args:
-        BASE_IMAGE: ${SITECORE_DOCKER_REGISTRY}sitecore-xm1-mssql-init:${SITECORE_VERSION}
+        PARENT_IMAGE: ${SITECORE_DOCKER_REGISTRY}sitecore-xm1-mssql-init:${SITECORE_VERSION}
+        HEADLESS_SERVICES_IMAGE: ${HEADLESS_SERVICES_IMAGE}
         SPE_IMAGE: ${SITECORE_MODULE_REGISTRY}sitecore-spe-assets:${SPE_VERSION}
-        HEADLESS_SERVICES_IMAGE: ${SITECORE_MODULE_REGISTRY}sitecore-headless-services-xm1-assets:${HEADLESS_SERVICES_VERSION}
 
-  # Mount our Solr data folder
+  # Mount our Solr data folder and use our retagged Solr image.
+  # Some modules (like SXA) also require additions to the Solr image.
   solr:
     volumes:
-      - ${LOCAL_DATA_PATH}\solr:c:\data
+      - type: bind
+        source: ${LOCAL_DATA_PATH}\solr
+        target: c:\data
 
+  # Mount our Solr data folder and use our retagged Solr image.
   # Some modules (like SXA) also require additions to the Solr image.
   solr-init:
     image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-xm1-solr-init:${VERSION:-latest}
     build:
-      context: ./docker/build/solr-init
+      context: docker/build/solr-init
       args:
-        BASE_IMAGE: ${SITECORE_DOCKER_REGISTRY}sitecore-xm1-solr-init:${SITECORE_VERSION}
+        PARENT_IMAGE: ${SITECORE_DOCKER_REGISTRY}sitecore-xm1-solr-init:${SITECORE_VERSION}
         SXA_IMAGE: ${SITECORE_MODULE_REGISTRY}sitecore-sxa-xm1-assets:${SXA_VERSION}
 
+  # Use our retagged Identity Server image.
+  # Configure for a mounted license file instead of using SITECORE_LICENSE.
   id:
-    image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-id:${VERSION:-latest}
+    image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-id7:${VERSION:-latest}
     build:
-      context: ./docker/build/id
+      context: docker/build/id
       args:
-        BASE_IMAGE: ${SITECORE_DOCKER_REGISTRY}sitecore-id6:${SITECORE_VERSION}
+        PARENT_IMAGE: ${SITECORE_DOCKER_REGISTRY}sitecore-id7:${SITECORE_VERSION}
+    volumes:
+      - ${HOST_LICENSE_FOLDER}:c:\license
     environment:
-      Sitecore_Sitecore__IdentityServer__Clients__DefaultClient__AllowedCorsOrigins__AllowedCorsOriginsGroup2: https://${HRZ_HOST}
-
+      SITECORE_LICENSE_LOCATION: c:\license\license.xml
+  # Use our custom CM (XP0 Standalone) image with added modules and solution code.
+  # Folders are mounted below for code deployment and log output. See Dockerfile for details.
+  # Configure for a mounted license file instead of using SITECORE_LICENSE.
   cm:
     image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-xm1-cm:${VERSION:-latest}
     build:
-      context: ./docker/build/cm
+      context: docker/build/cm
       args:
-        BASE_IMAGE: ${SITECORE_DOCKER_REGISTRY}sitecore-xm1-cm:${SITECORE_VERSION}
+        PARENT_IMAGE: ${SITECORE_DOCKER_REGISTRY}sitecore-xm1-cm:${SITECORE_VERSION}
+        SOLUTION_IMAGE: ${REGISTRY}${COMPOSE_PROJECT_NAME}-solution:${VERSION:-latest}
+        TOOLS_IMAGE: ${TOOLS_IMAGE}
+        MANAGEMENT_SERVICES_IMAGE: ${MANAGEMENT_SERVICES_IMAGE}
+        HEADLESS_SERVICES_IMAGE: ${HEADLESS_SERVICES_IMAGE}
         SPE_IMAGE: ${SITECORE_MODULE_REGISTRY}sitecore-spe-assets:${SPE_VERSION}
         SXA_IMAGE: ${SITECORE_MODULE_REGISTRY}sitecore-sxa-xm1-assets:${SXA_VERSION}
-        TOOLING_IMAGE: ${SITECORE_TOOLS_REGISTRY}sitecore-docker-tools-assets:${TOOLS_VERSION}
-        HORIZON_RESOURCES_IMAGE: ${SITECORE_MODULE_REGISTRY}horizon-integration-xm1-assets:${HORIZON_ASSET_VERSION}
-        MANAGEMENT_SERVICES_IMAGE: ${SITECORE_MODULE_REGISTRY}sitecore-management-services-xm1-assets:${MANAGEMENT_SERVICES_VERSION}
-        HEADLESS_SERVICES_IMAGE: ${SITECORE_MODULE_REGISTRY}sitecore-headless-services-xm1-assets:${HEADLESS_SERVICES_VERSION}
-        SOLUTION_IMAGE: ${REGISTRY}${COMPOSE_PROJECT_NAME}-solution:${VERSION:-latest}
-        CONTENTHUB_ASSETS_IMAGE: ${SITECORE_MODULE_REGISTRY}sitecore-chub-assets:${CONTENTHUB_VERSION}
     depends_on:
       - solution
     volumes:
-      - ${LOCAL_DEPLOY_PATH}\website:C:\deploy
+      - ${LOCAL_DEPLOY_PATH}\platform:C:\deploy
       - ${LOCAL_DATA_PATH}\cm:C:\inetpub\wwwroot\App_Data\logs
+      - ${HOST_LICENSE_FOLDER}:c:\license
     environment:
-      SITECORE_DEVELOPMENT_PATCHES: CustomErrorsOff
-      Sitecore_Horizon_ClientHost: https://${HRZ_HOST}
-      # DEMO TEAM CUSTOMIZATION - Custom integrations
-      Sitecore_ConnectionStrings_CMP.ContentHub: ${CMP_ContentHub}
-      Sitecore_ConnectionStrings_CMP.ServiceBusEntityPathIn: ${CMP_ServiceBusEntityPathIn}
-      Sitecore_ConnectionStrings_CMP.ServiceBusSubscription: ${CMP_ServiceBusSubscription}
-      Sitecore_ConnectionStrings_CMP.ServiceBusEntityPathOut: ${CMP_ServiceBusEntityPathOut}
-      Sitecore_ConnectionStrings_DAM.ContentHub: ${DAM_ContentHub}
-      Sitecore_ConnectionStrings_DAM.SearchPage: ${DAM_SearchPage}
-      Sitecore_ConnectionStrings_DAM.ExternalRedirectKey: ${DAM_ExternalRedirectKey}
+      SITECORE_LICENSE_LOCATION: c:\license\license.xml
+      JSS_DockerStarter_DEPLOYMENT_SECRET: ${JSS_DockerStarter_DEPLOYMENT_SECRET}
       JSS_EDITING_SECRET: ${JSS_EDITING_SECRET}
-      RENDERING_HOST_INTERNAL_URI: ${RENDERING_HOST_INTERNAL_URI}
-      CM_HOST: ${CM_HOST}
-    entrypoint: powershell -Command "& C:\tools\entrypoints\iis\Development.ps1"
-  hrz:
-    image: ${SITECORE_MODULE_REGISTRY}sitecore-horizon:${HORIZON_VERSION}
-    isolation: ${ISOLATION}
-    healthcheck:
-      test: [ "CMD", "curl", "-f", "http://localhost/healthz/live" ]
-      timeout: 300s
-    environment:
-      Sitecore_License: ${SITECORE_LICENSE}
-      Sitecore_FederatedUI__HostBaseUrl: http://hrz
-      Sitecore_SitecorePlatform__ContentManagementUrl: https://${CM_HOST}
-      Sitecore_SitecorePlatform__ContentManagementInternalUrl: http://cm
-      Sitecore_Sitecore__Authentication__OpenIdConnectOptions__RequireHttpsMetadata: 'false'
-      Sitecore_Sitecore__Authentication__OpenIdConnectOptions__Authority: https://${ID_HOST}
-      Sitecore_Sitecore__Authentication__OpenIdConnectOptions__CallbackAuthority: https://${HRZ_HOST}
-      Sitecore_Sitecore__Authentication__OpenIdConnectOptions__InternalAuthority: http://id
-      Sitecore_Sitecore__Authentication__BearerAuthenticationOptions__Authority: https://${ID_HOST}
-      Sitecore_Sitecore__Authentication__BearerAuthenticationOptions__InternalAuthority: http://id
-      Sitecore_Sitecore__Authentication__BearerAuthenticationOptions__RequireHttpsMetadata: 'false'
-      Sitecore_Plugins__Filters__ExperienceAccelerator: +SXA
-    depends_on:
-      id:
-        condition: service_started
-      cm:
-        condition: service_started
-    labels:
-      - "traefik.enable=true"
-      - "traefik.http.middlewares.force-STS-Header.headers.forceSTSHeader=true"
-      - "traefik.http.middlewares.force-STS-Header.headers.stsSeconds=31536000"
-      - "traefik.http.routers.sh-secure.entrypoints=websecure"
-      - "traefik.http.routers.sh-secure.rule=Host(`${HRZ_HOST}`)"
-      - "traefik.http.routers.sh-secure.tls=true"
-      - "traefik.http.routers.sh-secure.middlewares=force-STS-Header"
-      - "traefik.http.services.sh.loadbalancer.server.port=80"
+      RENDERING_HOST_PUBLIC_URI: "https://${RENDERING_HOST}"
+      ## Development Environment Optimizations
+      SITECORE_DEVELOPMENT_PATCHES: DevEnvOn,CustomErrorsOff,HttpErrorsDetailed,DebugOn,DiagnosticsOff,InitMessagesOff,RobotDetectionOff
+      Sitecore_AppSettings_exmEnabled:define: "no" # remove to turn on EXM
+    entrypoint: powershell.exe -Command "& C:\tools\entrypoints\iis\Development.ps1"

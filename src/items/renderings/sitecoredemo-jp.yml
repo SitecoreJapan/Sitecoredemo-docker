@@ -1,5 +1,5 @@
 ﻿---
-ID: "a0671b7a-2010-5b9e-bd40-905c7503a3e6"
+ID: "8e51d9f5-2e7b-42ed-a5ee-d3fe2784d0a4"
 Parent: "1995806f-0a84-42b5-93b0-88f0e2ff872c"
 Template: "7ee0975b-0698-493e-b3a2-0b2ef33d0522"
 Path: "/sitecore/layout/Renderings/Project/sitecoredemo-jp"
@@ -10,22 +10,22 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20220420T144844Z
+      Value: 20230111T061551Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
-        sitecore\JssImport
+        sitecore\Admin
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\JssImport
+        sitecore\Admin
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "d199112d-879b-4183-88de-13db6024e5c3"
+      Value: "78130624-4a61-4781-a4d3-0fc876357ef6"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\shinhara@sitecore.net
+        sitecore\Admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20220816T013751Z
+      Value: 20230111T061551Z

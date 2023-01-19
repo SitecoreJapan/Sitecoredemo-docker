@@ -1,10 +1,18 @@
 $ErrorActionPreference = "Stop";
 
+$workingDirectoryPath = ".\src\rendering";
+
 Write-Host "Building containers..." -ForegroundColor Green
 docker-compose build
 if ($LASTEXITCODE -ne 0) {
     Write-Error "Container build failed, see errors above."
 }
+
+Push-Location $workingDirectoryPath
+
+npm install
+
+Pop-Location
 
 # Start the Sitecore instance
 Write-Host "Starting Sitecore environment..." -ForegroundColor Green
@@ -42,8 +50,8 @@ if ($LASTEXITCODE -ne 0) {
 
 Write-Host "Logging into Sitecore..." -ForegroundColor Green
 
-dotnet sitecore login --cm https://cm.sitecoredemo.localhost --auth https://id.sitecoredemo.localhost --allow-write true -n default
-    
+dotnet sitecore login --cm https://cm.sitecoredemo.localhost/ --auth https://id.sitecoredemo.localhost/ --allow-write true
+
 if ($LASTEXITCODE -ne 0) {
     Write-Error "Unable to log into Sitecore, did the Sitecore environment start correctly? See logs above."
 }
@@ -61,6 +69,9 @@ dotnet sitecore index rebuild
 
 Write-Host "Pushing Default rendering host configuration" -ForegroundColor Green
 dotnet sitecore ser push
+
+Write-Host "publishing content..." -ForegroundColor Green
+dotnet sitecore publish
 
 if ($ClientCredentialsLogin -ne "true") {
     Write-Host "Opening site..." -ForegroundColor Green

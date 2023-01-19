@@ -1,21 +1,31 @@
 # Sitecoredemo Docker ヘッドレススターターキット
 
+## 必要システム
+
+- NodeJs 16.x
+- .NET 6.0 SDK
+- .NET Framework 4.8 SDK
+- Visual Studio 2019
+- Docker for Windows, with Windows Containers enabled
+
+より詳しい情報を確認する場合は、Sitecore Docker Container に関して確認をしてください。
+
+## セットアップ
+
 ブログシリーズで紹介をした手順をすべて含めているプロジェクトになります。
 
 1. .env.example のファイルをコピーして .env ファイルを作成します。
-2. `init.ps1` ファイルに記載している `SitecoreAdminPassword` のパスワードを変更します
-3. 以下のコマンドを管理者権限のあるターミナルで実行します。ライセンスファイルのある場所は任意です。
+2. 以下のコマンドを管理者権限のあるターミナルで実行します。ライセンスファイルのある場所は任意です。
 
-    ```ps1
-    .\init.ps1 -LicenseXmlPath "C:\projects\license\license.xml"
-    ```
+   ```ps1
+   .\init.ps1 -InitEnv -LicenseXmlPath "C:\projects\license\license.xml" -AdminPassword "DesiredAdminPassword"
+   ```
 
-4. env ファイルの `NODEJS_VERSION` に Node.js のバージョンを設定します。`node -v` コマンドで取得できます。
-5. `up.ps1` を実行してください。
+3. `up.ps1` を実行してください。
 
-    ```ps1
-    .\up.ps1
-    ```
+   ```ps1
+   .\up.ps1
+   ```
 
 しばらくすると Next.js と Sitecore が動いている環境が起動します。
 
