@@ -8,11 +8,11 @@ if ($LASTEXITCODE -ne 0) {
     Write-Error "Container build failed, see errors above."
 }
 
-Push-Location $workingDirectoryPath
+# Push-Location $workingDirectoryPath
 
-npm install
+# npm install
 
-Pop-Location
+# Pop-Location
 
 # Start the Sitecore instance
 Write-Host "Starting Sitecore environment..." -ForegroundColor Green
@@ -67,11 +67,11 @@ if ($LASTEXITCODE -ne 0) {
 Write-Host "Rebuilding indexes ..." -ForegroundColor Green
 dotnet sitecore index rebuild
 
-Write-Host "Pushing Default rendering host configuration" -ForegroundColor Green
-dotnet sitecore ser push
+# Write-Host "Pushing Default rendering host configuration" -ForegroundColor Green
+# dotnet sitecore ser push
 
-Write-Host "publishing content..." -ForegroundColor Green
-dotnet sitecore publish
+# Write-Host "publishing content..." -ForegroundColor Green
+# dotnet sitecore publish
 
 if ($ClientCredentialsLogin -ne "true") {
     Write-Host "Opening site..." -ForegroundColor Green

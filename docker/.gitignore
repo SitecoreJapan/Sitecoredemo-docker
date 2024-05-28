@@ -6,6 +6,8 @@
 !/data/sql/.gitkeep
 /data/solr/*
 !/data/solr/.gitkeep
+/data/device-detection/*
+!/data/device-detection/.gitkeep
 
 /deploy/platform/*
 !/deploy/platform/.gitkeep

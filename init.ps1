@@ -42,15 +42,15 @@ Write-Host "Preparing your Sitecore Containers environment!" -ForegroundColor Gr
 
 # Check for Sitecore Gallery
 Import-Module PowerShellGet
-$SitecoreGallery = Get-PSRepository | Where-Object { $_.SourceLocation -eq "https://sitecore.myget.org/F/sc-powershell/api/v2" }
+$SitecoreGallery = Get-PSRepository | Where-Object { $_.SourceLocation -eq "https://nuget.sitecore.com/resources/v2/" }
 if (-not $SitecoreGallery) {
     Write-Host "Adding Sitecore PowerShell Gallery..." -ForegroundColor Green
-    Register-PSRepository -Name SitecoreGallery -SourceLocation https://sitecore.myget.org/F/sc-powershell/api/v2 -InstallationPolicy Trusted
+    Register-PSRepository -Name SitecoreGallery -SourceLocation https://nuget.sitecore.com/resources/v2/ -InstallationPolicy Trusted
     $SitecoreGallery = Get-PSRepository -Name SitecoreGallery
 }
 
 # Install and Import SitecoreDockerTools
-$dockerToolsVersion = "10.2.7"
+$dockerToolsVersion = "10.3.40"
 Remove-Module SitecoreDockerTools -ErrorAction SilentlyContinue
 if (-not (Get-InstalledModule -Name SitecoreDockerTools -RequiredVersion $dockerToolsVersion -ErrorAction SilentlyContinue)) {
     Write-Host "Installing SitecoreDockerTools..." -ForegroundColor Green
@@ -117,6 +117,9 @@ if ($InitEnv) {
     # HOST_LICENSE_FOLDER
     Set-EnvFileVariable "HOST_LICENSE_FOLDER" -Value $LicenseXmlPath
 
+    # SITECORE_LICENSE
+    Set-DockerComposeEnvFileVariable "SITECORE_LICENSE" -Value (ConvertTo-CompressedBase64String -Path $LicenseXmlPath"\license.xml")
+
     # CM_HOST
     Set-EnvFileVariable "CM_HOST" -Value "cm.sitecoredemo.localhost"
     
@@ -155,6 +158,7 @@ if ($InitEnv) {
     # SQL_SA_LOGIN
     Set-EnvFileVariable "SQL_SA_LOGIN" -Value "sa"
 
+    
     # JSS_DockerStarter_DEPLOYMENT_SECRET
     Set-EnvFileVariable "JSS_DockerStarter_DEPLOYMENT_SECRET" -Value (Get-SitecoreRandomString 32 -DisallowSpecial -EnforceComplexity)
 
