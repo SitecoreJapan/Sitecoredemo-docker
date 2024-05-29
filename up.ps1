@@ -1,18 +1,10 @@
 $ErrorActionPreference = "Stop";
 
-$workingDirectoryPath = ".\src\rendering";
-
 Write-Host "Building containers..." -ForegroundColor Green
 docker-compose build
 if ($LASTEXITCODE -ne 0) {
     Write-Error "Container build failed, see errors above."
 }
-
-# Push-Location $workingDirectoryPath
-
-# npm install
-
-# Pop-Location
 
 # Start the Sitecore instance
 Write-Host "Starting Sitecore environment..." -ForegroundColor Green
@@ -71,13 +63,13 @@ dotnet sitecore index rebuild
 dotnet sitecore ser push
 
 # Write-Host "publishing content..." -ForegroundColor Green
-dotnet sitecore publish
+# dotnet sitecore publish
 
-if ($ClientCredentialsLogin -ne "true") {
-    Write-Host "Opening site..." -ForegroundColor Green
+# if ($ClientCredentialsLogin -ne "true") {
+#     Write-Host "Opening site..." -ForegroundColor Green
     
-    Start-Process https://cm.sitecoredemo.localhost/sitecore/
-}
+#     Start-Process https://cm.sitecoredemo.localhost/sitecore/
+# }
 
 Write-Host ""
 Write-Host "Use the following command to monitor your Rendering Host:" -ForegroundColor Green
