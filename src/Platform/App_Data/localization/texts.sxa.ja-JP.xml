@@ -3,17 +3,17 @@
   <phrase key="{0} Role">
     <ja-JP>{0}ロール</ja-JP>
   </phrase>
+  <phrase key="&quot;{0}&quot; is a site collection folder. If you delete it, all site collections with associated templates, sites, settings, and media assets will also be deleted.">
+    <ja-JP>「{0}」はサイト コレクションフォルダです。これを削除すると、関連するテンプレート、サイト、設定、メディアアセットを含むすべてのサイトコレクションも削除されます。</ja-JP>
+  </phrase>
+  <phrase key="&quot;{0}&quot; is a site collection. If you delete it, all associated templates, sites, settings, and media assets are also deleted.">
+    <ja-JP>「{0}」はサイトコレクションです。これを削除すると、関連するすべてのテンプレート、サイト、設定、メディアアセットも削除されます。</ja-JP>
+  </phrase>
   <phrase key="&quot;{0}&quot; is a site group. If you delete it, all sites within the group including settings and media assets will also be deleted.">
     <ja-JP>"{0}" はサイト グループです。これを削除した場合、設定およびメディア資産を含むグループ内の全てのサイトも削除されます。</ja-JP>
   </phrase>
   <phrase key="&quot;{0}&quot; is a site. If you delete it, all settings and media assets will also be deleted.">
     <ja-JP>"{0}" はサイトです。これを削除した場合、全ての設定およびメディア資産も削除されます。</ja-JP>
-  </phrase>
-  <phrase key="&quot;{0}&quot; is a tenant folder. If you delete it, all tenants with associated templates, sites, settings, and media assets will also be deleted.">
-    <ja-JP>"{0}" はテナント フォルダーです。これを削除した場合、関連するテンプレート、サイト、設定およびメディア資産を持つ全てのテナントも削除されます。</ja-JP>
-  </phrase>
-  <phrase key="&quot;{0}&quot; is a tenant. If you delete it, all associated templates, sites, settings and media assets will also be deleted.">
-    <ja-JP>"{0}" はテナントです。これを削除した場合、全ての関連するテンプレート、サイト、設定およびメディア資産も削除されます。</ja-JP>
   </phrase>
   <phrase key="[{0}]">
     <ja-JP>[{0}]</ja-JP>
@@ -57,17 +57,20 @@
   <phrase key="A rendering with this name already exists.">
     <ja-JP>同じ名前のレンダリングがすでに存在します。</ja-JP>
   </phrase>
+  <phrase key="A site collection with that name already exists.">
+    <ja-JP>同じ名前のサイトコレクションがすでに存在します。</ja-JP>
+  </phrase>
   <phrase key="A site with that name already exists.">
     <ja-JP>同じ名前のサイトがすでに存在します。</ja-JP>
   </phrase>
   <phrase key="A solution with that name already exists.">
     <ja-JP>その名前のソリューションはすでに存在します。</ja-JP>
   </phrase>
-  <phrase key="A tenant with that name already exists.">
-    <ja-JP>同じ名前のテナントがすでに存在します。</ja-JP>
-  </phrase>
   <phrase key="A test must contain at least two variations. When you have defined the variations, in the ribbon, click the 'Testing' tab and then start the test.">
     <ja-JP>テストには少なくとも2つのバリエーションが含まれている必要があります。 バリエーションを定義したら、リボンで[テスト]タブをクリックしてからテストを開始します。</ja-JP>
+  </phrase>
+  <phrase key="Accessibility">
+    <ja-JP>アクセシビリティ</ja-JP>
   </phrase>
   <phrase key="Accordion">
     <ja-JP>アコーディオン</ja-JP>
@@ -84,8 +87,8 @@
   <phrase key="Add a module to the {0} site">
     <ja-JP>モジュールを {0} サイトに追加</ja-JP>
   </phrase>
-  <phrase key="Add a module to the {0} tenant">
-    <ja-JP>モジュールを {0} テナントに追加</ja-JP>
+  <phrase key="Add a module to the {0} site collection">
+    <ja-JP>モジュールをサイトコレクション{0}に追加</ja-JP>
   </phrase>
   <phrase key="Add language to the site">
     <ja-JP>サイトに言語を追加します</ja-JP>
@@ -93,8 +96,8 @@
   <phrase key="Add module to site">
     <ja-JP>サイトにモジュールを追加</ja-JP>
   </phrase>
-  <phrase key="Add module to tenant">
-    <ja-JP>テナントにモジュールを追加</ja-JP>
+  <phrase key="Add module to the site collection">
+    <ja-JP>サイトコレクションにモジュールを追加</ja-JP>
   </phrase>
   <phrase key="Add Standard Value to site">
     <ja-JP>サイトに標準値を追加</ja-JP>
@@ -111,6 +114,12 @@
   <phrase key="Adding items from scaffolding actions">
     <ja-JP>スキャフォールディング アクションからアイテムを追加中</ja-JP>
   </phrase>
+  <phrase key="Adding site collection module">
+    <ja-JP>サイトコレクションモジュールを追加中</ja-JP>
+  </phrase>
+  <phrase key="Adding site collection templates">
+    <ja-JP>サイトコレクションテンプレートを追加中</ja-JP>
+  </phrase>
   <phrase key="Adding site module">
     <ja-JP>サイト モジュールを追加中</ja-JP>
   </phrase>
@@ -120,12 +129,6 @@
   <phrase key="Adding Standard Values">
     <ja-JP>標準値の追加</ja-JP>
   </phrase>
-  <phrase key="Adding tenant module">
-    <ja-JP>テナント モジュールを追加中</ja-JP>
-  </phrase>
-  <phrase key="Adding tenant templates">
-    <ja-JP>テナント テンプレートを追加中</ja-JP>
-  </phrase>
   <phrase key="Additional compatible templates">
     <ja-JP>追加互換性のあるテンプレート</ja-JP>
   </phrase>
@@ -134,6 +137,12 @@
   </phrase>
   <phrase key="Agency drop (preview mode, importable)">
     <ja-JP>エージェンシー ドロップ （プレビュー モード、インポート可能）</ja-JP>
+  </phrase>
+  <phrase key="agenda day">
+    <ja-JP>1日のアジェンダ</ja-JP>
+  </phrase>
+  <phrase key="agenda week">
+    <ja-JP>1s週間のアジェンダ</ja-JP>
   </phrase>
   <phrase key="Aggregated Facet Filter">
     <ja-JP>集計済みファセット フィルター</ja-JP>
@@ -153,14 +162,17 @@
   <phrase key="An item with that name already exists.">
     <ja-JP>同じ名前のアイテムがすでに存在します。</ja-JP>
   </phrase>
+  <phrase key="Analytics">
+    <ja-JP>アナリティクス</ja-JP>
+  </phrase>
   <phrase key="Anchor">
     <ja-JP>アンカー</ja-JP>
   </phrase>
   <phrase key="Anchor:">
     <ja-JP>アンカー：</ja-JP>
   </phrase>
-  <phrase key="Applying tenant templates to items">
-    <ja-JP>テナント テンプレートをアイテムに適用中</ja-JP>
+  <phrase key="Applying site collection templates to items">
+    <ja-JP>アイテムへのサイトコレクションテンプレートを適用中</ja-JP>
   </phrase>
   <phrase key="Archive">
     <ja-JP>アーカイブ</ja-JP>
@@ -291,14 +303,20 @@
   <phrase key="Completed">
     <ja-JP>完了</ja-JP>
   </phrase>
+  <phrase key="Compliancy">
+    <ja-JP>準拠</ja-JP>
+  </phrase>
   <phrase key="Component name">
     <ja-JP>コンポーネント名</ja-JP>
   </phrase>
   <phrase key="Component variants">
     <ja-JP>コンポーネント バリアント</ja-JP>
   </phrase>
-  <phrase key="Configure the tenant security first.">
-    <ja-JP>まずテナントのセキュリティを設定します。</ja-JP>
+  <phrase key="Composites">
+    <ja-JP>複合</ja-JP>
+  </phrase>
+  <phrase key="Configure the site collection security first.">
+    <ja-JP>最初にサイトコレクションセキュリティを設定します。</ja-JP>
   </phrase>
   <phrase key="Configuring the site definition item">
     <ja-JP>サイト定義アイテムを設定中</ja-JP>
@@ -308,6 +326,9 @@
   </phrase>
   <phrase key="Container">
     <ja-JP>コンテナー</ja-JP>
+  </phrase>
+  <phrase key="Context">
+    <ja-JP>コンテキスト</ja-JP>
   </phrase>
   <phrase key="Copy MVC view file (specify path below)">
     <ja-JP>MVC ビュー ファイルをコピー（パスを以下に指定）</ja-JP>
@@ -330,11 +351,17 @@
   <phrase key="Create a new folder.">
     <ja-JP>新規のフォルダーを作成します。</ja-JP>
   </phrase>
+  <phrase key="Create a new headless module">
+    <ja-JP>新しいヘッドレスモジュールを作成</ja-JP>
+  </phrase>
   <phrase key="Create a new Headless site">
     <ja-JP>新しいヘッドレスサイトを作成</ja-JP>
   </phrase>
-  <phrase key="Create a new Headless tenant">
-    <ja-JP>新しいヘッドレステナントを作成</ja-JP>
+  <phrase key="Create a new headless site collection">
+    <ja-JP>新しいヘッドレスサイトコレクションを作成</ja-JP>
+  </phrase>
+  <phrase key="Create a new module">
+    <ja-JP>新しいモジュールを作成</ja-JP>
   </phrase>
   <phrase key="Create a new Page Branch">
     <ja-JP>新しいページブランチを作成</ja-JP>
@@ -354,8 +381,11 @@
   <phrase key="Create a new theme">
     <ja-JP>新しいテーマを作成</ja-JP>
   </phrase>
-  <phrase key="Create a tenant">
-    <ja-JP>テナントを作成</ja-JP>
+  <phrase key="Create a site collection">
+    <ja-JP>サイトコレクションを作成</ja-JP>
+  </phrase>
+  <phrase key="Create Component Settings">
+    <ja-JP>コンポーネントの設定を作成</ja-JP>
   </phrase>
   <phrase key="Create Component Theme Configuration">
     <ja-JP>コンポーネントテーマの構成を作成</ja-JP>
@@ -369,9 +399,6 @@
   <phrase key="Create New Content">
     <ja-JP>新しいコンテンツを作成</ja-JP>
   </phrase>
-  <phrase key="Create new module">
-    <ja-JP>新しいモジュールを作成</ja-JP>
-  </phrase>
   <phrase key="Create New Settings">
     <ja-JP>新規の設定を作成します</ja-JP>
   </phrase>
@@ -381,17 +408,26 @@
   <phrase key="Create Standard Values">
     <ja-JP>標準値の作成</ja-JP>
   </phrase>
+  <phrase key="Creating a new site collection">
+    <ja-JP>新しいサイト コレクションを作成中</ja-JP>
+  </phrase>
   <phrase key="Creating editing theme">
     <ja-JP>編集テーマを作成しています</ja-JP>
+  </phrase>
+  <phrase key="Creating media library for the site collection">
+    <ja-JP>サイト コレクション用のメディアライブラリを作成中</ja-JP>
   </phrase>
   <phrase key="Creating new site">
     <ja-JP>新規サイトを作成しています</ja-JP>
   </phrase>
-  <phrase key="Creating new tenant">
-    <ja-JP>新規のテナントを作成中</ja-JP>
-  </phrase>
   <phrase key="Creating shared media library">
     <ja-JP>共有メディア ライブラリーを作成中</ja-JP>
+  </phrase>
+  <phrase key="Creating site collection item">
+    <ja-JP>サイトコレクションアイテムを作成中</ja-JP>
+  </phrase>
+  <phrase key="Creating site collection templates root">
+    <ja-JP>サイトコレクションテンプレートルートを作成中</ja-JP>
   </phrase>
   <phrase key="Creating site media library">
     <ja-JP>サイト メディア ライブラリを作成しています</ja-JP>
@@ -399,17 +435,8 @@
   <phrase key="Creating site theme">
     <ja-JP>サイト テーマを作成しています</ja-JP>
   </phrase>
-  <phrase key="Creating tenant item">
-    <ja-JP>テナント アイテムを作成中</ja-JP>
-  </phrase>
-  <phrase key="Creating tenant media library">
-    <ja-JP>テナント メディア ライブラリーを作成中</ja-JP>
-  </phrase>
-  <phrase key="Creating tenant templates root">
-    <ja-JP>テナント テンプレート ルートを作成中</ja-JP>
-  </phrase>
-  <phrase key="Creating tenant themes folder">
-    <ja-JP>テナント テーマ フォルダーを作成中</ja-JP>
+  <phrase key="Creating themes folder for the site collection">
+    <ja-JP>サイト コレクション用のテーマ フォルダを作成中</ja-JP>
   </phrase>
   <phrase key="Current site">
     <ja-JP>現在のサイト</ja-JP>
@@ -429,11 +456,18 @@
   <phrase key="Data">
     <ja-JP>データ</ja-JP>
   </phrase>
+  <phrase key="Data source workflow did not succeed. &#xA;Item:">
+    <ja-JP>データソースのワークフローが失敗しました。
+アイテム：</ja-JP>
+  </phrase>
   <phrase key="Datasource">
     <ja-JP>Datasource</ja-JP>
   </phrase>
   <phrase key="Datasource templates">
     <ja-JP>データソーステンプレート</ja-JP>
+  </phrase>
+  <phrase key="Datasources">
+    <ja-JP>データソース</ja-JP>
   </phrase>
   <phrase key="Date Filter">
     <ja-JP>日付 フィルター</ja-JP>
@@ -468,6 +502,9 @@
   <phrase key="Do you want to copy the subitems? Local page datasources will always be copied.">
     <ja-JP>サブ項目をコピーしますか？ ローカルページデータソースは常にコピーされます。</ja-JP>
   </phrase>
+  <phrase key="Do you want to install them now?">
+    <ja-JP>今すぐインストールしますか？</ja-JP>
+  </phrase>
   <phrase key="Do you want to make this clone and its children an SXA delegated area?">
     <ja-JP>このクローンおよび子を SXA デリゲート エリアにしますか？</ja-JP>
   </phrase>
@@ -483,8 +520,8 @@
   <phrase key="Download the selected file">
     <ja-JP>選択したファイルをダウンロード</ja-JP>
   </phrase>
-  <phrase key="Download the tenant as a package.">
-    <ja-JP>テナントをパッケージとしてダウンロードします。</ja-JP>
+  <phrase key="Download the site collection as a package.">
+    <ja-JP>サイトコレクションをパッケージとしてダウンロードします。</ja-JP>
   </phrase>
   <phrase key="Download zipped site">
     <ja-JP>Zip 化されたサイトをダウンロード</ja-JP>
@@ -510,8 +547,8 @@
   <phrase key="Editable">
     <ja-JP>編集可能</ja-JP>
   </phrase>
-  <phrase key="Editing tenant templates">
-    <ja-JP>テナント テンプレートを編集中</ja-JP>
+  <phrase key="Editing site collection templates">
+    <ja-JP>サイトコレクションテンプレートを編集中</ja-JP>
   </phrase>
   <phrase key="EditModePanel">
     <ja-JP>編集モードパネル</ja-JP>
@@ -521,6 +558,9 @@
   </phrase>
   <phrase key="End-user site (normal mode, non-importable)">
     <ja-JP>エンド ユーザー サイト （標準 モード、インポート不可）</ja-JP>
+  </phrase>
+  <phrase key="Engagement">
+    <ja-JP>エンゲージメント</ja-JP>
   </phrase>
   <phrase key="Enter new folder name">
     <ja-JP>新規 フォルダー名を入力します</ja-JP>
@@ -548,6 +588,9 @@
   </phrase>
   <phrase key="Event List">
     <ja-JP>イベント リスト</ja-JP>
+  </phrase>
+  <phrase key="Events">
+    <ja-JP>イベント</ja-JP>
   </phrase>
   <phrase key="Exception while adding {0} file.">
     <ja-JP>{0} ファイルを追加中に例外が発生しました。</ja-JP>
@@ -630,6 +673,9 @@
   <phrase key="Folder on server">
     <ja-JP>サーバー上のフォルダー</ja-JP>
   </phrase>
+  <phrase key="Forms">
+    <ja-JP>フォーム</ja-JP>
+  </phrase>
   <phrase key="Full url:">
     <ja-JP>フル URL:</ja-JP>
   </phrase>
@@ -642,14 +688,17 @@
   <phrase key="Generating static error page">
     <ja-JP>静的エラー ページを生成中</ja-JP>
   </phrase>
+  <phrase key="Generic Meta Rendering">
+    <ja-JP>Generic Meta Rendering</ja-JP>
+  </phrase>
   <phrase key="Getting scaffolding actions">
     <ja-JP>スキャフォールディング アクションを取得中</ja-JP>
   </phrase>
-  <phrase key="Getting tenant item">
-    <ja-JP>テナント アイテムを取得しています</ja-JP>
+  <phrase key="Getting site collection item">
+    <ja-JP>サイトコレクションアイテムを取得中</ja-JP>
   </phrase>
-  <phrase key="Getting tenant templates">
-    <ja-JP>テナント テンプレートを取得しています</ja-JP>
+  <phrase key="Getting site collection templates">
+    <ja-JP>サイトコレクションテンプレートを取得中</ja-JP>
   </phrase>
   <phrase key="Getting upgrade information">
     <ja-JP>アップグレード情報を取得しています</ja-JP>
@@ -657,11 +706,11 @@
   <phrase key="Getting upgrade step dialog/default values">
     <ja-JP>アップグレード手順ダイアログ/デフォルト値を取得しています</ja-JP>
   </phrase>
+  <phrase key="Getting valid site collection definitions">
+    <ja-JP>有効なサイトコレクション定義を取得中</ja-JP>
+  </phrase>
   <phrase key="Getting valid site definitions">
     <ja-JP>有効なサイト定義を取得しています</ja-JP>
-  </phrase>
-  <phrase key="Getting valid tenant definitions">
-    <ja-JP>有効なテナント定義を取得中</ja-JP>
   </phrase>
   <phrase key="Grid">
     <ja-JP>グリッド</ja-JP>
@@ -765,14 +814,14 @@
   <phrase key="Invalid file name. Make sure the new view file name does not contain invalid characters, and ends with .cshtml.">
     <ja-JP>ファイル名が無効です。新規のビュー ファイル名には無効な文字が含まれないようにしてください。また、.cshtml で終わるようにしてください。</ja-JP>
   </phrase>
-  <phrase key="Invalid location. Cloned sites can only be located under tenants and site folders.">
-    <ja-JP>無効なロケーションです。 複製されたサイトは、テナントフォルダおよびサイトフォルダにのみ配置できます。</ja-JP>
+  <phrase key="Invalid location. Cloned sites can only be located under site collections and site folders.">
+    <ja-JP>無効なロケーションです。複製されたサイトは、サイトコレクションとサイトフォルダにのみ配置できます。</ja-JP>
   </phrase>
   <phrase key="Invoking scripts from scaffolding actions">
     <ja-JP>スキャフォールディング アクションからスクリプトを呼び出し中</ja-JP>
   </phrase>
-  <phrase key="Invoking tenant post setup steps">
-    <ja-JP>テナント ポスト設定ステップを呼び出し中</ja-JP>
+  <phrase key="Invoking site collection post setup steps">
+    <ja-JP>セットアップ手順後にサイトコレクションを呼び出し中</ja-JP>
   </phrase>
   <phrase key="Invoking upgrade step">
     <ja-JP>アップグレード手順を実行しています</ja-JP>
@@ -794,6 +843,9 @@
   </phrase>
   <phrase key="JavaScript:">
     <ja-JP>JavaScript：</ja-JP>
+  </phrase>
+  <phrase key="Json">
+    <ja-JP>Json</ja-JP>
   </phrase>
   <phrase key="JSON Content">
     <ja-JP>JSON コンテンツ</ja-JP>
@@ -857,6 +909,12 @@
   </phrase>
   <phrase key="Map">
     <ja-JP>マップ</ja-JP>
+  </phrase>
+  <phrase key="Maps">
+    <ja-JP>マップ</ja-JP>
+  </phrase>
+  <phrase key="Media">
+    <ja-JP>メディア</ja-JP>
   </phrase>
   <phrase key="Media Browser">
     <ja-JP>メディア ブラウザー</ja-JP>
@@ -933,14 +991,14 @@
   <phrase key="New site">
     <ja-JP>新規サイト</ja-JP>
   </phrase>
+  <phrase key="New site collection">
+    <ja-JP>新しいサイトコレクション</ja-JP>
+  </phrase>
   <phrase key="New style added to page {0} rendering {1} property {2}: {3}.">
     <ja-JP>新しいスタイルが追加 ページ {0} レンダリング {1} プロパティ {2}: {3}.</ja-JP>
   </phrase>
   <phrase key="New style item created for rendering {0}: {1}.">
     <ja-JP>レンダリング {0} 用に作成された新しいスタイル アイテム: {1}</ja-JP>
-  </phrase>
-  <phrase key="New tenant">
-    <ja-JP>新規テナント</ja-JP>
   </phrase>
   <phrase key="New theme name">
     <ja-JP>新規 テーマ 名</ja-JP>
@@ -990,8 +1048,8 @@
   <phrase key="Opening new site dialog">
     <ja-JP>新規サイト ダイアログを開いています</ja-JP>
   </phrase>
-  <phrase key="Opening new tenant dialog">
-    <ja-JP>新規のテナント ダイアログを開いています</ja-JP>
+  <phrase key="Opening the new site collection dialog">
+    <ja-JP>新しいサイトコレクションダイアログを開いています</ja-JP>
   </phrase>
   <phrase key="Operation cannot be finished. Unable to determine item template based on insert options.">
     <ja-JP>操作は終了できません。挿入オプションに基づいたアイテム テンプレートを決定できません。</ja-JP>
@@ -1031,6 +1089,9 @@
   </phrase>
   <phrase key="Page Size">
     <ja-JP>ページ サイズ</ja-JP>
+  </phrase>
+  <phrase key="Page Structure">
+    <ja-JP>ページ 構造</ja-JP>
   </phrase>
   <phrase key="Page template">
     <ja-JP>ページテンプレート</ja-JP>
@@ -1221,6 +1282,9 @@
   <phrase key="Searching items roots">
     <ja-JP>アイテム ルートを検索中</ja-JP>
   </phrase>
+  <phrase key="Security">
+    <ja-JP>Security</ja-JP>
+  </phrase>
   <phrase key="Security domain">
     <ja-JP>セキュリティ ドメイン</ja-JP>
   </phrase>
@@ -1229,6 +1293,9 @@
   </phrase>
   <phrase key="Select an item first.">
     <ja-JP>最初にアイテムを選択してください。</ja-JP>
+  </phrase>
+  <phrase key="Select component variant">
+    <ja-JP>コンポーネントバリエーションを選択</ja-JP>
   </phrase>
   <phrase key="Select content token item.">
     <ja-JP>コンテンツ トークン アイテムを選択します。</ja-JP>
@@ -1302,23 +1369,26 @@
   <phrase key="Select the link type and specify the properties.">
     <ja-JP>リンク タイプを選択し、プロパティを指定します。</ja-JP>
   </phrase>
+  <phrase key="Select the modules that you want to add to the {0} site collection. The listed modules have not yet been added to the site collection.">
+    <ja-JP>{0}サイトコレクションに追加するモジュールを選択します。リストされたモジュールはまだサイトコレクションに追加されていません。</ja-JP>
+  </phrase>
   <phrase key="Select the modules that you want to add to the {0} site. The listed modules have not yet been added to the site.">
     <ja-JP>{0} サイトに追加したいモジュールを選択します。リスト内のモジュールはまだサイトに追加されていません。</ja-JP>
   </phrase>
-  <phrase key="Select the modules that you want to add to the {0} tenant. The listed modules have not yet been added to the tenant.">
-    <ja-JP>{0} テナントに追加したいモジュールを選択します。リスト内のモジュールはまだテナントに追加されていません。</ja-JP>
+  <phrase key="Select the modules that you want to use for the site collection.">
+    <ja-JP>サイトコレクションに使用するモジュールを選択します。</ja-JP>
   </phrase>
   <phrase key="Select the modules that you want to use for the site.">
     <ja-JP>サイトに使用したいモジュールを選択します。</ja-JP>
-  </phrase>
-  <phrase key="Select the modules that you want to use for the tenant.">
-    <ja-JP>テナントに使用したいモジュールを選択</ja-JP>
   </phrase>
   <phrase key="Select the package.">
     <ja-JP>パッケージを選択します。</ja-JP>
   </phrase>
   <phrase key="Select the parent node for a new folder.">
     <ja-JP>新規のフォルダーの親ノードを選択します。</ja-JP>
+  </phrase>
+  <phrase key="Select the rendering for which you want to create allowed on templates settings for.">
+    <ja-JP>テンプレート設定で許可するレンダリングを選択します。</ja-JP>
   </phrase>
   <phrase key="Select the rendering that you want to create datasource settings for.">
     <ja-JP>データソース設定を作成したいレンダリングを選択します。</ja-JP>
@@ -1328,6 +1398,9 @@
   </phrase>
   <phrase key="Select the root item and the name for the copy.">
     <ja-JP>ルート アイテムとコピー用の名前を選択</ja-JP>
+  </phrase>
+  <phrase key="Select the site collections that you want to add the module to.">
+    <ja-JP>モジュールを追加するサイトコレクションを選択します。</ja-JP>
   </phrase>
   <phrase key="Select the site(s) that you want to add the module to.">
     <ja-JP>モジュールを追加したいサイトを選択します。</ja-JP>
@@ -1340,9 +1413,6 @@
   </phrase>
   <phrase key="Select the target grid.">
     <ja-JP>ターゲット グリッドを選択します。</ja-JP>
-  </phrase>
-  <phrase key="Select the tenant(s) that you want to add the module to.">
-    <ja-JP>モジュールを追加したいテナントを選択します。</ja-JP>
   </phrase>
   <phrase key="Select the variable that you want to insert.">
     <ja-JP>挿入したい変数を選択します。</ja-JP>
@@ -1365,8 +1435,8 @@
   <phrase key="Set the grid details.">
     <ja-JP>グリッド詳細を設定します。</ja-JP>
   </phrase>
-  <phrase key="Setting tenant templates location.">
-    <ja-JP>テナント テンプレート ロケーションを設定しています。</ja-JP>
+  <phrase key="Setting site collection templates location.">
+    <ja-JP>サイトコレクションテンプレート場所の設定。</ja-JP>
   </phrase>
   <phrase key="Setting the default values">
     <ja-JP>デフォルト値の設定</ja-JP>
@@ -1392,11 +1462,29 @@
   <phrase key="Site">
     <ja-JP>サイト</ja-JP>
   </phrase>
+  <phrase key="Site Collection">
+    <ja-JP>テナント</ja-JP>
+  </phrase>
+  <phrase key="Site collection name">
+    <ja-JP>サイトコレクション名</ja-JP>
+  </phrase>
+  <phrase key="Site collection templates">
+    <ja-JP>サイトコレクションテンプレート</ja-JP>
+  </phrase>
+  <phrase key="Site Collection Templates">
+    <ja-JP>サイトコレクションテンプレート</ja-JP>
+  </phrase>
+  <phrase key="Site Collections">
+    <ja-JP>サイトコレクション</ja-JP>
+  </phrase>
   <phrase key="Site context">
     <ja-JP>サイト コンテキスト</ja-JP>
   </phrase>
   <phrase key="Site location">
     <ja-JP>サイトの場所</ja-JP>
+  </phrase>
+  <phrase key="Site Metadata">
+    <ja-JP>サイト メタデータ</ja-JP>
   </phrase>
   <phrase key="Site name">
     <ja-JP>サイト名</ja-JP>
@@ -1406,6 +1494,9 @@
   </phrase>
   <phrase key="Site theme name">
     <ja-JP>Site theme name</ja-JP>
+  </phrase>
+  <phrase key="Sitecore Forms">
+    <ja-JP>Sitecore フォーム</ja-JP>
   </phrase>
   <phrase key="Sites">
     <ja-JP>サイト</ja-JP>
@@ -1421,6 +1512,9 @@
   </phrase>
   <phrase key="Snippet">
     <ja-JP>スニペット</ja-JP>
+  </phrase>
+  <phrase key="Social">
+    <ja-JP>ソーシャル</ja-JP>
   </phrase>
   <phrase key="Social Login Wrapper">
     <ja-JP>ソーシャル ログイン ラッパー</ja-JP>
@@ -1476,20 +1570,11 @@
   <phrase key="Target Window:">
     <ja-JP>ターゲット ウィンドウ：</ja-JP>
   </phrase>
+  <phrase key="Taxonomy">
+    <ja-JP>分類</ja-JP>
+  </phrase>
   <phrase key="Template {0} not found">
     <ja-JP>テンプレート「{0}」が見つかりません</ja-JP>
-  </phrase>
-  <phrase key="Tenant">
-    <ja-JP>テナント</ja-JP>
-  </phrase>
-  <phrase key="Tenant name">
-    <ja-JP>テナント名</ja-JP>
-  </phrase>
-  <phrase key="Tenant templates">
-    <ja-JP>テナント テンプレート</ja-JP>
-  </phrase>
-  <phrase key="Tenants">
-    <ja-JP>テナント</ja-JP>
   </phrase>
   <phrase key="Test">
     <ja-JP>テスト</ja-JP>
@@ -1574,8 +1659,14 @@
   <phrase key="The media item that you selected does not exist.">
     <ja-JP>選択したメディア アイテムは存在しません。</ja-JP>
   </phrase>
+  <phrase key="The module has dependencies">
+    <ja-JP>モジュールには依存関係があります</ja-JP>
+  </phrase>
   <phrase key="The module path does not exist.">
     <ja-JP>モジュール パスは存在しません。</ja-JP>
+  </phrase>
+  <phrase key="The module you are trying to install requires the following modules to be installed first:">
+    <ja-JP>インストールしようとしているモジュールには、次のモジュールを先にインストールする必要があります。</ja-JP>
   </phrase>
   <phrase key="The name of the solution is too long">
     <ja-JP>ソリューションの名前が長すぎます</ja-JP>
@@ -1646,11 +1737,11 @@
   <phrase key="There are no renderings on the page. The Layout Service output will therefore be used in Preview and Normal mode.">
     <ja-JP>ページにレンダリングがありません。従ってレイアウト サービス出力はプレビューおよびノーマル モードで使用されます。</ja-JP>
   </phrase>
+  <phrase key="There are no site collections without this module">
+    <ja-JP>このモジュールが含まれないサイトコレクションはありません</ja-JP>
+  </phrase>
   <phrase key="There are no sites without this module">
     <ja-JP>このモジュールが無いサイトはありません。</ja-JP>
-  </phrase>
-  <phrase key="There are no tenants without this module">
-    <ja-JP>このモジュールが無いテナントはありません。</ja-JP>
   </phrase>
   <phrase key="There are unsaved changes. &#xA;Do you want to save the changes to the item?">
     <ja-JP>保存されていない変更があります。
@@ -1677,14 +1768,14 @@
   <phrase key="This script clones an existing site.">
     <ja-JP>このスクリプトは既存のサイトのクローンを作成します。</ja-JP>
   </phrase>
-  <phrase key="This script creates a new Headless tenant within your SXA enabled instance.">
-    <ja-JP>このスクリプトは、SXA対応インスタンス内に新しいヘッドレステナントを作成します。</ja-JP>
+  <phrase key="This script creates a new headless site collection within your SXA-enabled instance.">
+    <ja-JP>このスクリプトはSXA対応インスタンス内に新しいヘッドレスサイトコレクションを作成します。</ja-JP>
   </phrase>
   <phrase key="This script creates a new Page Branch">
     <ja-JP>このスクリプトは新しいページ ブランチを作成します</ja-JP>
   </phrase>
-  <phrase key="This script creates a new tenant within your SXA enabled instance.">
-    <ja-JP>このスクリプトはSXAが有効なインスタンス内に新しいテナントを作成します。</ja-JP>
+  <phrase key="This script creates a new site collection within your SXA-enabled instance.">
+    <ja-JP>このスクリプトはSXA対応インスタンス内に新しいサイトコレクションを作成します。</ja-JP>
   </phrase>
   <phrase key="This script creates Standard Values for your SXA site.">
     <ja-JP>このスクリプトは、SXA サイトの標準値を作成します。</ja-JP>
@@ -1707,11 +1798,11 @@
   <phrase key="This site already has all available modules deployed to it.">
     <ja-JP>このサイトには全ての利用可能なモジュールがデプロイされています。</ja-JP>
   </phrase>
-  <phrase key="This tenant already has all available modules deployed to it.">
-    <ja-JP>このテナントには全ての利用可能なモジュールがデプロイされています。</ja-JP>
+  <phrase key="This site collection already has all available modules deployed to it.">
+    <ja-JP>このサイトコレクションには、利用可能なすべてのモジュールが導入されています。</ja-JP>
   </phrase>
-  <phrase key="This tool lets you quickly download the tenant as a package.">
-    <ja-JP>このツールによりテナントをパッケージとして迅速にダウンロードすることができます。</ja-JP>
+  <phrase key="This tool lets you quickly download the site collection as a package.">
+    <ja-JP>このツールを使用すると、サイトコレクションをパッケージとして簡単にダウンロードできます。</ja-JP>
   </phrase>
   <phrase key="Title">
     <ja-JP>タイトル</ja-JP>
@@ -1758,11 +1849,11 @@
   <phrase key="Unzipping the package failed. Make sure the zip archive is valid.">
     <ja-JP>パッケージの解凍に失敗しました。Zip アーカイブが有効であるかご確認ください。</ja-JP>
   </phrase>
-  <phrase key="Updating insert options for tenant templates">
-    <ja-JP>テナント用挿入オプションを更新中</ja-JP>
+  <phrase key="Updating insert options for site collection templates">
+    <ja-JP>サイトコレクションテンプレートの挿入オプションを更新中</ja-JP>
   </phrase>
-  <phrase key="Updating tenant settings">
-    <ja-JP>テナント設定を更新中</ja-JP>
+  <phrase key="Updating site collection settings">
+    <ja-JP>サイトコレクションの設定を更新</ja-JP>
   </phrase>
   <phrase key="Upgrade">
     <ja-JP>アップグレード</ja-JP>
@@ -1785,11 +1876,14 @@
   <phrase key="Use original MVC view file">
     <ja-JP>元のMVC ビュー ファイルを使用</ja-JP>
   </phrase>
-  <phrase key="Used to set up the security for the tenant or site.">
-    <ja-JP>テナントまたはサイトのセキュリティ設定のために使用します。</ja-JP>
+  <phrase key="Used to set up the security for the site collection or site.">
+    <ja-JP>サイトコレクションまたはサイトのセキュリティを設定するために使用されました。</ja-JP>
   </phrase>
   <phrase key="Validating module dependencies for the {0} site.">
     <ja-JP>{0} サイトのモジュール依存関係を検証中</ja-JP>
+  </phrase>
+  <phrase key="Variant">
+    <ja-JP>バリアント</ja-JP>
   </phrase>
   <phrase key="Version">
     <ja-JP>バージョン</ja-JP>
@@ -1818,6 +1912,9 @@
   <phrase key="You are not allowed to create any items here.">
     <ja-JP>この場所にアイテムを作成することは許可されていません。</ja-JP>
   </phrase>
+  <phrase key="You cannot add renderings directly to the page design. Instead, add the renderings to the partial designs used by the page design.">
+    <ja-JP>ページデザインに直接レンダリングを追加することはできません。その代わりに、ページデザインに使用される一部のデザインにレンダリングを追加します。</ja-JP>
+  </phrase>
   <phrase key="You have installed a new version of SXA but your content has not been upgraded. Your site may not function correctly until you upgrade your content.">
     <ja-JP>SXAの新しいバージョンがインストールされていますが、コンテンツはアップグレードされていません。コンテンツをアップグレードするまでサイトが正常に機能しない場合があります。</ja-JP>
   </phrase>
@@ -1836,6 +1933,9 @@
   <phrase key="Your content is up to date.">
     <ja-JP>コンテンツは最新です。</ja-JP>
   </phrase>
+  <phrase key="Your site collection has been created.">
+    <ja-JP>サイトコレクションが作成されました。</ja-JP>
+  </phrase>
   <phrase key="Your site has been created.">
     <ja-JP>サイトが作成されました。</ja-JP>
   </phrase>
@@ -1847,9 +1947,6 @@
   </phrase>
   <phrase key="Your Sitecore instance has no domain collisions.">
     <ja-JP>Sitecore インスタンスにドメインの競合はありません。</ja-JP>
-  </phrase>
-  <phrase key="Your tenant has been created.">
-    <ja-JP>テナントが作成されました。</ja-JP>
   </phrase>
   <phrase key="Zip file">
     <ja-JP>Zip ファイル</ja-JP>

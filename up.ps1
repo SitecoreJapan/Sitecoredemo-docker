@@ -68,10 +68,10 @@ Write-Host "Rebuilding indexes ..." -ForegroundColor Green
 dotnet sitecore index rebuild
 
 # Write-Host "Pushing Default rendering host configuration" -ForegroundColor Green
-# dotnet sitecore ser push
+dotnet sitecore ser push
 
 # Write-Host "publishing content..." -ForegroundColor Green
-# dotnet sitecore publish
+dotnet sitecore publish
 
 if ($ClientCredentialsLogin -ne "true") {
     Write-Host "Opening site..." -ForegroundColor Green
