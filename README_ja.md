@@ -2,10 +2,9 @@
 
 ## 必要システム
 
-- NodeJs 16.x
+- NodeJs 21.x
 - .NET 6.0 SDK
-- .NET Framework 4.8 SDK
-- Visual Studio 2019
+- Visual Studio Code
 - Docker for Windows, with Windows Containers enabled
 
 より詳しい情報を確認する場合は、Sitecore Docker Container に関して確認をしてください。
@@ -29,4 +28,4 @@
 
 しばらくすると Next.js と Sitecore が動いている環境が起動します。
 
-このプロジェクトの作成手順は[ブログ](https://haramizu.com)を参照してください。
+このプロジェクトの作成手順は[ブログ](https://haramizu.com/ja-JP)を参照してください。

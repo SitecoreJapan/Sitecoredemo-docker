@@ -75,7 +75,7 @@
     <Content Include="App_Data\items\master\localization\items.master.sxa.ja-JP.dat" />
     <Content Include="App_Data\items\web\localization\items.web.ja-JP.dat" />
     <Content Include="App_Data\items\web\localization\items.web.sxa.ja-JP.dat" />
-    <Content Include="App_Config\Include\sitecoredemo-jp.config" />
+    <Content Include="App_Config\Include\sxastarter-jp.config" />
     <None Include="Platform.wpp.targets" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="README.md" />

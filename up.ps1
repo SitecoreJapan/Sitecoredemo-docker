@@ -42,7 +42,7 @@ if ($LASTEXITCODE -ne 0) {
 
 Write-Host "Logging into Sitecore..." -ForegroundColor Green
 
-dotnet sitecore login --cm https://cm.sitecoredemo.localhost/ --auth https://id.sitecoredemo.localhost/ --allow-write true
+dotnet sitecore login --cm https://cm.sxastarter.localhost/ --auth https://id.sxastarter.localhost/ --allow-write true
 
 if ($LASTEXITCODE -ne 0) {
     Write-Error "Unable to log into Sitecore, did the Sitecore environment start correctly? See logs above."
@@ -63,13 +63,13 @@ dotnet sitecore index rebuild
 dotnet sitecore ser push
 
 # Write-Host "publishing content..." -ForegroundColor Green
-# dotnet sitecore publish
+dotnet sitecore publish
 
-# if ($ClientCredentialsLogin -ne "true") {
-#     Write-Host "Opening site..." -ForegroundColor Green
+if ($ClientCredentialsLogin -ne "true") {
+    Write-Host "Opening site..." -ForegroundColor Green
     
-#     Start-Process https://cm.sitecoredemo.localhost/sitecore/
-# }
+    Start-Process https://cm.sxastarter.localhost/sitecore/
+}
 
 Write-Host ""
 Write-Host "Use the following command to monitor your Rendering Host:" -ForegroundColor Green

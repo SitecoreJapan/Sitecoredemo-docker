@@ -80,7 +80,7 @@ try {
     }
     Write-Host "Generating Traefik TLS certificate..." -ForegroundColor Green
     & $mkcert -install
-    & $mkcert "*.sitecoredemo.localhost"
+    & $mkcert "*.sxastarter.localhost"
 
     # stash CAROOT path for messaging at the end of the script
     $caRoot = "$(& $mkcert -CAROOT)\rootCA.pem"
@@ -99,10 +99,10 @@ finally {
 
 Write-Host "Adding Windows hosts file entries..." -ForegroundColor Green
 
-Add-HostsEntry "cm.sitecoredemo.localhost"
-Add-HostsEntry "cd.sitecoredemo.localhost"
-Add-HostsEntry "id.sitecoredemo.localhost"
-Add-HostsEntry "www.sitecoredemo.localhost"
+Add-HostsEntry "cm.sxastarter.localhost"
+Add-HostsEntry "cd.sxastarter.localhost"
+Add-HostsEntry "id.sxastarter.localhost"
+Add-HostsEntry "www.sxastarter.localhost"
 
 
 ###############################
@@ -121,13 +121,13 @@ if ($InitEnv) {
     Set-DockerComposeEnvFileVariable "SITECORE_LICENSE" -Value (ConvertTo-CompressedBase64String -Path $LicenseXmlPath"\license.xml")
 
     # CM_HOST
-    Set-EnvFileVariable "CM_HOST" -Value "cm.sitecoredemo.localhost"
+    Set-EnvFileVariable "CM_HOST" -Value "cm.sxastarter.localhost"
     
     # ID_HOST
-    Set-EnvFileVariable "ID_HOST" -Value "id.sitecoredemo.localhost"
+    Set-EnvFileVariable "ID_HOST" -Value "id.sxastarter.localhost"
 
     # RENDERING_HOST
-    Set-EnvFileVariable "RENDERING_HOST" -Value "www.sitecoredemo.localhost"
+    Set-EnvFileVariable "RENDERING_HOST" -Value "www.sxastarter.localhost"
 
     # REPORTING_API_KEY = random 64-128 chars
     Set-EnvFileVariable "REPORTING_API_KEY" -Value (Get-SitecoreRandomString 128 -DisallowSpecial)
