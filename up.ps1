@@ -1,18 +1,10 @@
 $ErrorActionPreference = "Stop";
 
-$workingDirectoryPath = ".\src\rendering";
-
 Write-Host "Building containers..." -ForegroundColor Green
 docker-compose build
 if ($LASTEXITCODE -ne 0) {
     Write-Error "Container build failed, see errors above."
 }
-
-Push-Location $workingDirectoryPath
-
-npm install
-
-Pop-Location
 
 # Start the Sitecore instance
 Write-Host "Starting Sitecore environment..." -ForegroundColor Green
@@ -50,7 +42,7 @@ if ($LASTEXITCODE -ne 0) {
 
 Write-Host "Logging into Sitecore..." -ForegroundColor Green
 
-dotnet sitecore login --cm https://cm.sitecoredemo.localhost/ --auth https://id.sitecoredemo.localhost/ --allow-write true
+dotnet sitecore login --cm https://cm.sxastarter.localhost/ --auth https://id.sxastarter.localhost/ --allow-write true
 
 if ($LASTEXITCODE -ne 0) {
     Write-Error "Unable to log into Sitecore, did the Sitecore environment start correctly? See logs above."
@@ -67,16 +59,16 @@ if ($LASTEXITCODE -ne 0) {
 Write-Host "Rebuilding indexes ..." -ForegroundColor Green
 dotnet sitecore index rebuild
 
-Write-Host "Pushing Default rendering host configuration" -ForegroundColor Green
+# Write-Host "Pushing Default rendering host configuration" -ForegroundColor Green
 dotnet sitecore ser push
 
-Write-Host "publishing content..." -ForegroundColor Green
+# Write-Host "publishing content..." -ForegroundColor Green
 dotnet sitecore publish
 
 if ($ClientCredentialsLogin -ne "true") {
     Write-Host "Opening site..." -ForegroundColor Green
     
-    Start-Process https://cm.sitecoredemo.localhost/sitecore/
+    Start-Process https://cm.sxastarter.localhost/sitecore/
 }
 
 Write-Host ""

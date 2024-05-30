@@ -42,15 +42,15 @@ Write-Host "Preparing your Sitecore Containers environment!" -ForegroundColor Gr
 
 # Check for Sitecore Gallery
 Import-Module PowerShellGet
-$SitecoreGallery = Get-PSRepository | Where-Object { $_.SourceLocation -eq "https://sitecore.myget.org/F/sc-powershell/api/v2" }
+$SitecoreGallery = Get-PSRepository | Where-Object { $_.SourceLocation -eq "https://nuget.sitecore.com/resources/v2/" }
 if (-not $SitecoreGallery) {
     Write-Host "Adding Sitecore PowerShell Gallery..." -ForegroundColor Green
-    Register-PSRepository -Name SitecoreGallery -SourceLocation https://sitecore.myget.org/F/sc-powershell/api/v2 -InstallationPolicy Trusted
+    Register-PSRepository -Name SitecoreGallery -SourceLocation https://nuget.sitecore.com/resources/v2/ -InstallationPolicy Trusted
     $SitecoreGallery = Get-PSRepository -Name SitecoreGallery
 }
 
 # Install and Import SitecoreDockerTools
-$dockerToolsVersion = "10.2.7"
+$dockerToolsVersion = "10.3.40"
 Remove-Module SitecoreDockerTools -ErrorAction SilentlyContinue
 if (-not (Get-InstalledModule -Name SitecoreDockerTools -RequiredVersion $dockerToolsVersion -ErrorAction SilentlyContinue)) {
     Write-Host "Installing SitecoreDockerTools..." -ForegroundColor Green
@@ -80,7 +80,7 @@ try {
     }
     Write-Host "Generating Traefik TLS certificate..." -ForegroundColor Green
     & $mkcert -install
-    & $mkcert "*.sitecoredemo.localhost"
+    & $mkcert "*.sxastarter.localhost"
 
     # stash CAROOT path for messaging at the end of the script
     $caRoot = "$(& $mkcert -CAROOT)\rootCA.pem"
@@ -99,10 +99,10 @@ finally {
 
 Write-Host "Adding Windows hosts file entries..." -ForegroundColor Green
 
-Add-HostsEntry "cm.sitecoredemo.localhost"
-Add-HostsEntry "cd.sitecoredemo.localhost"
-Add-HostsEntry "id.sitecoredemo.localhost"
-Add-HostsEntry "www.sitecoredemo.localhost"
+Add-HostsEntry "cm.sxastarter.localhost"
+Add-HostsEntry "cd.sxastarter.localhost"
+Add-HostsEntry "id.sxastarter.localhost"
+Add-HostsEntry "www.sxastarter.localhost"
 
 
 ###############################
@@ -117,14 +117,17 @@ if ($InitEnv) {
     # HOST_LICENSE_FOLDER
     Set-EnvFileVariable "HOST_LICENSE_FOLDER" -Value $LicenseXmlPath
 
+    # SITECORE_LICENSE
+    Set-DockerComposeEnvFileVariable "SITECORE_LICENSE" -Value (ConvertTo-CompressedBase64String -Path $LicenseXmlPath"\license.xml")
+
     # CM_HOST
-    Set-EnvFileVariable "CM_HOST" -Value "cm.sitecoredemo.localhost"
+    Set-EnvFileVariable "CM_HOST" -Value "cm.sxastarter.localhost"
     
     # ID_HOST
-    Set-EnvFileVariable "ID_HOST" -Value "id.sitecoredemo.localhost"
+    Set-EnvFileVariable "ID_HOST" -Value "id.sxastarter.localhost"
 
     # RENDERING_HOST
-    Set-EnvFileVariable "RENDERING_HOST" -Value "www.sitecoredemo.localhost"
+    Set-EnvFileVariable "RENDERING_HOST" -Value "www.sxastarter.localhost"
 
     # REPORTING_API_KEY = random 64-128 chars
     Set-EnvFileVariable "REPORTING_API_KEY" -Value (Get-SitecoreRandomString 128 -DisallowSpecial)
@@ -155,6 +158,7 @@ if ($InitEnv) {
     # SQL_SA_LOGIN
     Set-EnvFileVariable "SQL_SA_LOGIN" -Value "sa"
 
+    
     # JSS_DockerStarter_DEPLOYMENT_SECRET
     Set-EnvFileVariable "JSS_DockerStarter_DEPLOYMENT_SECRET" -Value (Get-SitecoreRandomString 32 -DisallowSpecial -EnforceComplexity)
 

@@ -46,9 +46,9 @@ Function Add-JssProject {
     try {
       jss setup `
         --instancePath "..\..\docker\deploy\platform\" `
-        --layoutServiceHost "https://cm.sitecoredemo.localhost" `
+        --layoutServiceHost "https://cm.sxastarter.localhost" `
         --apiKey "43F8D325-0317-48A0-9EE2-84F9BCAD2941" `
-        --deployUrl "https://cm.sitecoredemo.localhost/sitecore/api/jss/import" `
+        --deployUrl "https://cm.sxastarter.localhost/sitecore/api/jss/import" `
         --deploySecret "7E604A58DE5A45D5B34964A34B47D64E" `
         --nonInteractive `
         --skipValidation | Out-Null

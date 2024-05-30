@@ -2,10 +2,9 @@
 
 ## Prerequisites
 
-- NodeJs 16.x
+- NodeJs 21.x
 - .NET 6.0 SDK
-- .NET Framework 4.8 SDK
-- Visual Studio 2019
+- Visual Studio Code
 - Docker for Windows, with Windows Containers enabled
 
 See Sitecore Containers documentation for more information on system requirements.
@@ -29,6 +28,6 @@ The project will include all of the steps we have outlined in our blog series.
    .\up.ps1
    ```
 
-you can access to Sitecore 10.3 with Headless SXA - Next.js environment.
+you can access to Sitecore 10.4 with Headless SXA - Next.js environment.
 
-The project will include all of the steps we have outlined in [our blog series](https://haramizu.com).
+The project will include all of the steps we have outlined in [my blog series](https://haramizu.com/en-US/).
