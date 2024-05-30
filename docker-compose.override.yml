@@ -1,5 +1,4 @@
 services:
-
   # A Windows-based nodejs base image
   nodejs:
     image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-nodejs:${VERSION:-latest}
@@ -30,7 +29,7 @@ services:
       args:
         PARENT_IMAGE: ${REGISTRY}${COMPOSE_PROJECT_NAME}-nodejs:${VERSION:-latest}
     volumes:
-      - .\src\rendering:C:\app
+      - .\src\sxastarter:C:\app
     environment:
       SITECORE_API_HOST: "http://cm"
       NEXTJS_DIST_DIR: ".next-container"
@@ -51,7 +50,7 @@ services:
     volumes:
       - ./docker/traefik:C:/etc/traefik
     depends_on:
-    - rendering
+      - rendering
 
   # Mount our SQL data folder and use our custom image with the Headless Services (JSS)
   # module data added. See Dockerfile for details.
@@ -90,9 +89,9 @@ services:
         PARENT_IMAGE: ${SITECORE_DOCKER_REGISTRY}sitecore-xm1-solr-init:${SITECORE_VERSION}
         SXA_IMAGE: ${SITECORE_MODULE_REGISTRY}sitecore-sxa-xm1-assets:${SXA_VERSION}
 
-  # # Use our custom CM (XP0 Standalone) image with added modules and solution code.
-  # # Folders are mounted below for code deployment and log output. See Dockerfile for details.
-  # # Configure for a mounted license file instead of using SITECORE_LICENSE.
+  # Use our custom CM (XP0 Standalone) image with added modules and solution code.
+  # Folders are mounted below for code deployment and log output. See Dockerfile for details.
+  # Configure for a mounted license file instead of using SITECORE_LICENSE.
   cm:
     image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-xm1-cm:${VERSION:-latest}
     build:
@@ -110,13 +109,11 @@ services:
     volumes:
       - ${LOCAL_DEPLOY_PATH}\platform:C:\deploy
       - ${LOCAL_DATA_PATH}\cm:C:\inetpub\wwwroot\App_Data\logs
-  #     - ${HOST_LICENSE_FOLDER}:c:\license
     environment:
-  #     SITECORE_LICENSE_LOCATION: c:\license\license.xml
       JSS_DockerStarter_DEPLOYMENT_SECRET: ${JSS_DockerStarter_DEPLOYMENT_SECRET}
       JSS_EDITING_SECRET: ${JSS_EDITING_SECRET}
       RENDERING_HOST_PUBLIC_URI: "https://${RENDERING_HOST}"
-  #     ## Development Environment Optimizations
+      ## Development Environment Optimizations
       SITECORE_DEVELOPMENT_PATCHES: DevEnvOn,CustomErrorsOff,HttpErrorsDetailed,DebugOn,DiagnosticsOff,InitMessagesOff,RobotDetectionOff
       Sitecore_AppSettings_exmEnabled:define: "no" # remove to turn on EXM
   #  entrypoint: powershell.exe -Command "& C:\tools\entrypoints\iis\Development.ps1"
